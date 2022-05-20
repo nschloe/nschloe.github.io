@@ -29,7 +29,8 @@ recommended in now.
 
 The best thing is that it's finally there. And many things are working well, too.
 
-This gives you
+This
+
 
 ```markdown
 #### Cauchy's Theorem
@@ -38,7 +39,7 @@ Let $U$ be an open subset of the complex plane $\mathbb{C}$, and suppose the clo
 disk $D$ defined as
 
 $$
-D = \\{z:|z-z_{0}|\leq r\\}
+D = \{z:|z-z_{0}|\leq r\}
 $$
 
 is completely contained in $U$. Let $f: U\to\mathbb{C}$ be a holomorphic function,
@@ -50,7 +51,9 @@ f(a) = \frac{1}{2\pi i} \oint_{\gamma}\frac{f(z)}{z-a} dz.
 $$
 ```
 
-![Cauchy's theorem](../images/math-cauchy.png)
+gives you
+
+![Cauchy's theorem]({{ site.url }}/images/math-cauchy.png)
 
 - READMe
 - issues, discussions
@@ -68,7 +71,7 @@ place where one can actually talk about the article. -- And fix bugs!
 Not everything works. Most notably, there is math in lists or tables. Or GitHub
 pages, such as this one.
 
-![math in lists](images/math-in-lists.png)
+![math in lists](/images/math-in-lists.png)
 
 <img src="images/math-in-lists.png" alt="math in lists"/>
 
