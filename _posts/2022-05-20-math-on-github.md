@@ -85,7 +85,7 @@ $$\myexp{i}$$
 
 #### The syntax
 
-Getting only one of Markdown and LaTeX rendering right is a big challange.
+Getting only one of Markdown and LaTeX rendering right is a big challenge.
 Mixing them together gets you in all kinds of trouble.
 
 What I think GitHub does now is the following:
@@ -252,7 +252,7 @@ See the bug report
 
 [_Kerning_](https://en.wikipedia.org/wiki/Kerning) is a typographist's way of
 saying _distance between letters_. Compare the kerning in `a = b` between
-Github
+GitHub
 
 <p align="center">
   <img src="/images/kerning-github.png" width="20%">
