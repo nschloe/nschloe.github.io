@@ -129,39 +129,87 @@ With
 KaTeX, especially the support.
 It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)!
 
-No idea why anyone would choose MathJax here.
+No idea why anyone would choose MathJax over KaTeX now.
 
 #### The syntax
 
-Getting one of Markdown and LaTeX rendering right is a challange.
+Getting only one of Markdown and LaTeX rendering right is a big challange.
 Mixing them together gets you in all kinds of trouble.
 
-- What do you think
+What I think GitHub does now is the following:
+
+1. Render the entire page as Markdown, produce the HTML.
+2. Look for `$$...$$`. But make sure they're not crossing opening or closing
+   HTML tags. We don't want
+   ```markdown
+   ... lorem $$ ipsum </b> dolor sit $$ amet ...
+   ```
+   to render as math. Is `</b>` math?
+3. Try the same for `$...$` pairs.
+
+Take the quiz!
+
+- Does this get rendered as math?
+  ```markdown
+  $$
+  a+b
+  <ul><li>c</li></ul>
+  $$
+  ```
+  <details>
+  <summary>Solution</summary>
+  No.
+  </details>
+
+- Does this get rendered as math?
+  ```markdown
+  $$
+  a + b
+  <img/>
+  $$
+  ```
+  <details>
+  <summary>Solution</summary>
+  It doesn't render at all.
+  </details>
+
+- Does this get rendered as math?
   ```markdown
   &dollar;\frac{f}{a}&dollar;
   ```
-  renders as? That's right, math!
+  <details>
+  <summary>Solution</summary>
+  Yup, this is math.
+  </details>
 
-- And this?
-  ```
+- Does this get rendered as math?
+  ```markdown
   $[(a+b)!](c+d)$
   ```
-  A link surrounded by dollar signs!
+  <details>
+  <summary>Solution</summary>
+  Nope, this is a link surrounded by $.
+  </details>
 
-- And this?
-  ```
+- Does this get rendered as math?
+  ```markdown
   $x $y $
   ```
-  Try it for yourself.
+  <details>
+  <summary>Solution</summary>
+  Yes, but only the `x`. The `y` is gone.
+  </details>
 
-As an engineer, I would ask for doubling my salary to compensate for the pain
-of working on these problems. They're all of the pull-my-hair-out type.
+Try it out!
+
+Those problems are tough to fix because the two renderers are competing with
+each other.
 
 Isn't there a smarter way of combining math and Markdown? Turns out there is!
 GitLab has had [math
-support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while now,
-and they use "code" blocks with `math` syntax for display math, and ``$`...`$``
-for inline math.
+support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while, and
+they use "code" blocks with `math` syntax for display math, and ``$`...`$`` for
+inline math.
 
 ````markdown
 ```math
@@ -175,6 +223,16 @@ This syntax is close to Markdown and in fact ties in nicely with other Markdown
 renderers, too. (For example the syntax highlighter in this very code block.)
 There are no rendering ambiguities, and a whole class of bugs simply doesn't
 exist.
+
+With this syntax, rendering becomes easy:
+
+1. Render the page as Markdown produce the HTML.
+2. Check for all `math` `<code>` blocks, and render their contents as display
+   math.
+3. Check for all inline code blocks which are surrounded by `$...$` and render
+   their their contents as inline math.
+
+Done. No ambiguity, no stress.
 
 ## The Ugly
 
@@ -232,4 +290,8 @@ this product though. Particularly the choice of MathJax over KaTeX confuses me.
 Since that is more or less a drop-in replacement, perhaps that can be fixed at
 some point.
 
-A more serious issue is the decision against GitLab's Markdown math syntax.
+A more serious issue is GitHub's approach of (not) trying to consolidate math
+and Markdown syntax. _Something_ is working now, but thinking about the
+underlying code gives me the chills. It'll be almost impossible 
+
+the decision against GitLab's Markdown math syntax.
