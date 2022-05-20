@@ -1,11 +1,7 @@
-# Github Pages Demo Blog
+Hi! This is Nico, big nerd with a math background. I'll write irregularly on
+topics that interest me, mostly math and programming (duh).
 
-Welcome to this demo blog!
-
-You can find the sources of this project
-[here](https://github.com/nschloe/nschloe.github.io).
-
-x
+Here the list of posts:
 <ul>
   {% for post in site.posts %}
     <li>
@@ -13,4 +9,7 @@ x
     </li>
   {% endfor %}
 </ul>
-y
+
+[Here's my GitHub page](http://github.com/nschloe) in case you're in for a deep
+dive. You'll also find [the sources of this
+blog](https://github.com/nschloe/nschloe.github.io).
