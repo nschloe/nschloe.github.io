@@ -55,12 +55,15 @@ gives you
 
 You'll notice that not everything is working here:
 
-  - The curly brackets are missing in the first indented code block.
+  - The curly brackets are missing in the first indented code block. (bug
+    report [here](https://github.com/github/feedback/discussions/16993))
   - The math font is a really small, particularly the
 
     > every _a_ in
 
     towards the end.
+
+  - The spacing between the math characters is wrong.
 
   - The syntax highlighting in the above code block is off.
 
@@ -167,6 +170,8 @@ consequence this.
 
 ## The Ugly
 
+#### Font size
+
 MathJax's default font MJXTEX-I and GitHub's default text Helvetica have a
 different x-height/cap-height ratio. This means that, if you match the capitals
 in height, the small letters won't match. This is what it looks like:
@@ -180,6 +185,20 @@ There's probably not too much you can do here. Matching text and math fonts is
 a whole branch of science, see, e.g.,
 [here](https://tug.org/pracjourn/2006-1/hartke/hartke.pdf).
 
+
+#### Kerning
+
+_Kerning_ is a typographist's way of saying _distance between letters_. Compare
+the kerning in `a = b` between $Github
+
+![github kerning](/images/github-kerning.png)
+
+and LaTeX:
+
+![latex kerning](/images/latex-kerning.png)
+
+Clearly, the GitHub kerning is off. This could perhaps be a  font issue, or an
+issue related to MathJax.
 
 ## Concluding thoughts
 
