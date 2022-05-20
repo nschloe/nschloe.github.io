@@ -185,7 +185,7 @@ different x-height/cap-height ratio. This means that, if you match the capitals
 in height, the small letters won't match. This is what it looks like:
 
 <p align="center">
-  <img src="/images/math-font-size.png" width="60%">
+  <img src="/images/math-font-size.png" width="30%">
 </p>
 
 Font enthusiasts will also notice that the text font is sans-serif while the
@@ -204,11 +204,15 @@ See the bug report
 _Kerning_ is a typographist's way of saying _distance between letters_. Compare
 the kerning in `a = b` between Github
 
-![github kerning](/images/kerning-github.png)
+<p align="center">
+  <img src="/images/kerning-github.png" width="20%">
+</p>
 
 and LaTeX:
 
-![latex kerning](/images/kerning-latex.png)
+<p align="center">
+  <img src="/images/kerning-latex.png" width="20%">
+</p>
 
 Clearly, the GitHub kerning is off. This could perhaps be a  font issue, or an
 issue related to MathJax. (See the bug report
