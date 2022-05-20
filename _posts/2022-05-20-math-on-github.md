@@ -172,5 +172,3 @@ math font has serifs -- a no-go in serious typesetting.
 There's probably not too much you can do here. Matching text and math fonts is
 a whole branch of science, see, e.g.,
 [here](https://tug.org/pracjourn/2006-1/hartke/hartke.pdf).
-
-## Prior art
