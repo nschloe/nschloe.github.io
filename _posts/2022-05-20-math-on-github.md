@@ -148,6 +148,15 @@ Mixing them together gets you in all kinds of trouble.
   ```
   A link surrounded by dollar signs!
 
+- And this?
+  ```
+  $x $y $
+  ```
+  Try it for yourself.
+
+As an engineer, I would ask for doubling my salary to compensate for the pain
+of working on these problems. They're all of the pull-my-hair-out type.
+
 Isn't there a smarter way of combining math and Markdown? Turns out there is!
 GitLab has had [math
 support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while now,
@@ -162,13 +171,10 @@ E = mc^2
 $`a^2 + b^2 = c^2`$
 ````
 
-This syntax is Markdown-inspired and in fact ties in nicely with other Markdown
+This syntax is close to Markdown and in fact ties in nicely with other Markdown
 renderers, too. (For example the syntax highlighter in this very code block.)
-
-Choosing the `$`-approach makes many things hard on the engineering side,
-and I assume that missing support for math in lists and headers is a
-consequence this.
-
+There are no rendering ambiguities, and a whole class of bugs simply doesn't
+exist.
 
 ## The Ugly
 
@@ -191,7 +197,7 @@ a whole branch of science, see, e.g.,
 #### Kerning
 
 _Kerning_ is a typographist's way of saying _distance between letters_. Compare
-the kerning in `a = b` between $Github
+the kerning in `a = b` between Github
 
 ![github kerning](/images/kerning-github.png)
 
