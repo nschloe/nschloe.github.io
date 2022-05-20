@@ -250,8 +250,9 @@ See the bug report
 
 #### Kerning
 
-_Kerning_ is a typographist's way of saying _distance between letters_. Compare
-the kerning in `a = b` between Github
+[_Kerning_](https://en.wikipedia.org/wiki/Kerning) is a typographist's way of
+saying _distance between letters_. Compare the kerning in `a = b` between
+Github
 
 <p align="center">
   <img src="/images/kerning-github.png" width="20%">
