@@ -36,3 +36,8 @@ And inline math $`a^2 + b^2 = c^2`$
 ## The Ugly
 
 - Font size
+
+Try it here:
+$$
+x^2
+$$
