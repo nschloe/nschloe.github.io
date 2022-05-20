@@ -92,15 +92,50 @@ Mixing them together gets you in all kinds of trouble.
 What I think GitHub does now is the following:
 
 1. Render the entire page as Markdown, produce the HTML.
-2. Look for `$$...$$`. But make sure they're not crossing opening or closing
-   HTML tags. We don't want
-   ```markdown
-   ... lorem $$ ipsum </b> dolor sit $$ amet ...
-   ```
-   to render as math. Or do we? Is `</b>` math? Yikes.
+2. Look for `$$...$$`, and determine somehow if they toggle math mode or if
+   they should render as dollar signs.
 3. Try the same for `$...$` pairs.
 
-Take the quiz! _Does this get rendered as math?_
+This logic brings two fundamental problems:
+
+- As part of step 1, the Markdown is "sanitized". This means [the removal of
+  HTML tags unless they are
+  allowed](https://github.github.com/gfm/#disallowed-raw-html-extension-), or
+  the removal of `\` unless they are right before a letter.
+
+  The contents of code blocks are unaffected of course, but `$` or `$$` blocks
+  aren't code blocks as far as Markdown is concerned. This means that, e.g.,
+
+  ```markdown
+  $\{n\in\mathbb{N}:\: n \text{even}\}$
+  ```
+
+  gets transformed to
+
+  ```markdown
+  ${n\in\mathbb{N}:: n \text{even}}$
+  ```
+
+  which as math renders like
+  <p align="center">
+    <img src="/images/math-n-even.png" width="30%">
+  </p>
+
+- The second step has to apply _some_ heuristic to get right which `$` signs
+  toggle a math group, and which are just dollar signs. Many mistakes happen
+  there. This get really tricky if the math block seemingly contains HTML code,
+  e.g.,
+  ```markdown
+  $$
+  a <b > c
+  $$
+  ```
+  This does _not_ render as math, but takes `<b >` as an [HTML bold
+  tag](https://www.w3schools.com/tags/tag_b.asp)!
+
+##### Take the quiz!
+
+_Does this get rendered as math?_
 
 - ```markdown
   $$
