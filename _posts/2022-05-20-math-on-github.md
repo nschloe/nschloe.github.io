@@ -11,6 +11,7 @@ browser extension to get there early. ([xhub](https://github.com/nschloe/xhub),
 it can do a few other things so check it out.)
 
 The syntax GitHub has chosen is the `$`-based TeX syntax.
+
 ```latex
 Inline math: $a+b$
 
@@ -19,16 +20,15 @@ $$
 a + b
 $$
 ```
+
 It's well-known and popular among scientists although the more modern LaTeX
 syntax with `\(...\)` for inline and `\[...\]` for display math is actually
 recommended in now.
 (See [here](https://tex.stackexchange.com/q/510/13262) for an explanation.)
 
-
 ## The Good
 
 The best thing is that _something_ is finally there. This
-
 
 ```markdown
 #### Cauchy's Theorem
@@ -55,18 +55,18 @@ gives you
 
 You'll notice that not everything is working here:
 
-  - The curly brackets are missing in the first indented code block. (bug
-    report [here](https://github.com/github/feedback/discussions/16993))
-  - The math font is a really small, particularly the
+- The curly brackets are missing in the first indented code block. (bug
+  report [here](https://github.com/github/feedback/discussions/16993))
+- The math font is a really small, particularly the
 
-    > every _a_ in
+  > every _a_ in
 
-    towards the end.
+  towards the end.
 
-  - The spacing between the math characters is wrong. (bug report
-[here](https://github.com/github/feedback/discussions/16997))
+- The spacing between the math characters is wrong. (bug report
+  [here](https://github.com/github/feedback/discussions/16997))
 
-  - The syntax highlighting in the above code block is off.
+- The syntax highlighting in the above code block is off.
 
 Apart from that: Great! This works in README.mds, issues, discussions,
 including the _Preview_ tab. Also cool: `\newcommand`s are global, so you can
@@ -96,7 +96,7 @@ What I think GitHub does now is the following:
    ```markdown
    ... lorem $$ ipsum </b> dolor sit $$ amet ...
    ```
-   to render as math. Is `</b>` math?
+   to render as math. Or do we? Is `</b>` math? Yikes.
 3. Try the same for `$...$` pairs.
 
 Take the quiz! _Does this get rendered as math?_
@@ -107,6 +107,7 @@ Take the quiz! _Does this get rendered as math?_
   <ul><li>c</li></ul>
   $$
   ```
+
   <details>
   <summary>Solution</summary>
   No.
@@ -118,6 +119,7 @@ Take the quiz! _Does this get rendered as math?_
   <img/>
   $$
   ```
+
   <details>
   <summary>Solution</summary>
   It doesn't render at all.
@@ -126,6 +128,7 @@ Take the quiz! _Does this get rendered as math?_
 - ```markdown
   &dollar;\frac{f}{a}&dollar;
   ```
+
   <details>
   <summary>Solution</summary>
   Yup, this is math.
@@ -134,6 +137,7 @@ Take the quiz! _Does this get rendered as math?_
 - ```markdown
   $[(a+b)!](c+d)$
   ```
+
   <details>
   <summary>Solution</summary>
   Nope, this is a link surrounded by $.
@@ -153,7 +157,7 @@ each other.
 Isn't there a smarter way of combining math and Markdown? Turns out there is!
 GitLab has had [math
 support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while, and
-they use "code" blocks with `math` syntax for display math, and ``$`...`$`` for
+they use "code" blocks with `math` syntax for display math, and `` $`...`$ `` for
 inline math.
 
 ````markdown
@@ -198,17 +202,18 @@ yet.
 bug report.)
 
 Getting math in lists etc. right is hard because of the syntax GitHub chose.
-
+With GitLab's syntax, math works wherever Markdown code blocks work.
 
 #### MathJax vs KaTeX
 
 Then there is their choice of rendering engine,
 [MathJax](https://github.com/mathjax/MathJax/). Historically, it's the first
 engine that could seriously render math in web pages, and is used in many
-places, e.g., [math.stackexchange](https://math.stackexchange.com/).
-If you look just a little closer, though, you'll find there's at least one
-serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). Its main
-advantage over _MathJax_ is that it isn't dead. Check out the repo activity on the two projects:
+places, e.g., [math.stackexchange](https://math.stackexchange.com/). If you
+look just a little closer, though, you'll find there's at least one serious
+competitor: [KaTeX](https://github.com/KaTeX/KaTeX). Its main advantage over
+_MathJax_ is that it isn't dead. Check out the repo activity on the two
+projects:
 
 - MathJax:
 
@@ -221,9 +226,11 @@ advantage over _MathJax_ is that it isn't dead. Check out the repo activity on t
 With
 [xhub](https://github.com/nschloe/xhub), I've had a great experience with
 KaTeX, especially the support.
-It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)!
 
-No idea why anyone would choose MathJax over KaTeX now.
+More advantages of KaTeX:
+
+- It's [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php).
+- You can copy-and-paste math.
 
 ## The Ugly
 
@@ -247,7 +254,6 @@ a whole branch of science, see, e.g.,
 See the bug report
 [here](https://github.com/github/feedback/discussions/16999).
 
-
 #### Kerning
 
 [_Kerning_](https://en.wikipedia.org/wiki/Kerning) is a typographist's way of
@@ -264,7 +270,7 @@ and LaTeX:
   <img src="/images/kerning-latex.png" width="20%">
 </p>
 
-Clearly, the GitHub kerning is off. This could perhaps be a  font issue, or an
+Clearly, the GitHub kerning is off. This could perhaps be a font issue, or an
 issue related to MathJax. (See the bug report
 [here](https://github.com/github/feedback/discussions/16997).)
 
@@ -278,12 +284,11 @@ living, breathing repositories which _render_ like PDFs and provide a central
 place where one can actually talk about the article. -- And fix bugs!
 
 I'm less enthusiastic about some of the engineering decisions in developing
-this product though. Particularly the choice of MathJax over KaTeX confuses me.
-Since that is more or less a drop-in replacement, perhaps that can be fixed at
-some point.
+this product though. The choice of MathJax over KaTeX confuses me.
+Since that is more or less a drop-in replacement, perhaps that's a change
+that can be made at some point.
 
 A more serious issue is GitHub's approach of (not) trying to consolidate math
-and Markdown syntax. _Something_ is working now, but thinking about the
-underlying code gives me the chills. It'll be almost impossible 
-
-the decision against GitLab's Markdown math syntax.
+and Markdown syntax. _Something_ is working now, but knowing how hard it is to
+write a parser I'm pessimistic about how quickly bugs can be fixed and features
+added.
