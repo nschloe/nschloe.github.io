@@ -1,8 +1,8 @@
 title: Techematics
 author: Nico Schlömer
 # theme: minima
-remote_theme: mmistakes/minimal-mistakes
-# remote_theme: alshedivat/al-folio
+# remote_theme: mmistakes/minimal-mistakes
+remote_theme: alshedivat/al-folio
 email: nico.schloemer@gmail.com
 description: Nico's thoughts on math and programming
 # social links
