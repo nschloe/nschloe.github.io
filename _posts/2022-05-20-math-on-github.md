@@ -246,7 +246,7 @@ in height, the small letters won't match. This is what it looks like:
 </p>
 
 Font enthusiasts will also notice that the text font is sans-serif while the
-math font has serifs -- a no-go in serious typesetting.
+math font has serifs -- a no-go in serious typesetting, but forgivable on the web.
 
 There's probably not too much you can do here. Matching text and math fonts is
 a whole branch of science, see, e.g.,
