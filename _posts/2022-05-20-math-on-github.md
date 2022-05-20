@@ -63,7 +63,8 @@ You'll notice that not everything is working here:
 
     towards the end.
 
-  - The spacing between the math characters is wrong.
+  - The spacing between the math characters is wrong. (bug report
+[here](https://github.com/github/feedback/discussions/16997))
 
   - The syntax highlighting in the above code block is off.
 
@@ -85,10 +86,10 @@ $$\myexp{i}$$
 Not everything works. Most notably, there is _no math support_ in
 
 - lists,
-- tables
+- tables,
 - headers,
-- Gists,
-- Wikis
+- gists,
+- wiki pages
 
 yet.
 
@@ -99,7 +100,7 @@ yet.
 
 ![math in lists](/images/math-in-lists.png)
 
-(See [here](https://github.com/github/feedback/discussions/16992)) for a
+(See [here](https://github.com/github/feedback/discussions/16992) for a
 bug report.)
 
 This is hopefully something that GitHub will be able to sort out soon;
@@ -107,7 +108,7 @@ particularly the list issue appears easy to fix.
 
 #### MathJax vs KaTeX
 
-Then there their choice of rendering engine,
+Then there is their choice of rendering engine,
 [MathJax](https://github.com/mathjax/MathJax/). Historically, it's the first
 engine that could seriously render math in web pages, and is used in many
 places, e.g., [math.stackexchange](https://math.stackexchange.com/).
@@ -132,8 +133,8 @@ No idea why anyone would choose MathJax here.
 
 #### The syntax
 
-Mixing together two syntaxes TeX and Markdown introduces all kinds of
-problems.
+Getting one of Markdown and LaTeX rendering right is a challange.
+Mixing them together gets you in all kinds of trouble.
 
 - What do you think
   ```markdown
@@ -147,10 +148,11 @@ problems.
   ```
   A link surrounded by dollar signs!
 
-Fortunately, the problem of Markdown/math integration has been solved before,
-namely [by GitLab](https://docs.gitlab.com/ee/user/markdown.html#math).
-They use "code" blocks with `math` syntax for display math, and ``$`...`$`` for
-inline math.
+Isn't there a smarter way of combining math and Markdown? Turns out there is!
+GitLab has had [math
+support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while now,
+and they use "code" blocks with `math` syntax for display math, and ``$`...`$``
+for inline math.
 
 ````markdown
 ```math
@@ -160,7 +162,7 @@ E = mc^2
 $`a^2 + b^2 = c^2`$
 ````
 
-This is a very accessible syntax and ties in  nicely with other Markdown
+This syntax is Markdown-inspired and in fact ties in nicely with other Markdown
 renderers, too. (For example the syntax highlighter in this very code block.)
 
 Choosing the `$`-approach makes many things hard on the engineering side,
@@ -170,7 +172,7 @@ consequence this.
 
 ## The Ugly
 
-#### Font size
+#### Font sizes
 
 MathJax's default font MJXTEX-I and GitHub's default text Helvetica have a
 different x-height/cap-height ratio. This means that, if you match the capitals
