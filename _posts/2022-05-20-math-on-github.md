@@ -191,14 +191,15 @@ a whole branch of science, see, e.g.,
 _Kerning_ is a typographist's way of saying _distance between letters_. Compare
 the kerning in `a = b` between $Github
 
-![github kerning](/images/github-kerning.png)
+![github kerning](/images/kerning-github.png)
 
 and LaTeX:
 
-![latex kerning](/images/latex-kerning.png)
+![latex kerning](/images/kerning-latex.png)
 
 Clearly, the GitHub kerning is off. This could perhaps be a  font issue, or an
-issue related to MathJax.
+issue related to MathJax. (See the bug report
+[here](https://github.com/github/feedback/discussions/16997).)
 
 ## Concluding thoughts
 
