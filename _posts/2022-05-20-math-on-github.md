@@ -1,7 +1,9 @@
+---
 layout: post
 title: "Math on GitHub: The Good, the Bad and the Ugly"
 date: 2022-05-20
 categories: math github
+---
 
 # Math on GitHub: The Good, the Bad and the Ugly
 
