@@ -155,6 +155,27 @@ Take the quiz! _Does this get rendered as math?_
 These problems are tough to fix because the two renderers compete with
 each other.
 
+This has other implications, too. For example, the Markdown rendered (1. above)
+"sanitizes" the input text in that it removes `\` from before everything that's
+not a letter; in math, too. (Because Markdown doesn't know `$...$` syntax.)
+Consequently, this
+
+```markdown
+$\{a\: b\}$
+```
+
+gets rendered as
+
+<p align="center">
+  <img src="/images/math-backslash-github.png" width="30%">
+</p>
+
+when LaTeX renders it correctly as
+
+<p align="center">
+  <img src="/images/math-backslash-latex.png" width="30%">
+</p>
+
 Isn't there a smarter way of combining math and Markdown? Turns out there is!
 GitLab has had [math
 support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while, and
