@@ -83,54 +83,6 @@ $$\myexp{i}$$
 
 ## The Bad
 
-Not everything works. Most notably, there is _no math support_ in
-
-- lists,
-- tables,
-- headers,
-- gists,
-- wiki pages
-
-yet.
-
-```markdown
-- $E = mc^2$
-- $a^2 + b^2 = c^2$
-```
-
-![math in lists](/images/math-in-lists.png)
-
-(See [here](https://github.com/github/feedback/discussions/16992) for a
-bug report.)
-
-This is hopefully something that GitHub will be able to sort out soon;
-particularly the list issue appears easy to fix.
-
-#### MathJax vs KaTeX
-
-Then there is their choice of rendering engine,
-[MathJax](https://github.com/mathjax/MathJax/). Historically, it's the first
-engine that could seriously render math in web pages, and is used in many
-places, e.g., [math.stackexchange](https://math.stackexchange.com/).
-If you look just a little closer, though, you'll find there's at least one
-serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). Its main
-advantage over _MathJax_ is that it isn't dead. Check out the repo activity on the two projects:
-
-- MathJax:
-
-  [![mathjax contributors](/images/mathjax-contributors.png)](https://github.com/mathjax/MathJax/graphs/contributors)
-
-- KaTeX:
-
-  [![katex contributors](/images/katex-contributors.png)](https://github.com/KaTeX/KaTeX/graphs/contributors)
-
-With
-[xhub](https://github.com/nschloe/xhub), I've had a great experience with
-KaTeX, especially the support.
-It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)!
-
-No idea why anyone would choose MathJax over KaTeX now.
-
 #### The syntax
 
 Getting only one of Markdown and LaTeX rendering right is a big challange.
@@ -197,12 +149,10 @@ Take the quiz!
   ```
   <details>
   <summary>Solution</summary>
-  Yes, but only the `x`. The `y` is gone.
+  Yes, but only the <em>x</em>. The <em>y</em> is gone.
   </details>
 
-Try it out!
-
-Those problems are tough to fix because the two renderers are competing with
+These problems are tough to fix because the two renderers compete with
 each other.
 
 Isn't there a smarter way of combining math and Markdown? Turns out there is!
@@ -221,18 +171,62 @@ $`a^2 + b^2 = c^2`$
 
 This syntax is close to Markdown and in fact ties in nicely with other Markdown
 renderers, too. (For example the syntax highlighter in this very code block.)
-There are no rendering ambiguities, and a whole class of bugs simply doesn't
-exist.
 
 With this syntax, rendering becomes easy:
 
 1. Render the page as Markdown produce the HTML.
-2. Check for all `math` `<code>` blocks, and render their contents as display
-   math.
+2. Check for all `<code syntax="math">` blocks, and render their contents as
+   display math.
 3. Check for all inline code blocks which are surrounded by `$...$` and render
    their their contents as inline math.
 
-Done. No ambiguity, no stress.
+No ambiguity, no stress. A whole class of bugs simply doesn't exist.
+
+Not everything works. Most notably, there is _no math support_ in
+
+- lists,
+- tables,
+- headers,
+
+yet.
+
+```markdown
+- $E = mc^2$
+- $a^2 + b^2 = c^2$
+```
+
+![math in lists](/images/math-in-lists.png)
+
+(See [here](https://github.com/github/feedback/discussions/16992) for a
+bug report.)
+
+Getting math in lists etc. right is hard because of the syntax GitHub chose.
+
+
+#### MathJax vs KaTeX
+
+Then there is their choice of rendering engine,
+[MathJax](https://github.com/mathjax/MathJax/). Historically, it's the first
+engine that could seriously render math in web pages, and is used in many
+places, e.g., [math.stackexchange](https://math.stackexchange.com/).
+If you look just a little closer, though, you'll find there's at least one
+serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). Its main
+advantage over _MathJax_ is that it isn't dead. Check out the repo activity on the two projects:
+
+- MathJax:
+
+  [![mathjax contributors](/images/mathjax-contributors.png)](https://github.com/mathjax/MathJax/graphs/contributors)
+
+- KaTeX:
+
+  [![katex contributors](/images/katex-contributors.png)](https://github.com/KaTeX/KaTeX/graphs/contributors)
+
+With
+[xhub](https://github.com/nschloe/xhub), I've had a great experience with
+KaTeX, especially the support.
+It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)!
+
+No idea why anyone would choose MathJax over KaTeX now.
 
 ## The Ugly
 
