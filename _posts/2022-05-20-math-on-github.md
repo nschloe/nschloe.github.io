@@ -193,6 +193,9 @@ There's probably not too much you can do here. Matching text and math fonts is
 a whole branch of science, see, e.g.,
 [here](https://tug.org/pracjourn/2006-1/hartke/hartke.pdf).
 
+See the bug report
+[here](https://github.com/github/feedback/discussions/16999).
+
 
 #### Kerning
 
