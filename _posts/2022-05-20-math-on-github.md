@@ -73,10 +73,7 @@ $$
 \newcommand\myexp[1]{e^{#1}}
 $$
 
-Inline: $\myexp{i}$
-
-Display:
-
+$\myexp{i}$
 $$\myexp{i}$$
 ```
 
@@ -89,8 +86,11 @@ place where one can actually talk about the article. -- And fix bugs!
 
 ## The Bad
 
-Not everything works. Most notably, there is math in lists or tables. Or GitHub
-pages, such as this one.
+Not everything works. Most notably, there is
+
+- no math in lists or tables,
+- no math in Gists,
+- no math in Wikis
 
 ```markdown
 - $E = mc^2$
@@ -108,21 +108,54 @@ Then there their choice of rendering engine,
 [MathJax](https://github.com/mathjax/MathJax/). Historically, it's the first
 engine that could seriously render math in web pages, and is used in many
 places, e.g., [math.stackexchange](https://math.stackexchange.com/).
-
 If you look just a little closer, though, you'll find there's at least one
-serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). It's
-- newer,
-- has more contributors,
-- is [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)
+serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). It's main
+advantage over _MathJax_ is that it isn't dead. Check out the repo activity on the two projects:
 
-- MathJax activity:
+- MathJax:
 
   [![mathjax contributors](/images/mathjax-contributors.png)](https://github.com/mathjax/MathJax/graphs/contributors)
 
-- KaTeX activity:
+- KaTeX:
 
   [![katex contributors](/images/katex-contributors.png)](https://github.com/KaTeX/KaTeX/graphs/contributors)
 
+With
+[xhub](https://github.com/nschloe/xhub), I've had a great experience with
+KaTeX, especially the support.
+It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php).
+
+No idea why anyone would choose MathJax here.
+
+#### The syntax
+
+Mixing together two syntaxes TeX and Markdown introduces all kinds of
+problems. What do you think
+```markdown
+&dollar;\frac{f}{a}&dollar;
+```
+renders as? That's right, math! And this?
+```
+$[(a+b)!](c+d)$
+```
+A link surrounded by dollar signs!
+
+Fortunately, the problem of Markdown/math integration has been solved before,
+namely [by GitLab](https://docs.gitlab.com/ee/user/markdown.html#math).
+They use "code" blocks with `math` syntax for display math, and ``$`...`$`` for
+inline math.
+
+````markdown
+
+```math
+E = mc^2
+```
+
+And inline math $`a^2 + b^2 = c^2`$
+````
+
+This is a very accessible syntax and ties in  nicely with other Markdown
+renderers, too. Again, I can't say why GitHub has chosen the `$$`-approach.
 
 
 ## The Ugly
@@ -141,14 +174,3 @@ a whole branch of science, see, e.g.,
 [here](https://tug.org/pracjourn/2006-1/hartke/hartke.pdf).
 
 ## Prior art
-
-GitLab https://docs.gitlab.com/ee/user/markdown.html#math
-
-````markdown
-
-```math
-E = mc^2
-```
-
-And inline math $`a^2 + b^2 = c^2`$
-````
