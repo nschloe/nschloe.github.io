@@ -19,16 +19,9 @@ $$
 a + b
 $$
 ```
-It's well-known and popular amongst scientists altough the more modern LaTeX syntax
-is actually recommended in now:
-```latex
-Inline math: \(a+b\)
-
-Display math:
-\[
-a + b
-\]
-```
+It's well-known and popular amongst scientists altough the more modern LaTeX
+syntax with `\(...\)` for inline and `\[...\]` for display math is actually
+recommended in now.
 (See [here](https://tex.stackexchange.com/q/510/13262) for an explanation.)
 
 
@@ -43,6 +36,8 @@ Not everything works. Most notably, there is math in lists or tables. Or GitHub
 pages, such as this one.
 
 ![math in lists](images/math-in-lists.png)
+
+<img src="images/math-in-lists.png" alt="math in lists"/>
 
 This is hopefully something that GitHub will be able to sort out soon;
 particularly the list issue appears easy to fix.
@@ -84,5 +79,4 @@ E = mc^2
 ```
 
 And inline math $`a^2 + b^2 = c^2`$
-
 ````
