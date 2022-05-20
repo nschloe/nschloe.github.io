@@ -62,6 +62,8 @@ You'll notice that not everything is working here:
 
     towards the end.
 
+  - The syntax highlighting in the above code block is off.
+
 Apart from that: Great! This works in README.mds, issues, discussions,
 including the _Preview_ tab. Also cool: `\newcommand`s are global, so you can
 define a command in one block, and use it everywhere in the page:
@@ -77,11 +79,15 @@ $$\myexp{i}$$
 
 ## The Bad
 
-Not everything works. Most notably, there is
+Not everything works. Most notably, there is _no math support_ in
 
-- no math in lists or tables (reported [here](https://github.com/github/feedback/discussions/16992)),
-- no math in Gists,
-- no math in Wikis
+- lists,
+- tables
+- headers,
+- Gists,
+- Wikis
+
+yet.
 
 ```markdown
 - $E = mc^2$
@@ -89,6 +95,9 @@ Not everything works. Most notably, there is
 ```
 
 ![math in lists](/images/math-in-lists.png)
+
+(See [here](https://github.com/github/feedback/discussions/16992)) for a
+bug report.)
 
 This is hopefully something that GitHub will be able to sort out soon;
 particularly the list issue appears easy to fix.
@@ -100,7 +109,7 @@ Then there their choice of rendering engine,
 engine that could seriously render math in web pages, and is used in many
 places, e.g., [math.stackexchange](https://math.stackexchange.com/).
 If you look just a little closer, though, you'll find there's at least one
-serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). It's main
+serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). Its main
 advantage over _MathJax_ is that it isn't dead. Check out the repo activity on the two projects:
 
 - MathJax:
@@ -114,7 +123,7 @@ advantage over _MathJax_ is that it isn't dead. Check out the repo activity on t
 With
 [xhub](https://github.com/nschloe/xhub), I've had a great experience with
 KaTeX, especially the support.
-It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php).
+It's also [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)!
 
 No idea why anyone would choose MathJax here.
 
@@ -150,7 +159,10 @@ $`a^2 + b^2 = c^2`$
 
 This is a very accessible syntax and ties in  nicely with other Markdown
 renderers, too. (For example the syntax highlighter in this very code block.)
-Again, I can't say why GitHub has chosen the `$$`-approach.
+
+Choosing the `$`-approach makes many things hard on the engineering side,
+and I assume that missing support for math in lists and headers is a
+consequence this.
 
 
 ## The Ugly
@@ -170,7 +182,6 @@ a whole branch of science, see, e.g.,
 
 
 ## Concluding thoughts
-
 
 The reason why I'm so excited about this feature is that, in combination with
 version control and the issues/discussions capabilities in GitHub, I can see
