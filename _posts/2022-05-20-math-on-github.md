@@ -184,7 +184,9 @@ MathJax's default font MJXTEX-I and GitHub's default text Helvetica have a
 different x-height/cap-height ratio. This means that, if you match the capitals
 in height, the small letters won't match. This is what it looks like:
 
-![math font size comparison](/images/math-font-size.png)
+<p align="center">
+  <img src="/images/math-font-size.png" width="60%">
+</p>
 
 Font enthusiasts will also notice that the text font is sans-serif while the
 math font has serifs -- a no-go in serious typesetting.
