@@ -29,6 +29,39 @@ recommended in now.
 
 The best thing is that it's finally there. And many things are working well, too.
 
+This gives you
+
+```markdown
+#### Cauchy's Theorem
+
+Let $U$ be an open subset of the complex plane $\mathbb{C}$, and suppose the closed
+disk $D$ defined as
+
+$$
+D = \\{z:|z-z_{0}|\leq r\\}
+$$
+
+is completely contained in $U$. Let $f: U\to\mathbb{C}$ be a holomorphic function,
+and let $\gamma$ be the circle, oriented counterclockwise, forming the boundary of
+$D$. Then for every $a$ in the interior of $D$,
+
+$$
+f(a) = \frac{1}{2\pi i} \oint_{\gamma}\frac{f(z)}{z-a} dz.
+$$
+```
+
+![Cauchy's theorem](../images/math-cauchy.png)
+
+- READMe
+- issues, discussions
+
+
+The reason why I'm so excited about this feature is that, in combination with
+version control and the issues/discussions capabilities in GitHub, I can see
+tectonic changes in how we're publishing science. At last, science can really
+reap the benefits of a connected internet by moving away from static PDFs to
+living, breathing repositories which _render_ like PDFs and provide a central
+place where one can actually talk about the article. -- And fix bugs!
 
 ## The Bad
 
