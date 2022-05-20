@@ -1,6 +1,7 @@
 title: Techematics
-author: Nico
-theme: minima
+author: Nico Schlömer
+# theme: minima
+theme: mmistakes/minimal-mistakes
 email: nico.schloemer@gmail.com
 description: Nico's thoughts on math and programming
 # social links
