@@ -99,10 +99,9 @@ What I think GitHub does now is the following:
    to render as math. Is `</b>` math?
 3. Try the same for `$...$` pairs.
 
-Take the quiz!
+Take the quiz! _Does this get rendered as math?_
 
-- Does this get rendered as math?
-  ```markdown
+- ```markdown
   $$
   a+b
   <ul><li>c</li></ul>
@@ -113,8 +112,7 @@ Take the quiz!
   No.
   </details>
 
-- Does this get rendered as math?
-  ```markdown
+- ```markdown
   $$
   a + b
   <img/>
@@ -125,8 +123,7 @@ Take the quiz!
   It doesn't render at all.
   </details>
 
-- Does this get rendered as math?
-  ```markdown
+- ```markdown
   &dollar;\frac{f}{a}&dollar;
   ```
   <details>
@@ -134,8 +131,7 @@ Take the quiz!
   Yup, this is math.
   </details>
 
-- Does this get rendered as math?
-  ```markdown
+- ```markdown
   $[(a+b)!](c+d)$
   ```
   <details>
@@ -143,8 +139,7 @@ Take the quiz!
   Nope, this is a link surrounded by $.
   </details>
 
-- Does this get rendered as math?
-  ```markdown
+- ```markdown
   $x $y $
   ```
   <details>
@@ -181,6 +176,8 @@ With this syntax, rendering becomes easy:
    their their contents as inline math.
 
 No ambiguity, no stress. A whole class of bugs simply doesn't exist.
+
+#### It doesn't work everywhere
 
 Not everything works. Most notably, there is _no math support_ in
 
