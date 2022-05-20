@@ -19,7 +19,7 @@ $$
 a + b
 $$
 ```
-It's well-known and popular amongst scientists altough the more modern LaTeX
+It's well-known and popular among scientists although the more modern LaTeX
 syntax with `\(...\)` for inline and `\[...\]` for display math is actually
 recommended in now.
 (See [here](https://tex.stackexchange.com/q/510/13262) for an explanation.)
@@ -27,9 +27,7 @@ recommended in now.
 
 ## The Good
 
-The best thing is that it's finally there. And many things are working well, too.
-
-This
+The best thing is that _something_ is finally there. This
 
 
 ```markdown
@@ -58,7 +56,7 @@ gives you
 You'll notice that not everything is working here:
 
   - The curly brackets are missing in the first indented code block.
-  - The math font is a little small? Particularly the
+  - The math font is a really small, particularly the
 
     > every _a_ in
 
@@ -77,18 +75,11 @@ $\myexp{i}$
 $$\myexp{i}$$
 ```
 
-The reason why I'm so excited about this feature is that, in combination with
-version control and the issues/discussions capabilities in GitHub, I can see
-tectonic changes in how we're publishing science. At last, science can really
-reap the benefits of a connected internet by moving away from static PDFs to
-living, breathing repositories which _render_ like PDFs and provide a central
-place where one can actually talk about the article. -- And fix bugs!
-
 ## The Bad
 
 Not everything works. Most notably, there is
 
-- no math in lists or tables,
+- no math in lists or tables (reported [here](https://github.com/github/feedback/discussions/16992)),
 - no math in Gists,
 - no math in Wikis
 
@@ -130,15 +121,19 @@ No idea why anyone would choose MathJax here.
 #### The syntax
 
 Mixing together two syntaxes TeX and Markdown introduces all kinds of
-problems. What do you think
-```markdown
-&dollar;\frac{f}{a}&dollar;
-```
-renders as? That's right, math! And this?
-```
-$[(a+b)!](c+d)$
-```
-A link surrounded by dollar signs!
+problems.
+
+- What do you think
+  ```markdown
+  &dollar;\frac{f}{a}&dollar;
+  ```
+  renders as? That's right, math!
+
+- And this?
+  ```
+  $[(a+b)!](c+d)$
+  ```
+  A link surrounded by dollar signs!
 
 Fortunately, the problem of Markdown/math integration has been solved before,
 namely [by GitLab](https://docs.gitlab.com/ee/user/markdown.html#math).
@@ -146,16 +141,16 @@ They use "code" blocks with `math` syntax for display math, and ``$`...`$`` for
 inline math.
 
 ````markdown
-
 ```math
 E = mc^2
 ```
 
-And inline math $`a^2 + b^2 = c^2`$
+$`a^2 + b^2 = c^2`$
 ````
 
 This is a very accessible syntax and ties in  nicely with other Markdown
-renderers, too. Again, I can't say why GitHub has chosen the `$$`-approach.
+renderers, too. (For example the syntax highlighter in this very code block.)
+Again, I can't say why GitHub has chosen the `$$`-approach.
 
 
 ## The Ugly
@@ -166,9 +161,27 @@ in height, the small letters won't match. This is what it looks like:
 
 ![math font size comparison](/images/math-font-size.png)
 
-Font enthousiasts will also notice that the text font is sans-serif while the
+Font enthusiasts will also notice that the text font is sans-serif while the
 math font has serifs -- a no-go in serious typesetting.
 
 There's probably not too much you can do here. Matching text and math fonts is
 a whole branch of science, see, e.g.,
 [here](https://tug.org/pracjourn/2006-1/hartke/hartke.pdf).
+
+
+## Concluding thoughts
+
+
+The reason why I'm so excited about this feature is that, in combination with
+version control and the issues/discussions capabilities in GitHub, I can see
+tectonic changes in how we're publishing science. At last, science can really
+reap the benefits of a connected internet by moving away from static PDFs to
+living, breathing repositories which _render_ like PDFs and provide a central
+place where one can actually talk about the article. -- And fix bugs!
+
+I'm less enthusiastic about some of the engineering decisions in developing
+this product though. Particularly the choice of MathJax over KaTeX confuses me.
+Since that is more or less a drop-in replacement, perhaps that can be fixed at
+some point.
+
+A more serious issue is the decision against GitLab's Markdown math syntax.
