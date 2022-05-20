@@ -291,4 +291,5 @@ that can be made at some point.
 A more serious issue is GitHub's approach of (not) trying to consolidate math
 and Markdown syntax. _Something_ is working now, but knowing how hard it is to
 write a parser I'm pessimistic about how quickly bugs can be fixed and features
-added.
+added. The fact that math support is only on the top level of the document
+speaks for itself.
