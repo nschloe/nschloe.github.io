@@ -53,11 +53,32 @@ $$
 
 gives you
 
-![Cauchy's theorem]({{ site.url }}/images/math-cauchy.png)
+![Cauchy's theorem](/images/math-cauchy.png)
 
-- READMe
-- issues, discussions
+You'll notice that not everything is working here:
 
+  - The curly brackets are missing in the first indented code block.
+  - The math font is a little small? Particularly the
+
+    > every _a_ in
+
+    towards the end.
+
+Apart from that: Great! This works in README.mds, issues, discussions,
+including the _Preview_ tab. Also cool: `\newcommand`s are global, so you can
+define a command in one block, and use it everywhere in the page:
+
+```markdown
+$$
+\newcommand\myexp[1]{e^{#1}}
+$$
+
+Inline: $\myexp{i}$
+
+Display:
+
+$$\myexp{i}$$
+```
 
 The reason why I'm so excited about this feature is that, in combination with
 version control and the issues/discussions capabilities in GitHub, I can see
@@ -71,9 +92,12 @@ place where one can actually talk about the article. -- And fix bugs!
 Not everything works. Most notably, there is math in lists or tables. Or GitHub
 pages, such as this one.
 
-![math in lists](/images/math-in-lists.png)
+```markdown
+- $E = mc^2$
+- $a^2 + b^2 = c^2$
+```
 
-<img src="images/math-in-lists.png" alt="math in lists"/>
+![math in lists](/images/math-in-lists.png)
 
 This is hopefully something that GitHub will be able to sort out soon;
 particularly the list issue appears easy to fix.
@@ -86,7 +110,19 @@ engine that could seriously render math in web pages, and is used in many
 places, e.g., [math.stackexchange](https://math.stackexchange.com/).
 
 If you look just a little closer, though, you'll find there's at least one
-serious competitor, [KaTeX](https://github.com/KaTeX/KaTeX).
+serious competitor: [KaTeX](https://github.com/KaTeX/KaTeX). It's
+- newer,
+- has more contributors,
+- is [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php)
+
+- MathJax activity:
+
+  [![mathjax contributors](/images/mathjax-contributors.png)](https://github.com/mathjax/MathJax/graphs/contributors)
+
+- KaTeX activity:
+
+  [![katex contributors](/images/katex-contributors.png)](https://github.com/KaTeX/KaTeX/graphs/contributors)
+
 
 
 ## The Ugly
@@ -95,7 +131,7 @@ MathJax's default font MJXTEX-I and GitHub's default text Helvetica have a
 different x-height/cap-height ratio. This means that, if you match the capitals
 in height, the small letters won't match. This is what it looks like:
 
-![math font size comparison](images/math-font-size.png)
+![math font size comparison](/images/math-font-size.png)
 
 Font enthousiasts will also notice that the text font is sans-serif while the
 math font has serifs -- a no-go in serious typesetting.
