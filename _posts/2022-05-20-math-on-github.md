@@ -192,6 +192,8 @@ $`a^2 + b^2 = c^2`$
 
 This syntax is close to Markdown and in fact ties in nicely with other Markdown
 renderers, too. (For example the syntax highlighter in this very code block.)
+Math is rendered like code blocks, meaning that no accidental sanitation
+happens there either.
 
 With this syntax, rendering becomes easy:
 
