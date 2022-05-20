@@ -5,6 +5,7 @@ Welcome to this demo blog!
 You can find the sources of this project
 [here](https://github.com/nschloe/nschloe.github.io).
 
+x
 <ul>
   {% for post in site.posts %}
     <li>
@@ -12,3 +13,4 @@ You can find the sources of this project
     </li>
   {% endfor %}
 </ul>
+y

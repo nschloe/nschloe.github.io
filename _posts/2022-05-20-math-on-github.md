@@ -30,6 +30,9 @@ And inline math $`a^2 + b^2 = c^2`$
 
 ## The Bad
 
+- math in lists
+- MathJax vs KaTeX
+
 ## The Ugly
 
-Font size
+- Font size
