@@ -168,7 +168,7 @@ e.g.,
   $$
   ```
 
-  but takes `<b >` as an [HTML bold
+  takes `<b >` as an [HTML bold
   tag](https://www.w3schools.com/tags/tag_b.asp), so no math here.
 
 - ```markdown
