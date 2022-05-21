@@ -84,7 +84,7 @@ $$\myexp{i}$$
 
 ## The Bad
 
-#### The syntax
+### The syntax
 
 Getting only one of Markdown and LaTeX rendering right is a big challenge.
 Mixing them together gets you in all kinds of trouble.
@@ -96,17 +96,19 @@ What I think GitHub does now is the following:
    they should render as dollar signs.
 3. Try the same for `$...$` pairs.
 
-This logic brings two fundamental problems:
+This logic brings two fundamental problems.
 
-- As part of step 1, the Markdown is "sanitized". This means [the removal of
-  HTML tags unless they are
-  allowed](https://github.github.com/gfm/#disallowed-raw-html-extension-), or
-  the removal of `\` unless they are right before a letter.
+#### Competing Markdown and math renderer
 
-  The contents of code blocks are unaffected of course, but `$` or `$$` blocks
-  aren't code blocks as far as Markdown is concerned. This means that, e.g.,
+As part of step 1, the Markdown is "sanitized". This means [the removal of HTML
+tags unless they are
+allowed](https://github.github.com/gfm/#disallowed-raw-html-extension-), or the
+removal of `\` unless they are right before a letter.
 
-  ```markdown
+The contents of code blocks are unaffected of course, but `$` or `$$` blocks
+aren't code blocks as far as Markdown is concerned. This means that, e.g.,
+
+- ```markdown
   $\{n\in\mathbb{N}:\: n \text{even}\}$
   ```
 
@@ -121,21 +123,18 @@ This logic brings two fundamental problems:
     <img src="/images/math-n-even.png" width="30%">
   </p>
 
-- The second step has to apply _some_ heuristic to get right which `$` signs
-  toggle a math group, and which are just dollar signs. Many mistakes happen
-  there. This get really tricky if the math block seemingly contains HTML code,
-  e.g.,
-  ```markdown
-  $$
-  a <b > c
-  $$
+- ```markdown
+  &dollar;\frac{f}{a}&dollar;
   ```
-  This does _not_ render as math, but takes `<b >` as an [HTML bold
-  tag](https://www.w3schools.com/tags/tag_b.asp)!
+  This gets rendered as math because Markdown transforms the `&dollar;` into
+  `$`.
 
-##### Take the quiz!
+#### What is math?
 
-_Does this get rendered as math?_
+The second step has to apply _some_ heuristic to get right which `$` signs
+toggle a math group, and which are just dollar signs. Many mistakes happen
+there. This get really tricky if the math block seemingly contains HTML code,
+e.g.,
 
 - ```markdown
   $$
@@ -144,10 +143,7 @@ _Does this get rendered as math?_
   $$
   ```
 
-  <details>
-  <summary>Solution</summary>
-  No.
-  </details>
+  This gets rendered as HTML, not math.
 
 - ```markdown
   $$
@@ -156,36 +152,31 @@ _Does this get rendered as math?_
   $$
   ```
 
-  <details>
-  <summary>Solution</summary>
-  It doesn't render at all.
-  </details>
+  This doesn't render at all.
 
 - ```markdown
-  &dollar;\frac{f}{a}&dollar;
+  $$
+  a < b > c
+  $$
   ```
 
-  <details>
-  <summary>Solution</summary>
-  Yup, this is math.
-  </details>
+  This gets rendered as math. This though
+
+  ```markdown
+  $$
+  a <b > c
+  $$
+  ```
+
+  but takes `<b >` as an [HTML bold
+  tag](https://www.w3schools.com/tags/tag_b.asp), so no math here.
 
 - ```markdown
   $[(a+b)!](c+d)$
   ```
+  This gets rendered as a link surrounded by $.
 
-  <details>
-  <summary>Solution</summary>
-  Nope, this is a link surrounded by $.
-  </details>
-
-- ```markdown
-  $x $y $
-  ```
-  <details>
-  <summary>Solution</summary>
-  Yes, but only the <em>x</em>. The <em>y</em> is gone.
-  </details>
+#### Solution
 
 So, how could this be avoided? We need to make sure that the Markdown parser
 does not mess with the math. A smart way of achieving this is to use _code_
@@ -213,7 +204,7 @@ With this syntax, rendering becomes easy:
 
 No ambiguity, no stress. Whole classes of bugs simply doesn't exist.
 
-#### It doesn't work everywhere
+### It doesn't work everywhere
 
 Not everything works. Most notably, there is _no math support_ in
 
@@ -236,7 +227,7 @@ bug report.)
 Getting math in lists etc. right is hard because of the syntax GitHub chose.
 With GitLab's syntax, math works wherever Markdown code blocks work.
 
-#### MathJax vs KaTeX
+### MathJax vs KaTeX
 
 Then there is their choice of rendering engine,
 [MathJax](https://github.com/mathjax/MathJax/). Historically, it's the first
@@ -266,7 +257,7 @@ More advantages of KaTeX:
 
 ## The Ugly
 
-#### Font sizes
+### Font sizes
 
 MathJax's default font MJXTEX-I and GitHub's default text Helvetica have a
 different x-height/cap-height ratio. This means that, if you match the capitals
@@ -286,7 +277,7 @@ a whole branch of science, see, e.g.,
 See the bug report
 [here](https://github.com/github/feedback/discussions/16999).
 
-#### Kerning
+### Kerning
 
 [_Kerning_](https://en.wikipedia.org/wiki/Kerning) is a typographist's way of
 saying _distance between letters_. Compare the kerning in `a = b` between
