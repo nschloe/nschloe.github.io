@@ -187,24 +187,21 @@ _Does this get rendered as math?_
   Yes, but only the <em>x</em>. The <em>y</em> is gone.
   </details>
 
-Isn't there a smarter way of combining math and Markdown? Turns out there is!
-GitLab has had [math
-support](https://docs.gitlab.com/ee/user/markdown.html#math) for a while, and
-they use "code" blocks with `math` syntax for display math, and `` $`...`$ `` for
-inline math.
+So, how could this be avoided? We need to make sure that the Markdown parser
+does not mess with the math. A smart way of achieving this is to use _code_
+blocks for math -- their contents are left untouched by Markdown.
+In fact, this is how GitLab handles their [math
+support](https://docs.gitlab.com/ee/user/markdown.html#math):
 
 ````markdown
+Display math:
+
 ```math
 E = mc^2
 ```
 
-$`a^2 + b^2 = c^2`$
+Inline math: $`a^2 + b^2 = c^2`$.
 ````
-
-This syntax is close to Markdown and in fact ties in nicely with other Markdown
-renderers, too. (For example the syntax highlighter in this very code block.)
-Math is rendered like code blocks, meaning that no accidental sanitation
-happens there either.
 
 With this syntax, rendering becomes easy:
 
@@ -214,7 +211,7 @@ With this syntax, rendering becomes easy:
 3. Check for all inline code blocks which are surrounded by `$...$` and render
    their their contents as inline math.
 
-No ambiguity, no stress. A whole class of bugs simply doesn't exist.
+No ambiguity, no stress. Whole classes of bugs simply doesn't exist.
 
 #### It doesn't work everywhere
 
