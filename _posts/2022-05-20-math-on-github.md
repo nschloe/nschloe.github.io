@@ -257,7 +257,7 @@ For one, with KaTeX I've never had problems as described in the _Ugly_ section
 below.
 
 _Note:_ In a former version on this article, it was claimed that MathJax is
-barely maintained. This is not true.\_
+barely maintained. This is not true.
 
 ## The Ugly
 
