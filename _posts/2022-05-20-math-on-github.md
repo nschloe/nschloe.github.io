@@ -22,7 +22,7 @@ a + b
 $$
 ```
 
-I'm pointing out below why I think this is a problem.
+I'm pointing out below why this may be a problem.
 
 ## The Good
 
