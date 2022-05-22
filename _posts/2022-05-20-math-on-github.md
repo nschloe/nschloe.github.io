@@ -179,9 +179,13 @@ e.g.,
 #### Solution
 
 So, how could this be avoided? We need to make sure that the Markdown parser
-does not mess with the math. A smart way of achieving this is to use _code_
-blocks for math -- their contents are left untouched by Markdown.
-In fact, this is how GitLab handles their [math
+does not mess with the math. One way of doing this is to drill open the
+Markdown parser and and tell it that `$` and `$$` have a special meaning.
+This will be pretty tedious.
+
+Another way of achieving this is to use _code_ blocks for math -- their
+contents are left untouched by Markdown anyway. In fact, this is how GitLab
+handles their [math
 support](https://docs.gitlab.com/ee/user/markdown.html#math):
 
 ````markdown
@@ -234,26 +238,26 @@ Then there is their choice of rendering engine,
 engine that could seriously render math in web pages, and is used in many
 places, e.g., [math.stackexchange](https://math.stackexchange.com/). If you
 look just a little closer, though, you'll find there's at least one serious
-competitor: [KaTeX](https://github.com/KaTeX/KaTeX). Its main advantage over
-_MathJax_ is that it isn't dead. Check out the repo activity on the two
-projects:
+competitor: [KaTeX](https://github.com/KaTeX/KaTeX). In terms of GitHub stars,
+it has become way more popular than MathJax:
 
-- MathJax:
+![mathjax stars](/images/mathjax-stars.png)
 
-  [![mathjax contributors](/images/mathjax-contributors.png)](https://github.com/mathjax/MathJax/graphs/contributors)
+Why is that? Having worked with both MathJax and KaTeX in
+[xhub](https://github.com/nschloe/xhub), I think the reasons for the popularity
+include
 
-- KaTeX:
-
-  [![katex contributors](/images/katex-contributors.png)](https://github.com/KaTeX/KaTeX/graphs/contributors)
-
-With
-[xhub](https://github.com/nschloe/xhub), I've had a great experience with
-KaTeX, especially the support.
-
-More advantages of KaTeX:
-
+- its great community support
 - It's [faster](https://www.intmath.com/cg5/katex-mathjax-comparison.php).
-- You can copy-and-paste math.
+- It's smaller/more modular (page load times!)
+- You can copy-and-paste math
+- Better font support
+
+For one, with KaTeX I've never had problems as described in the _Ugly_ section
+below.
+
+_Note:_ In a former version on this article, it was claimed that MathJax is
+barely maintained. This is not true.\_
 
 ## The Ugly
 
