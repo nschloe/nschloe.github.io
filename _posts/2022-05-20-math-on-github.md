@@ -11,7 +11,7 @@ wrote a browser extension to get there early.
 ([xhub](https://github.com/nschloe/xhub), it can do a few other things so check
 it out.)
 
-The syntax GitHub has chosen is the `$`-based TeX syntax.
+The syntax GitHub has chosen is the familar `$`-based TeX syntax.
 
 ```latex
 Inline math: $a+b$
@@ -22,10 +22,7 @@ a + b
 $$
 ```
 
-It's well-known and popular among scientists although the more modern LaTeX
-syntax with `\(...\)` for inline and `\[...\]` for display math is actually
-recommended in now.
-(See [here](https://tex.stackexchange.com/q/510/13262) for an explanation.)
+I'm pointing out below why I think this is a problem.
 
 ## The Good
 
