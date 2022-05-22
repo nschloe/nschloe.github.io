@@ -173,12 +173,17 @@ e.g.,
   ```
   This gets rendered as a link surrounded by $.
 
-#### Solution
+- ```markdown
+  $x = \text{my $y$}$
+  ```
+  This incorrectly renders as _y_}$.
+
+#### Solutions
 
 So, how could this be avoided? We need to make sure that the Markdown parser
 does not mess with the math. One way of doing this is to drill open the
-Markdown parser and and tell it that `$` and `$$` have a special meaning.
-This will be pretty tedious.
+Markdown parser and and tell it that `$` and `$$` have a special meaning. This
+means maintaining your own parser.
 
 Another way of achieving this is to use _code_ blocks for math -- their
 contents are left untouched by Markdown anyway. In fact, this is how GitLab
