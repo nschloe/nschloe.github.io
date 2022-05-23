@@ -205,8 +205,8 @@ e.g.,
 So, how could this be avoided? We need to make sure that the Markdown parser
 does not mess with the math. One way of doing this is to drill open the
 Markdown parser and and tell it that `$` and `$$` have a special meaning. This
-means maintaining your own parser, and still won't work in expressions like
-
+means maintaining your own parser, and still won't work in last tlast two
+examples abov (`$x = \$$`).
 
 Another way of avoiding such problems altogether is to use _code_ blocks for
 math -- their contents are left untouched by Markdown anyway. In fact, this is
