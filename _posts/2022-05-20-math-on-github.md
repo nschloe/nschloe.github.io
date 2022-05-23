@@ -158,7 +158,7 @@ e.g.,
   a < b > c
   $$
   ```
-  This gets rendered as math:
+  This gets rendered as math (with bad kerning, see below)
   <p align="center">
     <img src="/images/math-github-abc1.png" width="15%">
   </p>
