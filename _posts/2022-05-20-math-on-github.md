@@ -206,6 +206,17 @@ e.g.,
   <p align="center">
     <img src="/images/math-github-backticks.png" width="15%">
   </p>
+
+- ```markdown
+  $$
+  - a =
+  - b
+  $$
+  ```
+  Doesn't get rendered as math.
+  <p align="center">
+    <img src="/images/math-github-md-list.png" width="15%">
+  </p>
   
 
 #### Solutions
