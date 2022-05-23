@@ -211,7 +211,7 @@ and a (proper) LaTeX parser which is territory nobody wants to enter.
 
 Another way of avoiding such problems altogether is to use _code_ blocks for
 math -- their contents are left untouched by Markdown anyway. In fact, this is
-how GitLab handles their [math
+how GitLab handle their [math
 support](https://docs.gitlab.com/ee/user/markdown.html#math):
 
 ````markdown
