@@ -69,6 +69,10 @@ You'll notice that not everything is working here:
 Apart from that: Great! This works in README.mds, issues, discussions,
 including the _Preview_ tab.
 
+_Note:_ In an earlier version, the article said that `\newcommand` would work.
+Apparently this has been removed shortly after release. See
+[here](https://github.com/github/feedback/discussions/17167) for a bug report.
+
 ## The Bad
 
 ### The syntax
