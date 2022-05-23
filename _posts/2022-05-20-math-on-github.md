@@ -126,6 +126,25 @@ aren't code blocks as far as Markdown is concerned. This means that, e.g.,
   This gets rendered as math because Markdown transforms the `&dollar;` into
   `$`.
 
+- ```markdown
+  $$
+  - a =
+  - b
+  $$
+  ```
+  Doesn't get rendered as math.
+  <p align="center">
+    <img src="/images/math-github-md-list.png" width="15%">
+  </p>
+
+- ```markdown
+  $`U`$
+  ```
+  Doesn't get rendered as math.
+  <p align="center">
+    <img src="/images/math-github-backticks.png" width="15%">
+  </p>
+
 #### What is math?
 
 The second step has to apply _some_ heuristic to get right which `$` signs
@@ -197,25 +216,6 @@ e.g.,
   Gets rendered as
   <p align="center">
     <img src="/images/math-github-text-dollar.png" width="15%">
-  </p>
-
-- ```markdown
-  $`U`$
-  ```
-  Doesn't get rendered as math.
-  <p align="center">
-    <img src="/images/math-github-backticks.png" width="15%">
-  </p>
-
-- ```markdown
-  $$
-  - a =
-  - b
-  $$
-  ```
-  Doesn't get rendered as math.
-  <p align="center">
-    <img src="/images/math-github-md-list.png" width="15%">
   </p>
   
 
