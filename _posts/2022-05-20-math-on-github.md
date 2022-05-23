@@ -139,8 +139,10 @@ e.g.,
   <ul><li>c</li></ul>
   $$
   ```
-
-  This gets rendered as HTML, not math.
+  No math:
+  <p align="center">
+    <img src="/images/math-github-list.png" width="30%">
+  </p>
 
 - ```markdown
   $$
@@ -156,23 +158,47 @@ e.g.,
   a < b > c
   $$
   ```
+  This gets rendered as math:
+  <p align="center">
+    <img src="/images/math-github-abc1.png" width="30%">
+  </p>
 
-  This gets rendered as math. This though
-
+  This though
   ```markdown
   $$
   a <b > c
   $$
   ```
-
   takes `<b >` as an [HTML bold
-  tag](https://www.w3schools.com/tags/tag_b.asp), so no math here.
+  tag](https://www.w3schools.com/tags/tag_b.asp), so no math here:
+  <p align="center">
+    <img src="/images/math-github-abc2.png" width="30%">
+  </p>
 
 - ```markdown
   $[(a+b)!](c+d)$
   ```
+  This gets rendered as a link surrounded by $:
+  <p align="center">
+    <img src="/images/math-github-link.png" width="30%">
+  </p>
 
-  This gets rendered as a link surrounded by $.
+- ```markdown
+  $x = \$$
+  ```
+  Doesn't get rendered as math.
+  <p align="center">
+    <img src="/images/math-github-dollar.png" width="30%">
+  </p>
+
+- ```markdown
+  $x = \text{my $y$}$
+  ```
+  Gets rendered as _y_}$
+  <p align="center">
+    <img src="/images/math-github-text-dollar.png" width="30%">
+  </p>
+  
 
 #### Solutions
 
@@ -181,13 +207,6 @@ does not mess with the math. One way of doing this is to drill open the
 Markdown parser and and tell it that `$` and `$$` have a special meaning. This
 means maintaining your own parser, and still won't work in expressions like
 
-- ```markdown
-  $x = \text{my $y$}$
-  ```
-
-- ```markdown
-  $x = \$$
-  ```
 
 Another way of avoiding such problems altogether is to use _code_ blocks for
 math -- their contents are left untouched by Markdown anyway. In fact, this is
