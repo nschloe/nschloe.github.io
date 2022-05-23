@@ -359,3 +359,10 @@ and Markdown syntax. _Something_ is working now, but knowing how hard it is to
 write a parser I'm pessimistic about how quickly bugs can be fixed and features
 added. The fact that math support is only on the top level of the document
 speaks for itself.
+
+For these reasons, I would still recommend
+[xhub](https://github.com/nschloe/xhub) for math on GitHub. Because of its
+choice of syntax, it doesn't have any of GitHub-math's problems. _Cauchy's
+theorem_ is rendered like
+
+![Cauchy's theorem](/images/xhub-cauchy.png)
