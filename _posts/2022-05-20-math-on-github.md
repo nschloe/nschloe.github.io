@@ -67,17 +67,7 @@ You'll notice that not everything is working here:
 - The syntax highlighting in the above code block is off.
 
 Apart from that: Great! This works in README.mds, issues, discussions,
-including the _Preview_ tab. Also cool: `\newcommand`s are global, so you can
-define a command in one block, and use it everywhere in the page:
-
-```markdown
-$$
-\newcommand\myexp[1]{e^{#1}}
-$$
-
-$\myexp{i}$
-$$\myexp{i}$$
-```
+including the _Preview_ tab.
 
 ## The Bad
 
