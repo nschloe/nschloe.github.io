@@ -141,7 +141,7 @@ e.g.,
   ```
   No math:
   <p align="center">
-    <img src="/images/math-github-list.png" width="30%">
+    <img src="/images/math-github-list.png" width="15%">
   </p>
 
 - ```markdown
@@ -160,7 +160,7 @@ e.g.,
   ```
   This gets rendered as math:
   <p align="center">
-    <img src="/images/math-github-abc1.png" width="30%">
+    <img src="/images/math-github-abc1.png" width="15%">
   </p>
 
   This though
@@ -172,7 +172,7 @@ e.g.,
   takes `<b >` as an [HTML bold
   tag](https://www.w3schools.com/tags/tag_b.asp), so no math here:
   <p align="center">
-    <img src="/images/math-github-abc2.png" width="30%">
+    <img src="/images/math-github-abc2.png" width="15%">
   </p>
 
 - ```markdown
@@ -180,7 +180,7 @@ e.g.,
   ```
   This gets rendered as a link surrounded by $:
   <p align="center">
-    <img src="/images/math-github-link.png" width="30%">
+    <img src="/images/math-github-link.png" width="15%">
   </p>
 
 - ```markdown
@@ -188,7 +188,7 @@ e.g.,
   ```
   Doesn't get rendered as math.
   <p align="center">
-    <img src="/images/math-github-dollar.png" width="30%">
+    <img src="/images/math-github-dollar.png" width="15%">
   </p>
 
 - ```markdown
@@ -196,7 +196,7 @@ e.g.,
   ```
   Gets rendered as _y_}$
   <p align="center">
-    <img src="/images/math-github-text-dollar.png" width="30%">
+    <img src="/images/math-github-text-dollar.png" width="15%">
   </p>
   
 
