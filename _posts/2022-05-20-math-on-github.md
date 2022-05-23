@@ -194,9 +194,17 @@ e.g.,
 - ```markdown
   $x = \text{my $y$}$
   ```
-  Gets rendered as _y_}$
+  Gets rendered as
   <p align="center">
     <img src="/images/math-github-text-dollar.png" width="15%">
+  </p>
+
+- ```markdown
+  $`U`$
+  ```
+  Doesn't get rendered as math.
+  <p align="center">
+    <img src="/images/math-github-backticks.png" width="15%">
   </p>
   
 
