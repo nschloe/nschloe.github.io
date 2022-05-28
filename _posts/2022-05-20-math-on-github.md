@@ -61,8 +61,8 @@ You'll notice that not everything is working here:
 
   towards the end.
 
-- The spacing between the math characters is wrong. (bug report
-  [here](https://github.com/github/feedback/discussions/16997))
+- ~~The spacing between the math characters is wrong. (bug report
+  [here](https://github.com/github/feedback/discussions/16997))~~ (fixed now)
 
 - The syntax highlighting in the above code block is off.
 
