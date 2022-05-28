@@ -82,28 +82,26 @@ Mixing them together gets you in all kinds of trouble.
 
 What I think GitHub does now is the following:
 
-1. Render the entire page as Markdown, produce the HTML.
-2. Look for `$$...$$`, and determine somehow if they toggle math mode or if
-   they should render as dollar signs.
-3. Try the same for `$...$` pairs.
+1. Render the entire page as plain Markdown, produce the HTML. ($-$$ is treated
+   like text.)
+2. Look for `$$...$$` without intermediate HTML tags and render as math.
+3. Do the same for `$...$` pairs.
 
-This logic brings two fundamental problems.
+This logic has fundamental issues.
 
-#### Competing Markdown and math renderer
+#### Competing Markdown and math renderers
 
 As part of step 1, the Markdown is "sanitized". This means [the removal of HTML
 tags unless they are
 allowed](https://github.github.com/gfm/#disallowed-raw-html-extension-), or the
-removal of `\` unless they are right before a letter.
-
-The contents of code blocks are unaffected of course, but `$` or `$$` blocks
-aren't code blocks as far as Markdown is concerned. This means that, e.g.,
+removal of `\` unless they are right before a letter (except in code blocks).
+This also affects everything in math, meaning that, e.g.,
 
 - ```markdown
   $\{n\in\mathbb{N}:\: n \text{even}\}$
   ```
 
-  gets transformed to
+  gets "sanitized" to
 
   ```markdown
   ${n\in\mathbb{N}:: n \text{even}}$
@@ -126,25 +124,11 @@ aren't code blocks as far as Markdown is concerned. This means that, e.g.,
   - b
   $$
   ```
-  Doesn't get rendered as math.
+  Doesn't get rendered as math because Markdown recognizes a list structure and
+  transforms it to HTML.
   <p align="center">
     <img src="/images/math-github-md-list.png" width="15%">
   </p>
-
-- ```markdown
-  $`U`$
-  ```
-  Doesn't get rendered as math.
-  <p align="center">
-    <img src="/images/math-github-backticks.png" width="15%">
-  </p>
-
-#### What is math?
-
-The second step has to apply _some_ heuristic to get right which `$` signs
-toggle a math group, and which are just dollar signs. Many mistakes happen
-there. This get really tricky if the math block seemingly contains HTML code,
-e.g.,
 
 - ```markdown
   $$
@@ -152,7 +136,7 @@ e.g.,
   <ul><li>c</li></ul>
   $$
   ```
-  No math:
+  No math for the same reason:
   <p align="center">
     <img src="/images/math-github-list.png" width="15%">
   </p>
@@ -171,7 +155,7 @@ e.g.,
   a < b > c
   $$
   ```
-  This gets rendered as math (with bad kerning, see below)
+  This gets rendered as math ~~(with bad kerning, see below)~~
   <p align="center">
     <img src="/images/math-github-abc1.png" width="15%">
   </p>
@@ -189,12 +173,23 @@ e.g.,
   </p>
 
 - ```markdown
-  $[(a+b)!](c+d)$
+  $[a+b](c+d)$
   ```
+  Again, the Markdown parser sees a Markdown structure, transforms it to HTML, and no math gets rendered
   This gets rendered as a link surrounded by $:
   <p align="center">
     <img src="/images/math-github-link.png" width="15%">
   </p>
+
+- ```markdown
+  $`U`$
+  ```
+  Doesn't get rendered as math.
+  <p align="center">
+    <img src="/images/math-github-backticks.png" width="15%">
+  </p>
+
+One can construct many more ambiguous cases, e.g.,
 
 - ```markdown
   $x = \$$
@@ -224,8 +219,8 @@ and a (proper) LaTeX parser which is territory nobody wants to enter.
 
 Another way of avoiding such problems altogether is to use _code_ blocks for
 math -- their contents are left untouched by Markdown anyway. In fact, this is
-how GitLab handle their [math
-support](https://docs.gitlab.com/ee/user/markdown.html#math):
+how [GitLab](https://docs.gitlab.com/ee/user/markdown.html#math) and
+[xhub](https://github.com/nschloe/xhub) handle their math support:
 
 ````markdown
 Display math:
@@ -240,14 +235,20 @@ Inline math: $`a^2 + b^2 = c^2`$.
 With this syntax, rendering becomes easy:
 
 1. Render the page as Markdown produce the HTML.
-2. Check for all `<code syntax="math">` blocks, and render their contents as
+2. Check for all `<code lang="math">` blocks, and render their contents as
    display math.
 3. Check for all inline code blocks which are surrounded by `$...$` and render
    their their contents as inline math.
 
-No ambiguity, no stress. Whole classes of bugs simply doesn't exist.
+This avoids _all_ of the problems listed above. It ties in nicely with other
+Markdown tools like formatters or converters (e.g.,
+[prettier](https://prettier.io/)). The simplicity of the approach also makes it
+more manageable for other sites to support this format.
+
 
 ### It doesn't work everywhere
+
+_Edit (May 28, 2022)_: Most of this has been fixed now.
 
 Not everything works. Most notably, there is _no math support_ in
 
@@ -321,6 +322,8 @@ See the bug report
 [here](https://github.com/github/feedback/discussions/16999).
 
 ### Kerning
+
+_Edit (May 28, 2022)_: This has been fixed now.
 
 [_Kerning_](https://en.wikipedia.org/wiki/Kerning) is a typographist's way of
 saying _distance between letters_. Compare the kerning in `a = b` between
