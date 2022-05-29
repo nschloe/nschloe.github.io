@@ -192,7 +192,7 @@ This also affects everything in math, meaning that, e.g.,
 One can construct many more ambiguous cases, e.g.,
 
 - ```markdown
-  $x = \$$
+  $\$4 + \$5$
   ```
   Doesn't get rendered as math.
   <p align="center">
