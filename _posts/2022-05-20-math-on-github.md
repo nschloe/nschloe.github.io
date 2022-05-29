@@ -113,12 +113,6 @@ This also affects everything in math, meaning that, e.g.,
   </p>
 
 - ```markdown
-  &dollar;\frac{f}{a}&dollar;
-  ```
-  This gets rendered as math because Markdown transforms the `&dollar;` into
-  `$`.
-
-- ```markdown
   $$
   - a =
   - b
@@ -207,6 +201,12 @@ One can construct many more ambiguous cases, e.g.,
     <img src="/images/math-github-text-dollar.png" width="15%">
   </p>
   
+- ```markdown
+  &dollar;\frac{f}{a}&dollar;
+  ```
+  This gets rendered as math because Markdown transforms the `&dollar;` into
+  `$`.
+
 
 #### Solutions
 
