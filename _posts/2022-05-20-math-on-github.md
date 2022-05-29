@@ -245,6 +245,13 @@ Markdown tools like formatters or converters (e.g.,
 [prettier](https://prettier.io/)). The simplicity of the approach also makes it
 more manageable for other sites to support this format.
 
+GitHub could enable this syntax _on top_ of $-$$, except for the fact that they
+would have to change the order of the delimiters in inline math to
+````markdown
+`$a^2 + b^2 = c^2$`
+````
+because simple `$` are already getting a special treatment.
+
 
 ### It doesn't work everywhere
 
