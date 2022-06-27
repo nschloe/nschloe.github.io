@@ -3,11 +3,12 @@ title: "Math on GitHub: Following up"
 date: 2022-06-27
 ---
 
-About six weeks ago, on May 19, 2022, GitHub released [Math support on
-Markdown](https://github.blog/2022-05-19-math-support-in-markdown/). At the
-time of the release, it received criticism for being ill-designed and buggy. I,
-too, wrote [a blog
-post](https://nschloe.github.io/2022/05/20/math-on-github.html) about it.
+About six weeks ago, on May 19, 2022, GitHub released
+[Math support on Markdown](https://github.blog/2022-05-19-math-support-in-markdown/).
+At the time of the release, it received criticism for being ill-designed and
+buggy. I, too, wrote
+[a blog post](https://nschloe.github.io/2022/05/20/math-on-github.html) about
+it.
 
 In the weeks following the release, GitHub have tried to address the issues.
 Let's take a look at where math on GitHub stands now.
@@ -60,8 +61,8 @@ failed to display correctly right after the release.
 
 - `$a <b > c$`
 
-  This still doesn't get rendered as math as `<b >` is recognized as an [HTML opening
-  bold tag](https://www.w3schools.com/html/html_formatting.asp).
+  This still doesn't get rendered as math as `<b >` is recognized as an
+  [HTML opening bold tag](https://www.w3schools.com/html/html_formatting.asp).
 
 - `$[a+b](c+d)$`
 
@@ -73,19 +74,19 @@ failed to display correctly right after the release.
 
   Again, the interior is recognized as Markdown code, and math is not rendered.
 
-It seems that GitHub haven't been able to tackle _any_ of the syntactical
-issues yet. That's no surprise: Math was added as an afterthought, and if the
-Markdown sanitizer is applied first, you'd have to drill that one open. This is
-a costly endeavor and I'm not sure if GitHub want to go down that path. So far,
-they don't.
+It seems that GitHub haven't been able to tackle _any_ of the syntactical issues
+yet. That's no surprise: Math was added as an afterthought, and if the Markdown
+sanitizer is applied first, you'd have to drill that one open. This is a costly
+endeavor and I'm not sure if GitHub want to go down that path. So far, they
+don't.
 
 ### `$` vs. dollar bugs
 
 GitHub might have taken inspiration from
-[StackExchange](https://math.stackexchange.com/) which also uses `$...$` as
-math syntax delimiters. In contrast to StackExchange, though, GitHub wanted
-"regular" dollar signs to continue rendering as such. What _is_ a regular
-dollar sign though? That's where it gets confusing and, consequently, buggy.
+[StackExchange](https://math.stackexchange.com/) which also uses `$...$` as math
+syntax delimiters. In contrast to StackExchange, though, GitHub wanted "regular"
+dollar signs to continue rendering as such. What _is_ a regular dollar sign
+though? That's where it gets confusing and, consequently, buggy.
 
 GitHub still renders
 
@@ -105,12 +106,11 @@ is math. This too:
 An apple costs $1, a mango $ 2.
 ```
 
-It seems to be that the terminating `$` is only treated as a LaTeX-toggle if
-not immediately followed by an alphanumeric character. If it _is_ followed by
-an alphanumeric, the opening `$` is also treated as a regular dollar. It's
-unclear to me how it works exactly. Experience shows: The clearer the syntax,
-the fewer bugs appear. The syntax here is not clear, so you have plenty of
-bugs:
+It seems to be that the terminating `$` is only treated as a LaTeX-toggle if not
+immediately followed by an alphanumeric character. If it _is_ followed by an
+alphanumeric, the opening `$` is also treated as a regular dollar. It's unclear
+to me how it works exactly. Experience shows: The clearer the syntax, the fewer
+bugs appear. The syntax here is not clear, so you have plenty of bugs:
 
 - ```markdown
   $x + $2 $
@@ -153,10 +153,10 @@ always. If you want a regular dollar sign, you'll have to escape it, `\$`.
 
 ### The remedy
 
-[As outlined in the previous blog
-post](https://nschloe.github.io/2022/05/20/math-on-github.html), and as done by
-GitLab and my browser extension [xhub](https://github.com/nschloe/xhub), a
-clean fix for all of the above problems is to use a different syntax, e.g.,
+[As outlined in the previous blog post](https://nschloe.github.io/2022/05/20/math-on-github.html),
+and as done by GitLab and my browser extension
+[xhub](https://github.com/nschloe/xhub), a clean fix for all of the above
+problems is to use a different syntax, e.g.,
 
 ```markdown
 $`a + b = c`$
@@ -172,8 +172,8 @@ a + b = c
 
 for display math. This only looks half-TeXy at first, but it's easy enough to
 type _and_ integrates nicely with Markdown. Thanks to the backticks, (which
-indicate to Markdown parsers that what follows is "code") its contents
-never messed with. There is no confusion with dollar signs either.
+indicate to Markdown parsers that what follows is "code") its contents never
+messed with. There is no confusion with dollar signs either.
 
 ### Conclusion
 
