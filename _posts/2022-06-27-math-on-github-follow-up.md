@@ -189,3 +189,8 @@ from the TeX world (like me), typing backticks might feel unfamiliar at first,
 but it's easy to get used to, especially in a Markdown context. Since it
 eliminates _all_ the issues described above, it is, in my opinion, the syntax
 that GitHub should have adopted. Perhaps it's not too late to make a switch.
+
+
+### Comments
+
+https://news.ycombinator.com/item?id=31891754
