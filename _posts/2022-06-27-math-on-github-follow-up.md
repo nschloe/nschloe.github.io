@@ -160,14 +160,14 @@ clean fix for all of the above problems is to use a different syntax,
 e.g.,
 
 ```markdown
-$`...`$
+$`a + b = c`$
 ```
 
 for inline math and
 
 ````markdown
 ```math
-...
+a + b = c
 ```
 ````
 
