@@ -39,12 +39,12 @@ Let's take a look at where math on GitHub stands now.
 ## Markdown vs. math
 
 One, if not _the_ major issue with GitHub's math support is its syntax. They're
-using the old familiar `$...$` for inline and `$$...$$` for display math.
-Unfortunately, this does not integrate well with Markdown at all. Whatever
-Markdown tools run on a text file, they'll see everything between `$`-signs as
-regular text. This means that certain symbols are sanitized away, other symbols
-are forcibly `\`-escaped etc. Let's review some of the math that failed to
-display correctly right after the release.
+using the old familiar `$...$` for inline and `$$...$$` for display math. This
+is easy for users but unfortunately does not integrate well with Markdown at
+all. Whatever Markdown tools run on a text file, they'll see everything between
+`$`-signs as regular text. This means that certain symbols are sanitized away,
+other symbols are forcibly `\`-escaped etc. Let's review some of the math that
+failed to display correctly right after the release.
 
 - `$\{n\in\mathbb{N}:\: n \text{even}\}$`
 
@@ -75,8 +75,9 @@ display correctly right after the release.
 
 It seems that GitHub haven't been able to tackle _any_ of the syntactical
 issues yet. That's no surprise: Math was added as an afterthought, and if the
-Markdown sanitizer is applied first, you'd have to drill that one open.
-Apparently, GitHub have refrained from doing so up until now.
+Markdown sanitizer is applied first, you'd have to drill that one open. This is
+a major endeavor and I'm not sure if GitHub want to go down that path. So far,
+they don't.
 
 ### `$` vs. dollar bugs
 
