@@ -1,6 +1,6 @@
 ---
 title: "Math on GitHub: Following up"
-date: 2022-07-27
+date: 2022-06-27
 ---
 
 About six weeks ago, on May 19, 2022, GitHub released [Math support on
@@ -76,7 +76,7 @@ failed to display correctly right after the release.
 It seems that GitHub haven't been able to tackle _any_ of the syntactical
 issues yet. That's no surprise: Math was added as an afterthought, and if the
 Markdown sanitizer is applied first, you'd have to drill that one open. This is
-a major endeavor and I'm not sure if GitHub want to go down that path. So far,
+a costly endeavor and I'm not sure if GitHub want to go down that path. So far,
 they don't.
 
 ### `$` vs. dollar bugs
@@ -156,8 +156,7 @@ always. If you want a regular dollar sign, you'll have to escape it, `\$`.
 [As outlined in the previous blog
 post](https://nschloe.github.io/2022/05/20/math-on-github.html), and as done by
 GitLab and my browser extension [xhub](https://github.com/nschloe/xhub), a
-clean fix for all of the above problems is to use a different syntax,
-e.g.,
+clean fix for all of the above problems is to use a different syntax, e.g.,
 
 ```markdown
 $`a + b = c`$
@@ -171,9 +170,23 @@ a + b = c
 ```
 ````
 
-for display math. This only looks half-TeXy at first, but it's easy to type
-_and_ integrates nicely with Markdown. Thanks to the backticks, indicating to
-Markdown parsers that the contents are "code", it's never messed with. There is
-no confusion with dollar signs either.
-The only thing you can _not_ use in inline math is backtick-dollar without
-exiting LaTeX, but that's perhaps something one can live with. 😉
+for display math. This only looks half-TeXy at first, but it's easy enough to
+type _and_ integrates nicely with Markdown. Thanks to the backticks, (which
+indicate to Markdown parsers that what follows is "code") its contents
+never messed with. There is no confusion with dollar signs either.
+
+### Conclusion
+
+GitHub's current choice of syntax goes against the Markdown grain. Fixing bugs
+is here hard, as highlighted by the fact that none of initial syntax issues
+could be fixed yet. It'll continue to be an uphill battle for GitHub engineers,
+and I'm afraid such math support will never be reliable, let alone complete.
+
+I estimate that the technical debt induced by `$`-math is high enough to
+warrant a redesign.
+
+Backtick math is a viable alternative, proven to work in practice. When coming
+from the TeX world (like me), typing backticks might feel unfamiliar at first,
+but it's easy to get used to, especially in a Markdown context. Since it
+eliminates _all_ the issues described above, it is, in my opinion, the syntax
+that GitHub should have adopted. Perhaps it's not too late to make a switch.
