@@ -178,12 +178,11 @@ never messed with. There is no confusion with dollar signs either.
 ### Conclusion
 
 GitHub's current choice of syntax goes against the Markdown grain. Fixing bugs
-is here hard, as highlighted by the fact that none of initial syntax issues
+is here hard, as highlighted by the fact that none of the initial syntax issues
 could be fixed yet. It'll continue to be an uphill battle for GitHub engineers,
 and I'm afraid such math support will never be reliable, let alone complete.
-
-I estimate that the technical debt induced by `$`-math is high enough to
-warrant a redesign.
+This hinders technical innovation. (For example, I'm working on a
+LaTeX-to-Markdown converter that requires robust math support.)
 
 Backtick math is a viable alternative, proven to work in practice. When coming
 from the TeX world (like me), typing backticks might feel unfamiliar at first,
