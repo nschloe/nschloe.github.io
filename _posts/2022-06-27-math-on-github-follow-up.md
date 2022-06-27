@@ -193,4 +193,5 @@ that GitHub should have adopted. Perhaps it's not too late to make a switch.
 
 ### Comments
 
-https://news.ycombinator.com/item?id=31891754
+[Comments welcome on Hacker
+News!](https://news.ycombinator.com/item?id=31891754)
