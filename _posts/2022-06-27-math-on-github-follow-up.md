@@ -39,7 +39,7 @@ Let's take a look at where math on GitHub stands now.
 ## Markdown vs. math
 
 One, if not _the_ major issue with GitHub's math support is its syntax. They're
-using the old familar `$...$` for inline and `$$...$$` for display math.
+using the old familiar `$...$` for inline and `$$...$$` for display math.
 Unfortunately, this does not integrate well with Markdown at all. Whatever
 Markdown tools run on a text file, they'll see everything between `$`-signs as
 regular text. This means that certain symbols are sanitized away, other symbols
@@ -117,7 +117,7 @@ bugs:
 
   renders as
   <p align="center">
-    <img src="/images/x-plus.png" width="20%">
+    <img src="/images/x-plus.png" width="10%">
   </p>
   The rest has somehow disappeared.
 
@@ -134,7 +134,7 @@ bugs:
 - `$x = \text{my $y$}$`
 
   <p align="center">
-    <img src="/images/y-dollar.png" width="20%">
+    <img src="/images/y-dollar.png" width="10%">
   </p>
 
   Dollar sign's within LaTeX completely
@@ -142,7 +142,7 @@ bugs:
 - `$x =\$$`
 
   <p align="center">
-    <img src="/images/triple-dollar.png" width="20%">
+    <img src="/images/triple-dollar.png" width="15%">
   </p>
 
   The parser gets confused with the dollar signs.
