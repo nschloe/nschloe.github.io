@@ -89,19 +89,19 @@ dollar sign though? That's where it gets confusing and, consequently, buggy.
 
 GitHub still renders
 
-```
+```markdown
 An apple costs $1, a mango $2.
 ```
 
 as dollar signs. This, however,
 
-```
+```markdown
 An apple costs 1$, a mango 2$.
 ```
 
 is math. This too:
 
-```
+```markdown
 An apple costs $1, a mango $ 2.
 ```
 
@@ -112,7 +112,7 @@ unclear to me how it works exactly. Experience shows: The clearer the syntax,
 the fewer bugs appear. The syntax here is not clear, so you have plenty of
 bugs:
 
-- ```
+- ```markdown
   $x + $2 $
   ```
 
@@ -138,7 +138,7 @@ bugs:
     <img src="/images/y-dollar.png" width="10%">
   </p>
 
-  Dollar sign's within LaTeX completely
+  Dollar signs within LaTeX completely throw off the parser.
 
 - `$x =\$$`
 
@@ -146,9 +146,9 @@ bugs:
     <img src="/images/triple-dollar.png" width="15%">
   </p>
 
-  The parser gets confused with the dollar signs.
+  Although properly escaped, the parser gets confused with the dollar sign.
 
-Note that StackExchange doesn't have those problems: `$` toggles math there,
+Note that StackExchange doesn't have those problems: There, `$` toggles math,
 always. If you want a regular dollar sign, you'll have to escape it, `\$`.
 
 ### The remedy
