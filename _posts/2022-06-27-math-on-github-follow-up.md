@@ -13,6 +13,9 @@ it.
 In the weeks following the release, GitHub have tried to address the issues.
 Let's take a look at where math on GitHub stands now.
 
+(_Note:_ Most examples can be found on [my GitHub math test
+repo](https://github.com/nschloe/math-test).)
+
 ## Fixed issues
 
 - Kerning
@@ -189,7 +192,6 @@ from the TeX world (like me), typing backticks might feel unfamiliar at first,
 but it's easy to get used to, especially in a Markdown context. Since it
 eliminates _all_ the issues described above, it is, in my opinion, the syntax
 that GitHub should have adopted. Perhaps it's not too late to make a switch.
-
 
 ### Comments
 
