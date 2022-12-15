@@ -21,8 +21,8 @@ repo](https://github.com/nschloe/math-test).)
 - Kerning
 
   At the time of the release, kerning between symbols in LaTeX blocks was
-  completely off. This was probably a simple math font config bug, and was fixes
-  swiftly after release.
+  completely off. This was probably a simple math font config bug, and was
+  fixed swiftly after release.
 
   Before:
   <p align="center">
