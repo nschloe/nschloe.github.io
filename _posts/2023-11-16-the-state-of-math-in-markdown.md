@@ -90,7 +90,8 @@ The samples can be compared on:
 - [GitLab](https://gitlab.com/nschloe/github-math-bugs)
 - [Gitea](https://try.gitea.io/nschloe/markdown-math-acid-test)
 
-The table below gives an overview of what works and what doesn't.
+[The table below](#comparison-table) gives an overview of what works and what
+doesn't.
 
 #### Key Takeaways
 
@@ -110,7 +111,9 @@ to only look at inline code contents for determining if it's math or not. In
 general though, you'd probably want to keep allowing actual code that starts
 and ends in `$`.
 
-### Comparison table (Nov 2023)[^2]
+### Comparison table
+
+Updated Nov 2023.[^2]
 
 |                                                                                                                                                                                |                    GitHub `$` (14.4%)                     |                  Github `` $` `` (41.3%)                  |                       GitLab `$` (58.7%)                        |                     GitLab `` $` `` (95.2%)                     |                     Gitea `$` (77.9%)                     |                    Gitea `\(` (81.7%)                     |                  Pandoc `$` (94.2%)                  |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | :-------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------: | :-------------------------------------------------------: | :--------------------------------------------------: |
