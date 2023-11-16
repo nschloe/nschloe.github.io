@@ -1,4 +1,7 @@
-# The State of Math in Markdown
+---
+title: "The State of Math in Markdown"
+date: 2023-11-16
+---
 
 Math input is quite a common Markdown extension in Git services these days.
 
