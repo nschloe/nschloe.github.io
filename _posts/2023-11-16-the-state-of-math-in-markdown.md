@@ -3,6 +3,10 @@ title: "The State of Math in Markdown"
 date: 2023-11-16
 ---
 
+_TLDR: Markdown + math is hard. GitHub is bad, Gitea better, GitLab best.
+Backticked syntax trumps `$`-syntax._
+
+
 Math input is quite a common Markdown extension in Git services these days.
 
 - The first proper math implementation in Markdown is from
@@ -144,6 +148,12 @@ Updated Nov 2023.[^2]
 | [50 or more colors in a block](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#50-or-more-colors-in-a-block)                                   | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) |                                ✓                                |                                ✓                                |                             ✓                             |                             ✓                             |                          ✓                           |
 | [100 or more bracketed exponents or subscripts](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#100-or-more-bracketed-exponents-or-subscripts) | [no](https://github.com/orgs/community/discussions/59960) | [no](https://github.com/orgs/community/discussions/59960) |                                ✓                                |                                ✓                                |                             ✓                             |                             ✓                             |                          ✓                           |
 
+### Comments
+
+[Comments welcome on Hacker
+News!](https://news.ycombinator.com/item?id=38292214)
+
+
 [^1]:
     `$`-toggles are original TeX notation, LaTeX introduced the begin-end
     `\(...\)` notation. It's generally preferable as it's easier to work with from
@@ -154,3 +164,5 @@ Updated Nov 2023.[^2]
 [^2]:
     I will update the samples and table once in a while to keep track of new
     developments.
+
+
