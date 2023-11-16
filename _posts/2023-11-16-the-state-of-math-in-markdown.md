@@ -29,7 +29,6 @@ Math input is quite a common Markdown extension in Git services these days.
 
   ```math
   f(x) = 1
-  $$
   ```
   ````
 
