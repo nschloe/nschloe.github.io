@@ -1,15 +1,22 @@
 title: techematics
 author: Nico Schlömer
 
-# theme: minima
+theme: minima
 
 # remote_theme: mmistakes/minimal-mistakes
-# Liquid syntax error (line 15): Unknown tag 'include_cached' in /_layouts/default.html
+# Liquid syntax error (line 15): Unknown tag 'include_cached' in
+# /_layouts/default.html
 
 # remote_theme: alshedivat/al-folio
-# Invalid CSS after "...content-width: ": expected expression (e.g. 1px, bold), was ";" on line 4
+# Invalid CSS after "...content-width: ": expected expression (e.g. 1px, bold),
+# was ";" on line 4
 
-remote_theme: cotes2020/jekyll-theme-chirpy
+# remote_theme: cotes2020/jekyll-theme-chirpy
+# Build error:
+# Liquid Exception: Liquid error
+# (/tmp/jekyll-remote-theme-20231116-7-1dwm4gn/_includes/read-time.html line
+# 3): wrong number of arguments (given 2, expected 1) included in
+# /_layouts/post.html
 
 email: nico.schloemer@gmail.com
 description: Nico's thoughts on math and programming
