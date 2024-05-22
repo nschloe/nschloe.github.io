@@ -118,7 +118,7 @@ and ends in `$`.
 
 Updated May 2024.[^2]
 
-|  | GitHub `$` (14.4%) | Github `` $` `` (41.3%) | GitLab `$` (58.7%) | GitLab `` $` `` (95.2%) | Gitea `$` (77.9%) | Gitea `\(` (81.7%) | Pandoc `$` (94.2%) |
+|  | GitHub `$` (14%) | Github `` $` `` (41%) | GitLab `$` (85%) | GitLab `` $` `` (96%) | Gitea `$` (81%) | Gitea `\(` (85%) | Pandoc `$` (94%) |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Basic example](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#basic-example) | [partial](https://github.com/github/markup/issues/1744) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [Subsequent math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#subsequent-math) | [no](https://github.com/github/markup/issues/1741) | ✓ | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/431890) | ✓ | ✓ | ✓ | ✓ |
