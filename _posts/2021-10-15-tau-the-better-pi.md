@@ -199,13 +199,13 @@ Articles _against_ τ:
 - [Michael Hartl, _The Tau Manifesto talk (short version)_, 2015](https://youtu.be/2hhjsSN-AiU)
 - [DerkCopyleft, _Tau=6,28... and has Perfect Numbers - Tau tiene Números Perfectos_, 2015](https://youtu.be/n1yshPWUlJw)
 - [Sen Zen, _Pi vs Tau_, 2016](https://youtu.be/ZEbTMbX9Qpo)
-- [Michael Hartl, _The Tau Manifesto | Talks at Google_, 2017](https://youtu.be/k7MuXCOlE6M)
+- [Michael Hartl, _The Tau Manifesto \| Talks at Google_, 2017](https://youtu.be/k7MuXCOlE6M)
 - [QuantumOverlord, _Refuting the Pi manifesto on Tau day_, 2017](https://youtu.be/k73uQF4iB_g)
 - [Vihart, _Pi Rant 2018: Alternative Pi_](https://youtu.be/6acbBrLoi14?t=273)
 - [3Blue1Brown, _How pi was almost 6.283185..._, 2018](https://youtu.be/bcPTiiiYDs8)
 - [HDSQ, _Tau the Song with 6.28318 Million Notes_, 2019](https://youtu.be/b0gyQMJHQ78)
 - [BriTheMathGuy, _It's Tau Day (but should you care?)_, 2020](https://youtu.be/qifarbO4yX8)
-- [Mathstreet Boys, _Larger Than Pi (Tau Day Parody) | Larger Than Life_, 2020](https://www.youtube.com/watch?v=bUmiWUfMrvk)
+- [Mathstreet Boys, _Larger Than Pi (Tau Day Parody) \| Larger Than Life_, 2020](https://www.youtube.com/watch?v=bUmiWUfMrvk)
 - [Khan Academy, _Tau versus pi_, 2021](https://youtu.be/1jDDfkKKgmc)
 - [EasyMemory, _Writing 1,000 decimals of Tau (2x Pi) from memory_, 2021](https://youtu.be/x41_CRWpgLc)
 - [sudgylacmoe, _The Tau Manifesto - With Michael Hartl_, 2023](https://youtu.be/kMtgV18Iew8)
@@ -220,7 +220,7 @@ Articles _against_ τ:
 
 - [xkcd, _Pi vs. Tau_](https://xkcd.com/1292/)
   <div align="center">
-    <img src=""/images/pi_vs_tau.png" width="50%"/>
+    <img src="/images/pi_vs_tau.png" width="50%"/>
   </div>
 - [xkcd, _Symbols_](https://xkcd.com/2520/)
 - [SMBC, _Proposed Number Improvements_](https://www.smbc-comics.com/comic/numbers-3)
