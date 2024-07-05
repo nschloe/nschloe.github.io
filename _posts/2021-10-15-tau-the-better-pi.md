@@ -385,7 +385,7 @@ onto the _y_-axis, the cosine is the projection onto the _x_-axis.
 \end{alignat*}
 ```
 
-<img src="plots/sin137.svg" align="right" width="30%"/>
+<img src="/images/sin137.svg" align="right" width="30%"/>
 
 Trigonometric values off the grid can easily be estimated:
 
@@ -450,7 +450,7 @@ Special cases:
   = \textcolor{teal}{\pi} r^2
   ```
 
-- <img src="plots/chebyshev1.svg" align="right" width="30%"/>
+- <img src="/images/chebyshev1.svg" align="right" width="30%"/>
 
   *n* = 1, *λ* = −1/2
 
@@ -460,7 +460,7 @@ Special cases:
 
   <br clear="right"/>
 
-- <img src="plots/chebyshev2.svg" align="right" width="30%"/>
+- <img src="/images/chebyshev2.svg" align="right" width="30%"/>
 
   *n* = 1, *λ* = 1/2
 
@@ -472,7 +472,7 @@ Special cases:
 
 #### _n_-dimensional generalized Cauchy volume (2*λ* > _n_)
 
-<img src="plots/cauchy.svg" align="right" width="30%"/>
+<img src="/images/cauchy.svg" align="right" width="30%"/>
 
 As appearing in its one-dimensional version in the [Cauchy
 distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) and
@@ -547,7 +547,7 @@ and _λ_ = 1,
 
 #### _n_-dimensional generalized Laguerre volume
 
-<img src="plots/laguerre.svg" align="right" width="30%"/>
+<img src="/images/laguerre.svg" align="right" width="30%"/>
 
 ```math
 \begin{align*}
@@ -565,7 +565,7 @@ and _λ_ = 1,
 
 #### [The Gaussian integral](https://en.wikipedia.org/wiki/Gaussian_integral)
 
-<img src="plots/gaussian.svg" align="right" width="30%"/>
+<img src="/images/gaussian.svg" align="right" width="30%"/>
 
 Compare
 
@@ -640,7 +640,7 @@ z^n = 1 \quad\Rightarrow\quad z = \exp(i\textcolor{orange}{\tau} k / n) \quad\fo
 
 #### [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation)
 
-<img src="plots/stirling.svg" align="right" width="30%"/>
+<img src="/images/stirling.svg" align="right" width="30%"/>
 
 ```math
 n! \sim \sqrt{\textcolor{orange}{\tau} n} \left(\frac{n}{e}\right)^n
@@ -650,7 +650,7 @@ n! \sim \sqrt{\textcolor{orange}{\tau} n} \left(\frac{n}{e}\right)^n
 
 #### [Particular values of the Gamma function](https://en.wikipedia.org/wiki/Particular_values_of_the_gamma_function)
 
-<img src="plots/gamma.svg" align="right" width="30%"/>
+<img src="/images/gamma.svg" align="right" width="30%"/>
 
 - Positive half-integers:
 
@@ -728,7 +728,7 @@ A reflection formula:
 
 #### [Error function](https://en.wikipedia.org/wiki/Error_function)
 
-<img src="plots/erf.svg" align="right" width="30%"/>
+<img src="/images/erf.svg" align="right" width="30%"/>
 
 ```math
 \mathrm{erf}(z) = \frac{2}{\sqrt{\textcolor{teal}{\pi}}} \int_0^z \exp(-t^2)\, dt.
@@ -750,7 +750,7 @@ with standard deviation 1 is fulfilled by
 
 #### The [sinc function](https://en.wikipedia.org/wiki/Sinc_function) and its power integrals
 
-<img src="plots/sinc.svg" align="right" width="30%"/>
+<img src="/images/sinc.svg" align="right" width="30%"/>
 
 ```math
 \int_{-\infty}^{\infty} \frac{\sin^n(x)}{x^n}\,dx
@@ -769,7 +769,7 @@ for all $`n\in\mathbb{N}`$. Specifically,
 
 #### The [Borwein integral](https://en.wikipedia.org/wiki/Borwein_integral)
 
-<img src="plots/borwein.svg" align="right" width="30%"/>
+<img src="/images/borwein.svg" align="right" width="30%"/>
 
 ```math
 \int_{-\infty}^{\infty} \prod_{k=0}^n \frac{\sin(a_k x)}{a_k x}\,dx
