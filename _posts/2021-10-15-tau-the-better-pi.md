@@ -892,3 +892,7 @@ with some rational $`C_n`$ (see [here](https://en.wikipedia.org/wiki/Borwein_int
   > focus on π rather than 2π is a historical accident.
 
   <br clear="right"/>
+
+---
+
+This blog post is updated once in a while.
