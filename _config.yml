@@ -3,11 +3,15 @@ author: Nico Schlömer
 
 # Use up-to-date minima for auto dark/light
 # theme: minima
-remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
-minima:
-  skin: auto
+
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: dark
+
+# remote_theme: jekyll/minima
+# minima:
+#   skin: auto
 
 # remote_theme: mmistakes/minimal-mistakes
 # Liquid syntax error (line 15): Unknown tag 'include_cached' in
