@@ -30,3 +30,5 @@ description: Nico's thoughts on math and programming
 twitter_username: nschloe
 github_username: nschloe
 # show_excerpts: true # set to false to remove excerpts on the homepage
+
+markdown: kramdown

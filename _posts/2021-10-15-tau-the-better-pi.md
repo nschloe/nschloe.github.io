@@ -1,6 +1,7 @@
 ---
 title: "tau: The better pi"
 date: 2021-10-15
+permalink: /tau/
 ---
 
 > Beauty is the first test: there is no permanent place in this world for ugly
