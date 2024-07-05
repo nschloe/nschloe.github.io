@@ -1,6 +1,7 @@
 ---
 title: "tau: The better pi"
 date: 2021-10-15
+layout: single
 ---
 <!--permalink: /tau/-->
 
@@ -173,8 +174,7 @@ Articles _against_ τ:
 - [O.V. Vijimon, _A circle without "π"_, 2017](https://osf.io/stwxf/)
 - [Lulzim Gjyrgjialli, _Circle constant is a turn_, 2018](https://www.itisaturn.com/assets/docs/itisaturn.pdf)
 - <a
-  href="https://en.wikipedia.org/wiki/Turn_(angle)#Proposals_for_a_single_letter_to_represent_2%CF%80">Wikipedia,
-  <emph>Proposals for a single letter to represent 2π</emph></a>
+  href="https://en.wikipedia.org/wiki/Turn_(angle)#Proposals_for_a_single_letter_to_represent_2%CF%80">Wikipedia,<emph>Proposals for a single letter to represent 2π</emph></a>
 
 - [Mathematics Educators StackExchange: _Pi or Tau? How should the circle
   constant be taught?_, 2014](https://matheducators.stackexchange.com/q/530/20645)
