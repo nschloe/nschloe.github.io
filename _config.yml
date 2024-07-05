@@ -5,6 +5,12 @@ author: Nico Schlömer
 # theme: minima
 plugins:
   - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dark
