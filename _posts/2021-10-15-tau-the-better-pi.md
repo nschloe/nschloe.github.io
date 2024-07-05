@@ -1,6 +1,7 @@
 ---
 title: "tau: The better pi"
 date: 2021-10-15
+classes: wide
 ---
 <!--permalink: /tau/-->
 
