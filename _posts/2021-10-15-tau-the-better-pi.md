@@ -8,7 +8,7 @@ date: 2021-10-15
 >
 > —[G.H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy)
 
-<img src=/images/hartl-palais.jpg" align="right" width="200px"/>
+<img src="/images/hartl-palais.jpg" align="right" width="200px"/>
 
 In 2001, [Bob Palais](https://www.math.utah.edu/~palais/) wrote the article [_π
 is wrong!_](https://doi.org/10.1007%2FBF03026846), remarking on the fact that
@@ -219,7 +219,7 @@ Articles _against_ τ:
 
 - [xkcd, _Pi vs. Tau_](https://xkcd.com/1292/)
   <div align="center">
-    <img src="/images/pi_vs_tau.png" width="50%"/>
+    <img src=""/images/pi_vs_tau.png" width="50%"/>
   </div>
 - [xkcd, _Symbols_](https://xkcd.com/2520/)
 - [SMBC, _Proposed Number Improvements_](https://www.smbc-comics.com/comic/numbers-3)
@@ -227,7 +227,7 @@ Articles _against_ τ:
 - [SMBC, _Social_](https://www.smbc-comics.com/comic/social)
 - [SMBC, _Better than pi_](https://www.smbc-comics.com/comic/better-than-pi)
   <div align="center">
-    <img src=/images/megapi.png" width="50%"/>
+    <img src="/images/megapi.png" width="50%"/>
   </div>
 - [Crooked Stave Artisan Beer Project, _Key Lime Tau (2π)_](https://untappd.com/b/crooked-stave-artisan-beer-project-key-lime-tau-2p/1343706)
 - [Tau Day, June 28, 6/28](https://www.google.com/search?q=tau+day)
@@ -235,14 +235,14 @@ Articles _against_ τ:
 - [Vitalik Buterin, _I'm boycotting pi day because tau day is better_, Twitter, 2020](https://twitter.com/vitalikbuterin/status/1238971048948830210)
 - [Elon Musk, _tau > pi_, Twitter, 2022](https://twitter.com/elonmusk/status/1496066844284928003)
   <div align="center">
-    <img src=/images/musk.png" width="50%"/>
+    <img src="/images/musk.png" width="50%"/>
   </div>
 
 ### Historical uses
 
 #### Al-Kashi (1424)
 
-<img src=/images/al-kashi-stamp.jpg" align="right" width="200px"/>
+<img src="/images/al-kashi-stamp.jpg" align="right" width="200px"/>
 
 (All quotes are translated from the German translation by P. Luckey, 1950.)
 
@@ -288,7 +288,7 @@ Further reading:
 The section _Adoption of the symbol π_ of the excellent Wikipedia article
 [Pi](https://en.wikipedia.org/wiki/Pi#Adoption_of_the_symbol_%CF%80) says:
 
-> <img src=/images/david-gregory.png" align="right" width="200px"/>
+> <img src="/images/david-gregory.png" align="right" width="200px"/>
 >
 > In the earliest usages, the Greek letter π was used to denote the
 > semiperimeter (_semiperipheria_ in Latin) of a circle and was combined in
@@ -311,7 +311,7 @@ The section _Adoption of the symbol π_ of the excellent Wikipedia article
 > immediately adopted by other mathematicians, with the fraction notation
 > still being used as late as 1767.
 >
-> <img src=/images/euler.jpg" align="right" width="200px"/>
+> <img src="/images/euler.jpg" align="right" width="200px"/>
 >
 > Euler started using the single-letter form beginning with his 1727 Essay
 > _Explaining the Properties of Air_, **though he used π = 6.28..., the ratio
@@ -840,7 +840,7 @@ with some rational $`C_n`$ (see [here](https://en.wikipedia.org/wiki/Borwein_int
 
 ### Quotes
 
-- <img src=/images/tao.jpg" align="right" width="200px"/>
+- <img src="/images/tao.jpg" align="right" width="200px"/>
 
   [Terence Tao](https://en.wikipedia.org/wiki/Terence_Tao) (2007,
   [here](https://blog.computationalcomplexity.org/2007/08/is-pi-defined-in-best-way.html?showComment=1186584000000#c971095637512882599)):
@@ -852,7 +852,7 @@ with some rational $`C_n`$ (see [here](https://en.wikipedia.org/wiki/Borwein_int
 
   <br clear="right"/>
 
-- <img src=/images/conway.jpg" align="right" width="200px"/>
+- <img src="/images/conway.jpg" align="right" width="200px"/>
 
   [John Conway](https://en.wikipedia.org/wiki/John_Horton_Conway) (2008, from
   [Constant
@@ -869,7 +869,7 @@ with some rational $`C_n`$ (see [here](https://en.wikipedia.org/wiki/Borwein_int
 
   <br clear="right"/>
 
-- <img src=/images/benjamin.jpg" align="right" width="200px"/>
+- <img src="/images/benjamin.jpg" align="right" width="200px"/>
 
   [Arthur Benjamin](https://en.wikipedia.org/wiki/Arthur_T._Benjamin) (2013, [Twitter
   Q&A](https://laughmaths.blogspot.com/2013/07/arthur-benjamin-man-maths-magician-part_15.html)):
@@ -882,7 +882,7 @@ with some rational $`C_n`$ (see [here](https://en.wikipedia.org/wiki/Borwein_int
 
   <br clear="right"/>
 
-- <img src=/images/baez.jpg" align="right" width="200px"/>
+- <img src="/images/baez.jpg" align="right" width="200px"/>
 
   [John Baez](https://en.wikipedia.org/wiki/John_C._Baez) (2022, from [12
   numbers that are cooler than
