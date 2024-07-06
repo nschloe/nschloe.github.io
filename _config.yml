@@ -42,6 +42,8 @@ github_username: nschloe
 # show_excerpts: true # set to false to remove excerpts on the homepage
 
 markdown: kramdown
+kramdown:
+    math-engine: katex
 
 defaults:
   # _posts

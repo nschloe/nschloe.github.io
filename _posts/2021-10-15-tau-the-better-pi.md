@@ -5,6 +5,14 @@ updated: 2024-07-05
 ---
 <!--permalink: /tau/-->
 
+a:
+$1 + 1 = 2$
+
+b:
+$$
+1 + 1 = 2
+$$
+
 > Beauty is the first test: there is no permanent place in this world for ugly
 > mathematics.
 >
