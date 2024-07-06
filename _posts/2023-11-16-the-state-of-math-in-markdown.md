@@ -67,7 +67,7 @@ Math input is quite a common Markdown extension in Git services these days.
   [added](https://github.blog/changelog/2022-06-28-fenced-block-syntax-for-mathematical-expressions/)
   `math` code blocks in June 2022, and ``$`a + b = c`$`` for inline math in
   [May
-  2022](https://github.blog/changelog/2023-05-08-new-delimiter-syntax-for-inline-mathematical-expressions/).
+  2023](https://github.blog/changelog/2023-05-08-new-delimiter-syntax-for-inline-mathematical-expressions/).
 
 Feeding on bug reports and discussions, I've compiled a list of test cases for
 math in Markdown that seem to be easy to get wrong. The difficulty ranges from
