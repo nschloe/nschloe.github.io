@@ -11,6 +11,7 @@ display mode (centered):
 
 $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
 
+
 a:
 $1 + 1 = 2$
 
@@ -382,123 +383,26 @@ Inclusion of a constant `tau` was _rejected_ by the following projects:
 
 #### Trigonometry
 
-```math
+$$
 \begin{split}
 \sin(\alpha) &= \sin(\alpha + \textcolor{orange}{\tau}) \quad\forall \alpha\\
 \cos(\alpha) &= \cos(\alpha + \textcolor{orange}{\tau}) \quad\forall \alpha\\
 \tan(\alpha) &= \tan(\alpha + \textcolor{orange}{\tau}) \quad\forall \alpha
 \end{split}
-```
-
-<math display="block" class="tml-display" style="display:block math;">
-  <mtable displaystyle="true" columnalign="right left">
-    <mtr>
-      <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
-        <mrow>
-          <mrow>
-            <mi>sin</mi>
-            <mo>⁡</mo>
-          </mrow>
-          <mo form="prefix" stretchy="false">(</mo>
-          <mi>α</mi>
-          <mo form="postfix" stretchy="false">)</mo>
-        </mrow>
-      </mtd>
-      <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
-        <mrow>
-          <mo>=</mo>
-          <mrow>
-            <mi>sin</mi>
-            <mo>⁡</mo>
-          </mrow>
-          <mo form="prefix" stretchy="false">(</mo>
-          <mi>α</mi>
-          <mo>+</mo>
-          <mi style="color:#FF8000;">τ</mi>
-          <mo form="postfix" stretchy="false">)</mo>
-          <mspace width="1em"></mspace>
-          <mi>∀</mi>
-          <mi>α</mi>
-        </mrow>
-      </mtd>
-    </mtr>
-    <mtr>
-      <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
-        <mrow>
-          <mrow>
-            <mspace width="0.1667em"></mspace>
-            <mi>cos</mi>
-            <mo>⁡</mo>
-          </mrow>
-          <mo form="prefix" stretchy="false">(</mo>
-          <mi>α</mi>
-          <mo form="postfix" stretchy="false">)</mo>
-        </mrow>
-      </mtd>
-      <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
-        <mrow>
-          <mo>=</mo>
-          <mrow>
-            <mi>cos</mi>
-            <mo>⁡</mo>
-          </mrow>
-          <mo form="prefix" stretchy="false">(</mo>
-          <mi>α</mi>
-          <mo>+</mo>
-          <mi style="color:#FF8000;">τ</mi>
-          <mo form="postfix" stretchy="false">)</mo>
-          <mspace width="1em"></mspace>
-          <mi>∀</mi>
-          <mi>α</mi>
-        </mrow>
-      </mtd>
-    </mtr>
-    <mtr>
-      <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
-        <mrow>
-          <mrow>
-            <mspace width="0.1667em"></mspace>
-            <mi>tan</mi>
-            <mo>⁡</mo>
-          </mrow>
-          <mo form="prefix" stretchy="false">(</mo>
-          <mi>α</mi>
-          <mo form="postfix" stretchy="false">)</mo>
-        </mrow>
-      </mtd>
-      <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
-        <mrow>
-          <mo>=</mo>
-          <mrow>
-            <mi>tan</mi>
-            <mo>⁡</mo>
-          </mrow>
-          <mo form="prefix" stretchy="false">(</mo>
-          <mi>α</mi>
-          <mo>+</mo>
-          <mi style="color:#FF8000;">τ</mi>
-          <mo form="postfix" stretchy="false">)</mo>
-          <mspace width="1em"></mspace>
-          <mi>∀</mi>
-          <mi>α</mi>
-        </mrow>
-      </mtd>
-    </mtr>
-  </mtable>
-</math>
+$$
 
 With τ being a full revolution, the following identities are very easy to
 grasp (for integers _n_). Remember the sine is the projection of the angle
 onto the _y_-axis, the cosine is the projection onto the _x_-axis.
 
-```math
+$$
 \begin{alignat*}{3}
   \sin(n \textcolor{orange}{\tau}) &= 0,          &\qquad \cos(n \textcolor{orange}{\tau}) &= 1,\\
   \sin((n + 1/4) \textcolor{orange}{\tau}) &= 1,  &\qquad \cos((n + 1/4) \textcolor{orange}{\tau}) &= 0,\\
   \sin((n + 1/2) \textcolor{orange}{\tau}) &= 0,  &\qquad \cos((n + 1/2) \textcolor{orange}{\tau}) &= -1,\\
   \sin((n + 3/4) \textcolor{orange}{\tau}) &= -1, &\qquad \cos((n + 3/4) \textcolor{orange}{\tau}) &= 0
 \end{alignat*}
-```
+$$
 
 <img src="/images/sin137.svg" align="right" width="30%"/>
 
@@ -518,7 +422,7 @@ GitHub doesn't understand inline and block math in one list item
 
 #### Surface area of the _n_-dimensional unit sphere
 
-```math
+$$
 |U_n|
 = \frac{2\textcolor{teal}{\pi}^{n/2}}{\Gamma(n/2)}
 = \begin{cases}
@@ -526,11 +430,11 @@ GitHub doesn't understand inline and block math in one list item
 \textcolor{orange}{\tau} & \text{if } n = 2\\
 |U_{n-2}| \times \textcolor{orange}{\tau} / (n - 2) & \text{otherwise}
 \end{cases}
-```
+$$
 
 #### _n_-dimensional Gegenbauer integral over the unit ball <i>S<sub>n</sub></i>
 
-```math
+$$
 |G_n^{\lambda}|
   = \int_{S^n} \left(1 - \sum_{i=1}^n x_i^2\right)^\lambda
   = \begin{cases}
@@ -538,132 +442,7 @@ GitHub doesn't understand inline and block math in one list item
     B\left(\lambda + 1, \frac{1}{2}\right)&\text{for $n=1$}\\
     |G_{n-2}^{\lambda}|\times \textcolor{orange}{\tau} / (2\lambda + n) & \text{otherwise}
   \end{cases}
-```
-
-<math display="block" class="tml-display" style="display:block math;">
-  <mrow>
-    <mi>|</mi>
-    <msubsup>
-      <mi>G</mi>
-      <mi>n</mi>
-      <mi>λ</mi>
-    </msubsup>
-    <mi>|</mi>
-    <mo>=</mo>
-    <msub>
-      <mo movablelimits="false">∫</mo>
-      <msup>
-        <mi>S</mi>
-        <mi>n</mi>
-      </msup>
-    </msub>
-    <msup>
-      <mrow>
-        <mo fence="true" form="prefix">(</mo>
-        <mn>1</mn>
-        <mo>−</mo>
-        <mrow>
-          <munderover>
-            <mo movablelimits="false">∑</mo>
-            <mrow>
-              <mi>i</mi>
-              <mo>=</mo>
-              <mn>1</mn>
-            </mrow>
-            <mi>n</mi>
-          </munderover>
-        </mrow>
-        <msubsup>
-          <mi>x</mi>
-          <mi>i</mi>
-          <mn>2</mn>
-        </msubsup>
-        <mo fence="true" form="postfix">)</mo>
-      </mrow>
-      <mi>λ</mi>
-    </msup>
-    <mo>=</mo>
-    <mrow>
-      <mo fence="true" form="prefix">{</mo>
-      <mtable>
-        <mtr>
-          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 0em;">
-            <mn>1</mn>
-          </mtd>
-          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 1em;">
-            <mrow>
-              <mtext>for </mtext>
-              <mrow>
-                <mi>n</mi>
-                <mo>=</mo>
-                <mn>0</mn>
-              </mrow>
-            </mrow>
-          </mtd>
-        </mtr>
-        <mtr>
-          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 0em;">
-            <mrow>
-              <mi>B</mi>
-              <mrow>
-                <mo fence="true" form="prefix">(</mo>
-                <mi>λ</mi>
-                <mo>+</mo>
-                <mn>1</mn>
-                <mo separator="true">,</mo>
-                <mfrac>
-                  <mn>1</mn>
-                  <mn>2</mn>
-                </mfrac>
-                <mo fence="true" form="postfix">)</mo>
-              </mrow>
-            </mrow>
-          </mtd>
-          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 1em;">
-            <mrow>
-              <mtext>for </mtext>
-              <mrow>
-                <mi>n</mi>
-                <mo>=</mo>
-                <mn>1</mn>
-              </mrow>
-            </mrow>
-          </mtd>
-        </mtr>
-        <mtr>
-          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 0em;">
-            <mrow>
-              <mi>|</mi>
-              <msubsup>
-                <mi>G</mi>
-                <mrow>
-                  <mi>n</mi>
-                  <mo>−</mo>
-                  <mn>2</mn>
-                </mrow>
-                <mi>λ</mi>
-              </msubsup>
-              <mi>|</mi>
-              <mo>×</mo>
-              <mi style="color:#FF8000;">τ</mi>
-              <mi>/</mi>
-              <mo form="prefix" stretchy="false">(</mo>
-              <mn>2</mn>
-              <mi>λ</mi>
-              <mo>+</mo>
-              <mi>n</mi>
-              <mo form="postfix" stretchy="false">)</mo>
-            </mrow>
-          </mtd>
-          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 1em;">
-            <mtext>otherwise</mtext>
-          </mtd>
-        </mtr>
-      </mtable>
-      <mo fence="true" form="postfix"></mo>
-    </mrow>
-  </mrow>
-</math>
+$$
 
 Note that the [Beta function
 _B_](https://en.wikipedia.org/wiki/Beta_function), with one argument ½,
@@ -673,22 +452,22 @@ Special cases:
 
 - Volume of the _n_-dimensional unit ball (*λ* = 0):
 
-  ```math
+  $$
   |S_n|
   = \begin{cases}
   1 & \text{if } n = 0\\
   2 & \text{if } n = 1\\
   |S_{n-2}| \times \textcolor{orange}{\tau} / n & \text{otherwise}
   \end{cases}
-  ```
+  $$
 
 - The area of a disk (*λ* = 0, *n* = 2)
 
-  ```math
+  $$
   |S_n(r)|
   = \frac{\textcolor{orange}{\tau}}{2} r^2
   = \textcolor{teal}{\pi} r^2
-  ```
+  $$
 
 - <img src="/images/chebyshev1.svg" align="right" width="30%"/>
 
