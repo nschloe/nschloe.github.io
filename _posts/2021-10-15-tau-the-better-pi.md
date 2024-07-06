@@ -176,10 +176,8 @@ Articles _against_ τ:
 - [Lulzim Gjyrgjialli, _Circle constant is a turn_, 2018](https://www.itisaturn.com/assets/docs/itisaturn.pdf)
 - <a
   href="https://en.wikipedia.org/wiki/Turn_(angle)#Proposals_for_a_single_letter_to_represent_2%CF%80">Wikipedia,<emph>Proposals for a single letter to represent 2π</emph></a>
-
 - [Mathematics Educators StackExchange: _Pi or Tau? How should the circle
   constant be taught?_, 2014](https://matheducators.stackexchange.com/q/530/20645)
-
 - [Theorem of the Day](https://www.theoremoftheday.org/), e.g.,
   [Euler’s Identity](https://www.theoremoftheday.org/GeometryAndTrigonometry/EulerIdentity/TotDEulerIdentity.pdf) or
   [Stirling’s Approximation](https://www.theoremoftheday.org/Binomial/Stirling/TotDStirling.pdf)
@@ -252,13 +250,14 @@ While Archimedes was able to bound the ratio of a circle circumference and
 diameter between 223/71 (≈ 3.1408) and 22/7 (≈ 3.1428), [Jamshid al-Kashi
 ](https://en.wikipedia.org/wiki/Jamshid_al-Kashi) wanted to determine it to a
 much higher precision. In his 1424 _Treatise on the circumference of the
-circle_, it was his goal that
+circle_, it was his goal
 
-> in a circle whose diameter is 600,000 times the diameter of the earth, the
-> difference between it [the calculated circumference] and the true
-> circumference is less than a single hair, which is one sixth of the width
-> of an average barley grain, such that it [the difference] in a [circle]
-> which is smaller than that doesn't matter.
+> to determine the circumference of the circle in the parts where the diameter
+> is known, to the extent that we are certain that in a circle whose diameter
+> is six hundred thousand times the diameter of the Earth, the difference
+> between it (the determined circumference) and the true circumference does not
+> amount to a single hair that is one-sixth the width of an average barleycorn,
+> so that this (difference) in a circle smaller than that is negligible.
 
 This translates to approximately 14 decimal digits.
 
@@ -267,7 +266,7 @@ _Transformation of the value of the circumference into the Indian digits
 under the condition that half of the diameter be one_, he gives the result in
 decimal digits:
 
-> We put the digits from left to right onto a half-verse, to get a verse:
+> We have arranged these figures from left to right into a half-verse to form a verse:
 >
 > > wa baḥǧā ḥahǧi ṣaz a za ṭah ḥawahu
 > >
@@ -275,7 +274,7 @@ decimal digits:
 >
 > 6 2 8 3 1 8 5 3 0 7 1 7 9 5 8 6 5
 >
-> is the circumference for a diameter which is two thereof.
+> is [the] circumference to a diameter, which is twice that.
 
 Further reading:
 
