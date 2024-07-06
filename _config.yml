@@ -1,4 +1,5 @@
 title: techematics
+subtitle: Nico's thoughts on math and programming
 author: Nico Schlömer
 
 # Use up-to-date minima for auto dark/light
@@ -35,7 +36,6 @@ minimal_mistakes_skin: dark
 # /_layouts/post.html
 
 email: nico.schloemer@gmail.com
-description: Nico's thoughts on math and programming
 # social links
 twitter_username: nschloe
 github_username: nschloe
