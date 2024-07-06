@@ -6,22 +6,6 @@ katex: True
 ---
 <!--permalink: /tau/-->
 
-inline: $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-display mode (centered):
-
-$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-
-
-a:
-$1 + 1 = 2$
-
-b:
-$$1 + 1 = 2$$
-
-\[\begin{aligned}
-E = mc^2
-\end{aligned}\]
-
 > Beauty is the first test: there is no permanent place in this world for ugly
 > mathematics.
 >
