@@ -11,7 +11,7 @@ katex: True
 >
 > —[G.H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy)
 
-<img src="/images/hartl-palais.jpg" align="right" width="200px"/>
+<img src="/images/hartl-palais.jpg" align="right" width="300px"/>
 
 In 2001, [Bob Palais](https://www.math.utah.edu/~palais/) wrote the article [_π
 is wrong!_](https://doi.org/10.1007%2FBF03026846), remarking on the fact that
@@ -26,7 +26,7 @@ Tau Manifesto](https://tauday.com/tau-manifesto), and the τ movement was born.
 
 <!--table style="width:220px" align="right">
 <tr>
-<td><img src="https://nschloe.github.io/tau/hartl-palais.jpg" width="200px" align="right"/></td>
+<td><img src="https://nschloe.github.io/tau/hartl-palais.jpg" width="300px" align="right"/></td>
 </tr>
 <tr><td>
 Michael Hartl (left) and Bob Palais (right) on Tau Day 2017 (Source:
@@ -453,7 +453,7 @@ Special cases:
   = \textcolor{teal}{\pi} r^2
   $$
 
-- <img src="/images/chebyshev1.svg" align="right" width="30%"/>
+- <img src="/images/chebyshev1.svg" align="right" width="40%"/>
 
   *n* = 1, *λ* = −1/2
 
@@ -463,7 +463,7 @@ Special cases:
 
   <br clear="right"/>
 
-- <img src="/images/chebyshev2.svg" align="right" width="30%"/>
+- <img src="/images/chebyshev2.svg" align="right" width="40%"/>
 
   *n* = 1, *λ* = 1/2
 
@@ -475,7 +475,7 @@ Special cases:
 
 #### _n_-dimensional generalized Cauchy volume (2*λ* > _n_)
 
-<img src="/images/cauchy.svg" align="right" width="30%"/>
+<img src="/images/cauchy.svg" align="right" width="40%"/>
 
 As appearing in its one-dimensional version in the [Cauchy
 distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) and
@@ -550,7 +550,7 @@ $$
 
 #### _n_-dimensional generalized Laguerre volume
 
-<img src="/images/laguerre.svg" align="right" width="30%"/>
+<img src="/images/laguerre.svg" align="right" width="40%"/>
 
 $$
 \begin{align*}
@@ -568,7 +568,7 @@ $$
 
 #### [The Gaussian integral](https://en.wikipedia.org/wiki/Gaussian_integral)
 
-<img src="/images/gaussian.svg" align="right" width="30%"/>
+<img src="/images/gaussian.svg" align="right" width="40%"/>
 
 Compare
 
@@ -643,7 +643,7 @@ $$
 
 #### [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation)
 
-<img src="/images/stirling.svg" align="right" width="30%"/>
+<img src="/images/stirling.svg" align="right" width="40%"/>
 
 $$
 n! \sim \sqrt{\textcolor{orange}{\tau} n} \left(\frac{n}{e}\right)^n
@@ -653,7 +653,7 @@ $$
 
 #### [Particular values of the Gamma function](https://en.wikipedia.org/wiki/Particular_values_of_the_gamma_function)
 
-<img src="/images/gamma.svg" align="right" width="30%"/>
+<img src="/images/gamma.svg" align="right" width="40%"/>
 
 - Positive half-integers:
 
@@ -732,7 +732,7 @@ $$
 
 #### [Error function](https://en.wikipedia.org/wiki/Error_function)
 
-<img src="/images/erf.svg" align="right" width="30%"/>
+<img src="/images/erf.svg" align="right" width="40%"/>
 
 $$
 \mathrm{erf}(z) = \frac{2}{\sqrt{\textcolor{teal}{\pi}}} \int_0^z \exp(-t^2)\, dt.
@@ -754,7 +754,7 @@ $$
 
 #### The [sinc function](https://en.wikipedia.org/wiki/Sinc_function) and its power integrals
 
-<img src="/images/sinc.svg" align="right" width="30%"/>
+<img src="/images/sinc.svg" align="right" width="40%"/>
 
 $$
 \int_{-\infty}^{\infty} \frac{\sin^n(x)}{x^n}\,dx
@@ -773,7 +773,7 @@ $$
 
 #### The [Borwein integral](https://en.wikipedia.org/wiki/Borwein_integral)
 
-<img src="/images/borwein.svg" align="right" width="30%"/>
+<img src="/images/borwein.svg" align="right" width="40%"/>
 
 $$
 \int_{-\infty}^{\infty} \prod_{k=0}^n \frac{\sin(a_k x)}{a_k x}\,dx
