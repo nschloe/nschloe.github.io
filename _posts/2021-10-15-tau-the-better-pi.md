@@ -524,6 +524,131 @@ GitHub doesn't understand inline and block math in one list item
   \end{cases}
 ```
 
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>|</mi>
+    <msubsup>
+      <mi>G</mi>
+      <mi>n</mi>
+      <mi>λ</mi>
+    </msubsup>
+    <mi>|</mi>
+    <mo>=</mo>
+    <msub>
+      <mo movablelimits="false">∫</mo>
+      <msup>
+        <mi>S</mi>
+        <mi>n</mi>
+      </msup>
+    </msub>
+    <msup>
+      <mrow>
+        <mo fence="true" form="prefix">(</mo>
+        <mn>1</mn>
+        <mo>−</mo>
+        <mrow>
+          <munderover>
+            <mo movablelimits="false">∑</mo>
+            <mrow>
+              <mi>i</mi>
+              <mo>=</mo>
+              <mn>1</mn>
+            </mrow>
+            <mi>n</mi>
+          </munderover>
+        </mrow>
+        <msubsup>
+          <mi>x</mi>
+          <mi>i</mi>
+          <mn>2</mn>
+        </msubsup>
+        <mo fence="true" form="postfix">)</mo>
+      </mrow>
+      <mi>λ</mi>
+    </msup>
+    <mo>=</mo>
+    <mrow>
+      <mo fence="true" form="prefix">{</mo>
+      <mtable>
+        <mtr>
+          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 0em;">
+            <mn>1</mn>
+          </mtd>
+          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 1em;">
+            <mrow>
+              <mtext>for </mtext>
+              <mrow>
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 0em;">
+            <mrow>
+              <mi>B</mi>
+              <mrow>
+                <mo fence="true" form="prefix">(</mo>
+                <mi>λ</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mfrac>
+                  <mn>1</mn>
+                  <mn>2</mn>
+                </mfrac>
+                <mo fence="true" form="postfix">)</mo>
+              </mrow>
+            </mrow>
+          </mtd>
+          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 1em;">
+            <mrow>
+              <mtext>for </mtext>
+              <mrow>
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+              </mrow>
+            </mrow>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 0em;">
+            <mrow>
+              <mi>|</mi>
+              <msubsup>
+                <mi>G</mi>
+                <mrow>
+                  <mi>n</mi>
+                  <mo>−</mo>
+                  <mn>2</mn>
+                </mrow>
+                <mi>λ</mi>
+              </msubsup>
+              <mi>|</mi>
+              <mo>×</mo>
+              <mi style="color:#FF8000;">τ</mi>
+              <mi>/</mi>
+              <mo form="prefix" stretchy="false">(</mo>
+              <mn>2</mn>
+              <mi>λ</mi>
+              <mo>+</mo>
+              <mi>n</mi>
+              <mo form="postfix" stretchy="false">)</mo>
+            </mrow>
+          </mtd>
+          <mtd class="tml-left" style="padding:0.5ex 0em 0.5ex 1em;">
+            <mtext>otherwise</mtext>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo fence="true" form="postfix"></mo>
+    </mrow>
+  </mrow>
+</math>
+
 Note that the [Beta function
 _B_](https://en.wikipedia.org/wiki/Beta_function), with one argument ½,
 includes a factor $`\sqrt{\pi}`$.
