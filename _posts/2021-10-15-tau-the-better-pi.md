@@ -13,6 +13,10 @@ $$
 1 + 1 = 2
 $$
 
+\[\begin{aligned}
+E = mc^2
+\end{aligned}\]
+
 > Beauty is the first test: there is no permanent place in this world for ugly
 > mathematics.
 >
