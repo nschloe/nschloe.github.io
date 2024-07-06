@@ -1,7 +1,7 @@
 ---
 title: "The State of Math in Markdown"
 date: 2023-11-16
-updated: 2024-05-22
+last_modified_at: 2024-05-22
 ---
 
 _TLDR: Markdown + math is hard. GitHub is bad, Gitea better, GitLab best.
