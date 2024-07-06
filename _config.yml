@@ -43,7 +43,7 @@ github_username: nschloe
 
 markdown: kramdown
 kramdown:
-    math-engine: katex
+  math-engine: mathjax
 
 defaults:
   # _posts
