@@ -374,6 +374,103 @@ Inclusion of a constant `tau` was _rejected_ by the following projects:
 \end{split}
 ```
 
+<math display="block" class="tml-display" style="display:block math;">
+  <mtable displaystyle="true" columnalign="right left">
+    <mtr>
+      <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
+        <mrow>
+          <mrow>
+            <mi>sin</mi>
+            <mo>⁡</mo>
+          </mrow>
+          <mo form="prefix" stretchy="false">(</mo>
+          <mi>α</mi>
+          <mo form="postfix" stretchy="false">)</mo>
+        </mrow>
+      </mtd>
+      <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
+        <mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>sin</mi>
+            <mo>⁡</mo>
+          </mrow>
+          <mo form="prefix" stretchy="false">(</mo>
+          <mi>α</mi>
+          <mo>+</mo>
+          <mi style="color:#FF8000;">τ</mi>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mspace width="1em"></mspace>
+          <mi>∀</mi>
+          <mi>α</mi>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
+        <mrow>
+          <mrow>
+            <mspace width="0.1667em"></mspace>
+            <mi>cos</mi>
+            <mo>⁡</mo>
+          </mrow>
+          <mo form="prefix" stretchy="false">(</mo>
+          <mi>α</mi>
+          <mo form="postfix" stretchy="false">)</mo>
+        </mrow>
+      </mtd>
+      <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
+        <mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>cos</mi>
+            <mo>⁡</mo>
+          </mrow>
+          <mo form="prefix" stretchy="false">(</mo>
+          <mi>α</mi>
+          <mo>+</mo>
+          <mi style="color:#FF8000;">τ</mi>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mspace width="1em"></mspace>
+          <mi>∀</mi>
+          <mi>α</mi>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
+        <mrow>
+          <mrow>
+            <mspace width="0.1667em"></mspace>
+            <mi>tan</mi>
+            <mo>⁡</mo>
+          </mrow>
+          <mo form="prefix" stretchy="false">(</mo>
+          <mi>α</mi>
+          <mo form="postfix" stretchy="false">)</mo>
+        </mrow>
+      </mtd>
+      <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
+        <mrow>
+          <mo>=</mo>
+          <mrow>
+            <mi>tan</mi>
+            <mo>⁡</mo>
+          </mrow>
+          <mo form="prefix" stretchy="false">(</mo>
+          <mi>α</mi>
+          <mo>+</mo>
+          <mi style="color:#FF8000;">τ</mi>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mspace width="1em"></mspace>
+          <mi>∀</mi>
+          <mi>α</mi>
+        </mrow>
+      </mtd>
+    </mtr>
+  </mtable>
+</math>
+
 With τ being a full revolution, the following identities are very easy to
 grasp (for integers _n_). Remember the sine is the projection of the angle
 onto the _y_-axis, the cosine is the projection onto the _x_-axis.
