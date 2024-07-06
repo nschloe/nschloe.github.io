@@ -4,6 +4,31 @@ article.page {
     width: 100%;
 }
 
+/* https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-571208318 */
+.wide2 {
+  .page {
+    float: left;
+    width: 100%;
+    @include breakpoint($large) {
+      padding-left: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-left: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-left: 0;
+    }
+  }
+}
+
 /* Copyright comment */
 @import "minimal-mistakes/copyright";
 
