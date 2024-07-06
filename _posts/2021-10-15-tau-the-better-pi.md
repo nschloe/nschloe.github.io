@@ -317,7 +317,7 @@ The section _Adoption of the symbol π_ of the excellent Wikipedia article
 > _Clavis Mathematicae_. Barrow likewise used
 > "<math><mfrac><mi>π</mi><mi>δ</mi></mfrac></math>" to
 > represent the constant 3.14..., **while Gregory instead used
-> "$`\frac{\pi}{\rho}`$" to represent 6.28...**
+> "$\frac{\pi}{\rho}$" to represent 6.28...**
 >
 > The earliest known use of the Greek letter π alone to represent the ratio
 > of a circle's circumference to its diameter was by Welsh mathematician
@@ -446,7 +446,7 @@ $$
 
 Note that the [Beta function
 _B_](https://en.wikipedia.org/wiki/Beta_function), with one argument ½,
-includes a factor $`\sqrt{\pi}`$.
+includes a factor $\sqrt{\pi}$.
 
 Special cases:
 
@@ -473,9 +473,9 @@ Special cases:
 
   *n* = 1, *λ* = −1/2
 
-  ```math
+  $$
   \int_{-1}^1 \frac{1}{\sqrt{1-x^2}} = \textcolor{teal}{\pi}
-  ```
+  $$
 
   <br clear="right"/>
 
@@ -483,9 +483,9 @@ Special cases:
 
   *n* = 1, *λ* = 1/2
 
-  ```math
+  $$
   \int_{-1}^1 \sqrt{1-x^2} = \frac{\textcolor{teal}{\pi}}{2}
-  ```
+  $$
 
   <br clear="right"/>
 
@@ -498,7 +498,7 @@ distribution](https://en.wikipedia.org/wiki/Cauchy_distribution) and
 [Student's _t_
 distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution).
 
-```math
+$$
 \begin{align*}
   |Y_n^{\lambda}|
     &= \int_{\mathbb{R}^n} \left(1 + \sum_{i=1}^n x_i^2\right)^{-\lambda}\\
@@ -508,31 +508,31 @@ distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution).
       |Y_{n-2}^{\lambda}|\times \textcolor{orange}{\tau} / (2\lambda - n) & \text{otherwise}
     \end{cases}
 \end{align*}
-```
+$$
 
 Note again that the [Beta function
 _B_](https://en.wikipedia.org/wiki/Beta_function), with one argument
-½, includes a factor $`\sqrt{\pi}`$. Specifically, for _n_ = 1
+½, includes a factor $\sqrt{\pi}$. Specifically, for _n_ = 1
 and _λ_ = 1,
 
-```math
+$$
 |Y_1^1| = B(\tfrac{1}{2}, \tfrac{1}{2}) = \textcolor{teal}{\pi}.
-```
+$$
 
 <br clear="right"/>
 
 <!--
 - Consider the integral
 
-  ```math
+  $$
   \int_0^{\infty} \frac{1}{1 + x^\alpha} = \frac{\textcolor{teal}{\pi} / \alpha}{\sin(\textcolor{teal}{\pi}/\alpha)}
-  ```
+  $$
 
   for all _α_ > 1, specifically
 
-  ```math
+  $$
   \int_{-\infty}^{\infty} \frac{1}{1 + x^2} = \textcolor{teal}{\pi}.
-  ```
+  $$
 
   This is relevant in the [Cauchy
   distribution](https://en.wikipedia.org/wiki/Cauchy_distribution).
@@ -540,25 +540,25 @@ and _λ_ = 1,
 - Consider the normalization of [Student's
   _t_-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution),
 
-  ```math
+  $$
   V(\gamma) = \int_{-\infty}^\infty \frac{1}{\sqrt{1 + x^2/\gamma}^{\gamma+1}}
   = \frac{\sqrt{\textcolor{teal}{\pi}\gamma} \Gamma(\gamma/2)}{\Gamma((\gamma+1) / 2)}
-  ```
+  $$
 
   for all _γ_>0. specifically,
 
-  ```math
+  $$
   \begin{align*}
   V(1) &= \textcolor{teal}{\pi},\\
   V(2) &= 2\sqrt{2}.
   \end{align*}
-  ```
+  $$
 
   Interestingly, values for larger _γ_ can be determined via the recurrence
 
-  ```math
+  $$
   V(\gamma) = \frac{\sqrt{\gamma(\gamma-2)}}{\gamma-1} \times V(\gamma - 2)
-  ```
+  $$
 
   which is perhaps a bit more revealing than the closed-form expression with
   the Gamma function evaluations.
@@ -568,7 +568,7 @@ and _λ_ = 1,
 
 <img src="/images/laguerre.svg" align="right" width="30%"/>
 
-```math
+$$
 \begin{align*}
   V_n
   &= \int_{\mathbb{R}^n} \left(\sqrt{x_1^2+\cdots+x_n^2}\right)^\alpha \exp\left(-\sqrt{x_1^2+\dots+x_n^2}\right)\\
@@ -578,7 +578,7 @@ and _λ_ = 1,
     V_{n-2} \times \textcolor{orange}{\tau} (n+\alpha-1) (n+\alpha-2) / (n-2) & \text{otherwise}
   \end{cases}
 \end{align*}
-```
+$$
 
 <br clear="right"/>
 
@@ -588,37 +588,37 @@ and _λ_ = 1,
 
 Compare
 
-```math
+$$
 \int_{-\infty}^{\infty} \exp(-x^2)\,dx = \sqrt{\textcolor{teal}{\pi}},\qquad
 \int_{-\infty}^{\infty} \exp(-x^2 / 2)\,dx = \sqrt{\textcolor{orange}{\tau}}
-```
+$$
 
 One could argue that the latter is more "canonical" since it has variance and
 standard deviation of 1, not ½ and √½. Compare with the [Normal
 distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 
-```math
+$$
 \int_{-\infty}^{\infty} \frac{1}{\sigma \sqrt{\textcolor{orange}{\tau}}} \exp\left(-\frac{(x-\mu)^2}{2 \sigma^2}\right) \,dx= 1
-```
+$$
 
 <br clear="right"/>
 
 #### [Cauchy's integral formula](https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula)
 
-Let $`U`$ be an open subset of the complex plane $`\mathbb{C}`$, and suppose the closed
-disk $`D`$ defined as
+Let $U$ be an open subset of the complex plane $\mathbb{C}$, and suppose the closed
+disk $D$ defined as
 
-```math
+$$
 D = \bigl\{z:|z-z_{0}|\leq r\bigr\}
-```
+$$
 
 is completely contained in $`U`$. Let $`f:U\to\mathbb{C}`$ be a holomorphic function,
 and let $`\gamma`$ be the circle, oriented counterclockwise, forming the boundary
 of $`D`$. Then for every $`a`$ in the interior of $`D`$,
 
-```math
+$$
 f(a) = \frac{1}{\textcolor{orange}{\tau} i} \oint_{\gamma}\frac{f(z)}{z-a} dz.
-```
+$$
 
 #### [Cauchy's residue theorem](https://en.wikipedia.org/wiki/Residue_theorem)
 
@@ -631,39 +631,39 @@ of $`f`$ around $`\gamma`$ is equal to $`\textcolor{orange}{\tau} i`$ times
 the sum of residues of $`f`$ at the points, each counted as many times as
 $`\gamma`$ winds around the point:
 
-```math
+$$
 \oint_\gamma f(z)\,\mathrm{d}z = \textcolor{orange}{\tau} i \sum_{k=1}^n I(\gamma,a_k) \mathrm{Res}(f,a_k)
-```
+$$
 
 #### [Fourier transform](https://en.wikipedia.org/wiki/Fourier_transform)
 
-```math
+$$
 \begin{align*}
 \hat{f}(\xi) &= \int_{-\infty}^{\infty} f(x) \exp(-i\textcolor{orange}{\tau} x\xi)\,dx,\\
 f(x)         &= \int_{-\infty}^{\infty} \hat{f}(\xi) \exp(i\textcolor{orange}{\tau} x\xi)\,d\xi
 \end{align*}
-```
+$$
 
 #### [*n*th roots of unity](https://en.wikipedia.org/wiki/Root_of_unity)
 
-```math
+$$
 z^n = 1 \quad\Rightarrow\quad z = \exp(i\textcolor{orange}{\tau} k / n) \quad\forall k=0,\dots,n-1
-```
+$$
 
 #### [Euler's identity](https://en.wikipedia.org/wiki/Euler%27s_identity)
 
-```math
+$$
 \exp(i \textcolor{teal}{\pi}) + 1  = 0,\quad
 \exp(i \textcolor{orange}{\tau}) - 1 = 0
-```
+$$
 
 #### [Stirling's approximation](https://en.wikipedia.org/wiki/Stirling%27s_approximation)
 
 <img src="/images/stirling.svg" align="right" width="30%"/>
 
-```math
+$$
 n! \sim \sqrt{\textcolor{orange}{\tau} n} \left(\frac{n}{e}\right)^n
-```
+$$
 
 <br clear="right"/>
 
@@ -678,43 +678,44 @@ n! \sim \sqrt{\textcolor{orange}{\tau} n} \left(\frac{n}{e}\right)^n
   Γ(½) = √π, so all half-integer values of Γ contain that factor (recall
   Γ(_z_+1) = _z_ Γ(_z_)):
 
-  ```math
+  $$
   \Gamma(n + \tfrac{1}{2})
   = \sqrt{\textcolor{teal}{\pi}} \prod_{i=0}^{n-1} \left(i + \frac{1}{2}\right)
-  ```
+  $$
 
   for _n_ ∈ ℕ. Equivalently:
 
-  ```math
+  $$
   \Gamma(n + \tfrac{1}{2})
   = \sqrt{\textcolor{teal}{\pi}} \frac{(2n-1)!!}{2^n}
-  ```
+  $$
 
   or (for odd _n_ > 0)
 
-  ```math
+  $$
   \Gamma(\tfrac{n}{2})
   = \sqrt{\textcolor{teal}{\pi}} \frac{(n-2)!!}{2^{(n-1)/2}}.
-  ```
+  $$
 
 - [The multiplication theorem](https://en.wikipedia.org/wiki/Multiplication_theorem):
 
-  ```math
+  $$
   \prod_{k=0}^{m-1}\Gamma\left(z+\frac{k}{m}\right) = \textcolor{orange}{\tau}^\frac{m-1}{2} m^{\frac{1}{2}-mz} \Gamma(mz),
-  ```
+  $$
 
   and its special case (_m_ = 2), the [Legendre duplication
   formula](https://en.wikipedia.org/wiki/Multiplication_theorem#Gamma_function%E2%80%93Legendre_formula)
 
-  ```math
+  $$
   \Gamma(z)\Gamma(z+\tfrac{1}{2}) = 2^{1-2z}\sqrt{\textcolor{teal}{\pi}}\Gamma(2z).
-  ```
+  $$
 
 - [Euler’s reflection formula](https://en.wikipedia.org/wiki/Reflection_formula):
-  ```math
+
+  $$
   \Gamma(z)\Gamma(1-z)
   = \frac{\textcolor{teal}{\pi}}{\sin(\textcolor{teal}{\pi} z)}
-  ```
+  $$
     <!-- = \frac{\textcolor{orange}{tau}}{crd(\textcolor{orange}{\tau} z)} -->
   <br clear="right"/>
 
@@ -722,48 +723,48 @@ n! \sim \sqrt{\textcolor{orange}{\tau} n} \left(\frac{n}{e}\right)^n
 
 [Values at even integers:](https://en.wikipedia.org/wiki/Particular_values_of_the_Riemann_zeta_function)
 
-```math
+$$
 \zeta(2n) = \sum_{k=1}^{\infty} \frac{1}{k^{2n}} = (-1)^{n+1} \frac{\textcolor{orange}{\tau}^{2n} B_{2n}}{2 (2n)!},
-```
+$$
 
-for $`n\in\mathbb{N}`$, e.g.,
+for $n\in\mathbb{N}$, e.g.,
 
-```math
+$$
 \zeta(2) = \sum_{k=1}^{\infty} \frac{1}{k^2} = \frac{\textcolor{teal}{\pi}^2}{6} = \frac{\textcolor{orange}{\tau}^2}{24}
-```
+$$
 
 A reflection formula:
 
-```math
+$$
 \frac{\zeta(1-z)}{\zeta(z)} = 2 \frac{\Gamma(z)}{\textcolor{orange}{\tau}^z} \cos\left(\frac{\textcolor{orange}{\tau} z}{4}\right)
-```
+$$
 
 #### [Weyl law](https://en.wikipedia.org/wiki/Weyl_law)
 
-```math
+$$
 \lim_{\lambda\to\infty} \frac{N(\lambda)}{\lambda^{d/2}}
 = \textcolor{orange}{\tau}^{-d}\omega_d \mathrm{vol}(\Omega)
-```
+$$
 
 #### [Error function](https://en.wikipedia.org/wiki/Error_function)
 
 <img src="/images/erf.svg" align="right" width="30%"/>
 
-```math
+$$
 \mathrm{erf}(z) = \frac{2}{\sqrt{\textcolor{teal}{\pi}}} \int_0^z \exp(-t^2)\, dt.
-```
+$$
 
 In statistics, for non-negative values of _x_, the error function has the
 following interpretation: For a random variable _Y_ that is normally
-distributed with mean 0 and standard deviation $`1/\sqrt{2}`$, erf(_x_) is the
+distributed with mean 0 and standard deviation $1/\sqrt{2}$, erf(_x_) is the
 probability that _Y_ falls in the range [−<i>x</i>, _x_]. The same property
 with standard deviation 1 is fulfilled by
 
-```math
+$$
 \mathrm{erf}_1(z)
 = \mathrm{erf}(z / \sqrt{2})
 = \frac{2}{\sqrt{\textcolor{orange}{\tau}}} \int_0^z \exp(-t^2 / 2)\, dt.
-```
+$$
 
 <br clear="right"/>
 
@@ -771,18 +772,18 @@ with standard deviation 1 is fulfilled by
 
 <img src="/images/sinc.svg" align="right" width="30%"/>
 
-```math
+$$
 \int_{-\infty}^{\infty} \frac{\sin^n(x)}{x^n}\,dx
 = \frac{n \textcolor{orange}{\tau}}{2^n}\sum_{k=0}^{\lfloor n/2 \rfloor} \frac{(-1)^k (n-2k)^{n-1}}{k!(n-k)!}
-```
+$$
 
-for all $`n\in\mathbb{N}`$. Specifically,
+for all $n\in\mathbb{N}$. Specifically,
 
-```math
+$$
 \int_{-\infty}^{\infty} \frac{\sin(x)}{x}\,dx
 = \int_{-\infty}^{\infty} \frac{\sin^2(x)}{x^2}\,dx
 = \frac{\textcolor{orange}{\tau}}{2} = \textcolor{teal}{\pi}.
-```
+$$
 
 <br clear="right"/>
 
@@ -790,72 +791,91 @@ for all $`n\in\mathbb{N}`$. Specifically,
 
 <img src="/images/borwein.svg" align="right" width="30%"/>
 
-```math
+$$
 \int_{-\infty}^{\infty} \prod_{k=0}^n \frac{\sin(a_k x)}{a_k x}\,dx
 = \textcolor{teal}{\pi} C_n
-```
+$$
 
-with some rational $`C_n`$ (see [here](https://en.wikipedia.org/wiki/Borwein_integral#General_formula)).
+with some rational $C_n$ (see [here](https://en.wikipedia.org/wiki/Borwein_integral#General_formula)).
 
 <br clear="right"/>
 
 #### Physics
 
 - Cosmological constant:
-  ```math
+
+  $$
   \Lambda = \frac{4\textcolor{orange}{\tau} G}{3c^2} \rho
-  ```
+  $$
+
 - Heisenberg's uncertainty principle:
-  ```math
+
+  $$
   \Delta x \Delta p \ge \frac{h}{2 \textcolor{orange}{\tau}}
-  ```
+  $$
+
 - Einstein's field equation of general relativity:
-  ```math
+
+  $$
   R_{\mu\nu} = \frac{4\textcolor{orange}{\tau} G}{c^4} T_{\mu\nu}
-  ```
+  $$
+
 - Coulomb's law for the electric force in vacuum:
 
-  ```math
+  $$
   F = \frac{|q_1 q_2|}{2\textcolor{orange}{\tau} \varepsilon_0 r^2}
-  ```
+  $$
 
 - Magnetic permeability of free space:
-  ```math
+
+  $$
   \mu_0 \approx 2\textcolor{orange}{\tau} \times 10^{-7} N/A^2
-  ```
+  $$
+
 - Approximate period of a simple pendulum with small amplitude:
-  ```math
+
+  $$
   T \approx \textcolor{orange}{\tau} \sqrt{\frac{L}{g}}
-  ```
+  $$
+
 - Exact period of a simple pendulum with amplitude θ<sub>0</sub>:
 
-  ```math
+  $$
   T = \frac{\textcolor{orange}{\tau}}{\mathrm{agm}(1, \cos(\theta_0/2))} \sqrt{\frac{L}{g}}
-  ```
+  $$
 
   (agm is the [arithmetic-geometric
   mean](https://en.wikipedia.org/wiki/Arithmetic%E2%80%93geometric_mean).)
 
 - Kepler's third law of planetary motion:
-  ```math
+
+  $$
   \frac{R^3}{T^2} = \frac{GM}{\textcolor{orange}{\tau}^2}
-  ```
+  $$
+
 - The buckling formula:
-  ```math
+
+  $$
   F = \frac{\textcolor{orange}{\tau}^2 EI}{4L^2}
-  ```
+  $$
+
 - Reduced Planck constant:
-  ```math
+
+  $$
   \hbar = \frac{h}{\textcolor{orange}{\tau}}
-  ```
+  $$
+
 - Reactance of an inductor:
-  ```math
+
+  $$
   \textcolor{orange}{\tau} fL
-  ```
+  $$
+
 - Susceptance of a capacitor:
-  ```math
+
+  $$
   \textcolor{orange}{\tau} fC
-  ```
+  $$
 
 ### Quotes
 
