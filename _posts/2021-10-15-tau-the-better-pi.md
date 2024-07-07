@@ -12,7 +12,7 @@ katex: True
 > —[G.H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy)
 
 <figure align="right" width="40%">
-  <img src="/images/hartl-palais.jpg" align="right" width="40%"/>
+  <img src="/images/hartl-palais.jpg" align="right" width="300px"/>
   <figcaption>Hartl and Palais.</figcaption>
 </figure>
 
