@@ -11,7 +11,10 @@ katex: True
 >
 > —[G.H. Hardy](https://en.wikipedia.org/wiki/G._H._Hardy)
 
-<img src="/images/hartl-palais.jpg" align="right" width="300px"/>
+<figure align="right">
+  <img src="/images/hartl-palais.jpg" align="right" width="40%"/>
+  <figcaption>Hartl and Palais.</figcaption>
+</figure>
 
 In 2001, [Bob Palais](https://www.math.utah.edu/~palais/) wrote the article [_π
 is wrong!_](https://doi.org/10.1007%2FBF03026846), remarking on the fact that
