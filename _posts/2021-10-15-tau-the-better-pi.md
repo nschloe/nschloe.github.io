@@ -340,7 +340,7 @@ The section _Adoption of the symbol π_ of the excellent Wikipedia article
 - [Nim, since 0.14.0 (2016)](https://github.com/nim-lang/Nim/pull/3976) `TAU`
 - [Python, since 3.6 (2016)](https://www.python.org/dev/peps/pep-0628/) `math.tau`
 - [Unreal Engine, since 4.12 (2016)](https://docs.unrealengine.com/5.3/en-US/BlueprintAPI/Math/Trig/GetTAU/) `TAU`
-- [CSS (2018)](https://www.w3.org/TR/2018/WD-css-values-4-20180814/#angles) `turn`
+- [CSS (2018)](https://www.w3.org/TR/css-values-4/#angles) `turn`
 - [OpenFOAM](https://www.openfoam.com/documentation/guides/latest/api/namespaceFoam_1_1constant_1_1mathematical.html#ad9e5ddf5862462196c9159f5d761e93a) `twoPi`
 - [Extreme Numerics.NET](https://numerics.net/documentation/reference/extreme.mathematics.constants.twopi) `Constants.TwoPi`
 - [V, since 0.1.7 (2019)](https://github.com/vlang/v/pull/703) `tau`
