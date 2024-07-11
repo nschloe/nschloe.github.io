@@ -591,7 +591,7 @@ $$
 Its moments are
 
 $$
-M_k = \int_{-\infty}^{\infty} x^k \frac{1}{\sqrt{\textcolor{orange}{\tau}}\sigma} \exp(-x^2 / 2\sigma^2)\,dx =
+M_k = \int_{-\infty}^{\infty} x^k \frac{1}{\sigma \sqrt{\textcolor{orange}{\tau}}} \exp\left(-\frac{x^2}{2\sigma^2}\right)\,dx =
 \begin{cases}
 1 & \text{if $k=0$}\\
 0 & \text{if $k=1$}\\
