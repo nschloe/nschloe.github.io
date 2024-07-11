@@ -365,6 +365,7 @@ Inclusion of a constant `tau` was _rejected_ by the following projects:
 - [NumPy (2017)](https://github.com/numpy/numpy/pull/9696)
 - [Go (2020)](https://github.com/golang/go/issues/40663)
 - [Swift (2020)](https://github.com/apple/swift-numerics/issues/89)
+- [Kotlin (2020)](https://discuss.kotlinlang.org/t/adding-kotlin-math-tau/17967/8)
 - [Luau (2022)](https://github.com/luau-lang/luau/issues/278)
 - [C++ (2022)](https://lists.isocpp.org/std-proposals/2022/03/3646.php)
 
@@ -583,7 +584,7 @@ $$
 $$
 
 One could argue that the latter is more "canonical" since it has variance and
-standard deviation of 1, not ½ and √½. Compare with the [Normal
+standard deviation of 1, not ½ and √½. Compare with the [normal
 distribution](https://en.wikipedia.org/wiki/Normal_distribution)
 
 $$
