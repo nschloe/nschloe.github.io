@@ -434,9 +434,7 @@ $$
   \end{cases}
 $$
 
-Note that the [Beta function
-_B_](https://en.wikipedia.org/wiki/Beta_function), with one argument ½,
-includes a factor $\sqrt{\pi}$.
+with the [Beta function _B_](https://en.wikipedia.org/wiki/Beta_function).
 
 Special cases:
 
