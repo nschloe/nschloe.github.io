@@ -570,11 +570,9 @@ $$
 
 <br clear="right"/>
 
-#### [The Gaussian integral](https://en.wikipedia.org/wiki/Gaussian_integral)
+#### [The normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) and [the Gaussian integral](https://en.wikipedia.org/wiki/Gaussian_integral)
 
 <img src="/images/gaussian.svg" align="right" width="40%"/>
-
-Compare
 
 $$
 \int_{-\infty}^{\infty} \exp(-x^2)\,dx = \sqrt{\textcolor{teal}{\pi}},\qquad
@@ -582,11 +580,23 @@ $$
 $$
 
 One could argue that the latter is more "canonical" since it has variance and
-standard deviation of 1, not ½ and √½. Compare with the [normal
-distribution](https://en.wikipedia.org/wiki/Normal_distribution)
+standard deviation of 1, not $1/2$ and $\sqrt{1/2}$. The [normal
+distribution](https://en.wikipedia.org/wiki/Normal_distribution) _does_ feature
+the factor $1/2$:
 
 $$
 \int_{-\infty}^{\infty} \frac{1}{\sigma \sqrt{\textcolor{orange}{\tau}}} \exp\left(-\frac{(x-\mu)^2}{2 \sigma^2}\right) \,dx= 1
+$$
+
+Its moments are
+
+$$
+M_k = \int_{-\infty}^{\infty} x^k \frac{1}{\sqrt\textcolor{orange}{\tau}\sigma} \exp(-x^2 / 2\sigma^2)\,dx =
+\begin{cases}
+1 & \text{if $k=0$}\\
+0 & \text{if $k=1$}\\
+M_{k-2} \times (k - 1) \sigma^2 & \text{otherwise.}
+\end{cases}
 $$
 
 <br clear="right"/>
