@@ -364,6 +364,7 @@ Inclusion of a constant `tau` was _rejected_ by the following projects:
 - [Ruby (2016)](https://bugs.ruby-lang.org/issues/4897)
 - [NumPy (2017)](https://github.com/numpy/numpy/pull/9696)
 - [Go (2020)](https://github.com/golang/go/issues/40663)
+- [Swift (2020)](https://github.com/apple/swift-numerics/issues/89)
 - [Luau (2022)](https://github.com/luau-lang/luau/issues/278)
 - [C++ (2022)](https://lists.isocpp.org/std-proposals/2022/03/3646.php)
 
@@ -591,6 +592,28 @@ $$
 
 <br clear="right"/>
 
+#### [Error function](https://en.wikipedia.org/wiki/Error_function)
+
+<img src="/images/erf.svg" align="right" width="40%"/>
+
+$$
+\mathrm{erf}(z) = \frac{2}{\sqrt{\textcolor{teal}{\pi}}} \int_0^z \exp(-t^2)\, dt.
+$$
+
+In statistics, for non-negative values of _x_, the error function has the
+following interpretation: For a random variable _Y_ that is normally
+distributed with mean 0 and standard deviation $1/\sqrt{2}$, erf(_x_) is the
+probability that _Y_ falls in the range [−<i>x</i>, _x_]. The same property
+with standard deviation 1 is fulfilled by
+
+$$
+\mathrm{erf}_1(z)
+= \mathrm{erf}(z / \sqrt{2})
+= \frac{2}{\sqrt{\textcolor{orange}{\tau}}} \int_0^z \exp(-t^2 / 2)\, dt.
+$$
+
+<br clear="right"/>
+
 #### [Cauchy's integral formula](https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula)
 
 Let $U$ be an open subset of the complex plane $\mathbb{C}$, and suppose the closed
@@ -733,28 +756,6 @@ $$
 \lim_{\lambda\to\infty} \frac{N(\lambda)}{\lambda^{d/2}}
 = \textcolor{orange}{\tau}^{-d}\omega_d \mathrm{vol}(\Omega)
 $$
-
-#### [Error function](https://en.wikipedia.org/wiki/Error_function)
-
-<img src="/images/erf.svg" align="right" width="40%"/>
-
-$$
-\mathrm{erf}(z) = \frac{2}{\sqrt{\textcolor{teal}{\pi}}} \int_0^z \exp(-t^2)\, dt.
-$$
-
-In statistics, for non-negative values of _x_, the error function has the
-following interpretation: For a random variable _Y_ that is normally
-distributed with mean 0 and standard deviation $1/\sqrt{2}$, erf(_x_) is the
-probability that _Y_ falls in the range [−<i>x</i>, _x_]. The same property
-with standard deviation 1 is fulfilled by
-
-$$
-\mathrm{erf}_1(z)
-= \mathrm{erf}(z / \sqrt{2})
-= \frac{2}{\sqrt{\textcolor{orange}{\tau}}} \int_0^z \exp(-t^2 / 2)\, dt.
-$$
-
-<br clear="right"/>
 
 #### The [sinc function](https://en.wikipedia.org/wiki/Sinc_function) and its power integrals
 
