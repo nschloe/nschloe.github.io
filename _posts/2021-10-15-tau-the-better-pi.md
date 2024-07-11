@@ -352,7 +352,7 @@ The section _Adoption of the symbol π_ of the excellent Wikipedia article
 - [Boost, since 1.77.0 (2021)](https://github.com/boostorg/math/pull/566) `tau`
 - [Godot game engine/GDScript, since 3.3.3 (2021)](https://github.com/godotengine/godot/pull/48837) `TAU`
 - [Crystal, since 0.36.0 (2021)](https://github.com/crystal-lang/crystal/pull/10179) `Math::TAU`
-- [Java, OpenJDK, since 19 (2022)](https://github.com/openjdk/jdk/pull/7813) `Math.TAU`
+- [Java, OpenJDK, since 19 (2022)](https://github.com/openjdk/jdk/commit/05a83e03ca35b4885b48bb0e7d188baf8f7d9d7f) `Math.TAU`
 - [JSCAD, since 2.6.3 (2022)](https://github.com/jscad/OpenJSCAD.org/pull/1128) `TAU`
 - [Liberty Eiffel, upcoming (202x)](<https://wiki.liberty-eiffel.org/index.php/Versions_history#Curtiss_(2022.dev,_to_be_named_after_Glenn_Curtiss)>) `Tau`
 
