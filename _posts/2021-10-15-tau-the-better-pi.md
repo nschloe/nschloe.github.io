@@ -4,6 +4,7 @@ date: 2021-10-15
 last_modified_at: 2024-07-05
 katex: True
 ---
+
 <!--permalink: /tau/-->
 
 > Beauty is the first test: there is no permanent place in this world for ugly
@@ -331,43 +332,34 @@ The section _Adoption of the symbol π_ of the excellent Wikipedia article
 > rapidly, and the practice was universally adopted thereafter in the Western
 > world, **though the definition still varied between 3.14... and 6.28... as
 > late as 1761.**
-> <br clear="right"/>
+
+<br clear="right"/>
 
 ### In programming
 
-- [Processing, since 2.0 (2013)](https://processing.org/reference/TAU.html) `TAU`
-- [Raku (aka Perl 6), since 2015](https://docs.raku.org/language/terms#term_tau) `tau`
-- [Nim, since 0.14.0 (2016)](https://github.com/nim-lang/Nim/pull/3976) `TAU`
-- [Python, since 3.6 (2016)](https://www.python.org/dev/peps/pep-0628/) `math.tau`
-- [Unreal Engine, since 4.12 (2016)](https://docs.unrealengine.com/5.3/en-US/BlueprintAPI/Math/Trig/GetTAU/) `TAU`
-- [CSS (2018)](https://www.w3.org/TR/css-values-4/#angles) `turn`
-- [OpenFOAM](https://www.openfoam.com/documentation/guides/latest/api/namespaceFoam_1_1constant_1_1mathematical.html#ad9e5ddf5862462196c9159f5d761e93a) `twoPi`
-- [Extreme Numerics.NET](https://numerics.net/documentation/reference/extreme.mathematics.constants.twopi) `Constants.TwoPi`
-- [V, since 0.1.7 (2019)](https://github.com/vlang/v/pull/703) `tau`
-- [Zig, since 0.6.0 (2019)](https://github.com/ziglang/zig/pull/3716) `tau`
-- [Manim, since 0.1.0 (2020)](https://github.com/ManimCommunity/manim/commit/42b11d284c26d25a27db1c41c61f13234f571176) `TAU`
-- [Rust, since 1.47 (2020)](https://doc.rust-lang.org/std/f64/consts/constant.TAU.html) `std::f64::consts::TAU`
-- [.NET, C#, since 5.0 (2020)](https://github.com/dotnet/runtime/pull/37517) `Tau`
-  <!--https://learn.microsoft.com/en-us/dotnet/api/system.math.tau?view=net-7.0 -->
-- [Boost, since 1.77.0 (2021)](https://github.com/boostorg/math/pull/566) `tau`
-- [Godot game engine/GDScript, since 3.3.3 (2021)](https://github.com/godotengine/godot/pull/48837) `TAU`
-- [Crystal, since 0.36.0 (2021)](https://github.com/crystal-lang/crystal/pull/10179) `Math::TAU`
-- [Java, OpenJDK, since 19 (2022)](https://github.com/openjdk/jdk/commit/05a83e03ca35b4885b48bb0e7d188baf8f7d9d7f) `Math.TAU`
-- [JSCAD, since 2.6.3 (2022)](https://github.com/jscad/OpenJSCAD.org/pull/1128) `TAU`
-- [Liberty Eiffel, upcoming (202x)](<https://wiki.liberty-eiffel.org/index.php/Versions_history#Curtiss_(2022.dev,_to_be_named_after_Glenn_Curtiss)>) `Tau`
+<!--https://learn.microsoft.com/en-us/dotnet/api/system.math.tau?view=net-7.0 -->
 
-Inclusion of a constant `tau` was _rejected_ by the following projects:
-
-- [Dart (2011)](https://github.com/dart-lang/sdk/issues/14)
-- [Julia (2013)](https://github.com/JuliaLang/julia/pull/4864)
-- [JavaScript (2014)](https://esdiscuss.org/topic/math-tau)
-- [Ruby (2016)](https://bugs.ruby-lang.org/issues/4897)
-- [NumPy (2017)](https://github.com/numpy/numpy/pull/9696)
-- [Go (2020)](https://github.com/golang/go/issues/40663)
-- [Swift (2020)](https://github.com/apple/swift-numerics/issues/89)
-- [Kotlin (2020)](https://discuss.kotlinlang.org/t/adding-kotlin-math-tau/17967/8)
-- [Luau (2022)](https://github.com/luau-lang/luau/issues/278)
-- [C++ (2022)](https://lists.isocpp.org/std-proposals/2022/03/3646.php)
+| Accepted | Rejected |
+| ======== | ======== |
+| [Processing, since 2.0 (2013)](https://processing.org/reference/TAU.html) `TAU` |[Dart (2011)](https://github.com/dart-lang/sdk/issues/14) |
+| [Raku (aka Perl 6), since 2015](https://docs.raku.org/language/terms#term_tau) `tau` |[Julia (2013)](https://github.com/JuliaLang/julia/pull/4864) |
+| [Nim, since 0.14.0 (2016)](https://github.com/nim-lang/Nim/pull/3976) `TAU`|[JavaScript (2014)](https://esdiscuss.org/topic/math-tau) |
+| [Python, since 3.6 (2016)](https://www.python.org/dev/peps/pep-0628/) `math.tau` |[Ruby (2016)](https://bugs.ruby-lang.org/issues/4897) |
+| [Unreal Engine, since 4.12 (2016)](https://docs.unrealengine.com/5.3/en-US/BlueprintAPI/Math/Trig/GetTAU/) `TAU` |[NumPy (2017)](https://github.com/numpy/numpy/pull/9696) |
+| [CSS (2018)](https://www.w3.org/TR/css-values-4/#angles) `turn`| [Go (2020)](https://github.com/golang/go/issues/40663)|
+| [OpenFOAM](https://www.openfoam.com/documentation/guides/latest/api/namespaceFoam_1_1constant_1_1mathematical.html#ad9e5ddf5862462196c9159f5d761e93a) `twoPi`| [Swift (2020)](https://github.com/apple/swift-numerics/issues/89)|
+| [Extreme Numerics.NET](https://numerics.net/documentation/reference/extreme.mathematics.constants.twopi) `Constants.TwoPi`| [Kotlin (2020)](https://discuss.kotlinlang.org/t/adding-kotlin-math-tau/17967/8)|
+| [V, since 0.1.7 (2019)](https://github.com/vlang/v/pull/703) `tau`| [Luau (2022)](https://github.com/luau-lang/luau/issues/278)|
+| [Zig, since 0.6.0 (2019)](https://github.com/ziglang/zig/pull/3716) `tau` | [C++ (2022)](https://lists.isocpp.org/std-proposals/2022/03/3646.php)|
+| [Manim, since 0.1.0 (2020)](https://github.com/ManimCommunity/manim/commit/42b11d284c26d25a27db1c41c61f13234f571176) `TAU`| |
+| [Rust, since 1.47 (2020)](https://doc.rust-lang.org/std/f64/consts/constant.TAU.html) `std::f64::consts::TAU`| |
+| [.NET, C#, since 5.0 (2020)](https://github.com/dotnet/runtime/pull/37517) `Tau`| |
+| [Boost, since 1.77.0 (2021)](https://github.com/boostorg/math/pull/566) `tau`| |
+| [Godot game engine/GDScript, since 3.3.3 (2021)](https://github.com/godotengine/godot/pull/48837) `TAU`| |
+| [Crystal, since 0.36.0 (2021)](https://github.com/crystal-lang/crystal/pull/10179) `Math::TAU`| |
+| [Java, OpenJDK, since 19 (2022)](https://github.com/openjdk/jdk/commit/05a83e03ca35b4885b48bb0e7d188baf8f7d9d7f) `Math.TAU`| |
+| [JSCAD, since 2.6.3 (2022)](https://github.com/jscad/OpenJSCAD.org/pull/1128) `TAU`| |
+| [Liberty Eiffel, upcoming (202x)](<https://wiki.liberty-eiffel.org/index.php/Versions_history#Curtiss_(2022.dev,_to_be_named_after_Glenn_Curtiss)>) `Tau`| |
 
 ### Some equations
 
@@ -588,6 +580,7 @@ $$
 \int_{-\infty}^{\infty} \frac{1}{\sigma \sqrt{\textcolor{orange}{\tau}}} \exp\left(-\frac{(x-\mu)^2}{2 \sigma^2}\right) \,dx= 1
 $$
 
+<!--
 Its moments are
 
 $$
@@ -598,6 +591,7 @@ M_k = \int_{-\infty}^{\infty} x^k \frac{1}{\sigma \sqrt{\textcolor{orange}{\tau}
 M_{k-2} \times (k - 1) \sigma^2 & \text{otherwise.}
 \end{cases}
 $$
+-->
 
 <br clear="right"/>
 
@@ -736,6 +730,7 @@ $$
   \Gamma(z)\Gamma(1-z)
   = \frac{\textcolor{teal}{\pi}}{\sin(\textcolor{teal}{\pi} z)}
   $$
+
     <!-- = \frac{\textcolor{orange}{tau}}{crd(\textcolor{orange}{\tau} z)} -->
   <br clear="right"/>
 
