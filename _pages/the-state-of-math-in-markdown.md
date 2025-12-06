@@ -2,6 +2,7 @@
 layout: page
 title: "The state of math in Markdown"
 permalink: /the-state-of-math-in-markdown/
+show_in_nav: true
 ---
 
 ### GitHub
