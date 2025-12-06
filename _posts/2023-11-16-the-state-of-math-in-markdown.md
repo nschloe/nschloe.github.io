@@ -156,7 +156,3 @@ News!](https://news.ycombinator.com/item?id=38292214)
     a compiler's standpoint, and gives you better info in case of an error. In fact
     the creator of TeX, Donald Knuth, [perfers the begin-end
     syntax.](https://tex.stackexchange.com/questions/510/are-and-preferable-to-dollar-signs-for-math-mode#comment61028_510)
-
-[^2]:
-    I will update the samples and table once in a while to keep track of new
-    developments.
