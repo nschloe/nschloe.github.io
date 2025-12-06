@@ -1,3 +1,9 @@
+---
+layout: page
+title: "The state of math in Markdown"
+permalink: /the-state-of-math-in-markdown/
+---
+
 ### GitHub
 
 |  | GitHub `$` (38.5%) | Github `` $` `` (59.4%) | Github `` $$ `` (42.2%) | Github ```` ```math ```` (59.4%) |
