@@ -7,7 +7,6 @@ last_modified_at: 2024-05-22
 _TLDR: Markdown + math is hard. GitHub is bad, Gitea better, GitLab best.
 Backticked syntax trumps `$`-syntax._
 
-
 Math input is quite a common Markdown extension in Git services these days.
 
 - The first proper math implementation in Markdown is from
@@ -117,42 +116,40 @@ and ends in `$`.
 
 ### Comparison table
 
-Updated May 2024.[^2]
+Updated December 2025.[^2]
 
-|  | GitHub `$` (14%) | Github `` $` `` (41%) | GitLab `$` (85%) | GitLab `` $` `` (96%) | Gitea `$` (81%) | Gitea `\(` (85%) | Pandoc `$` (98%) |
-| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [Basic example](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#basic-example) | [partial](https://github.com/github/markup/issues/1744) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Subsequent math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#subsequent-math) | [no](https://github.com/github/markup/issues/1741) | ✓ | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/431890) | ✓ | ✓ | ✓ | ✓ |
-| [Indented math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#indented-math) | ✓ | ✓ | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431893) | ✓ | [no](https://github.com/go-gitea/gitea/issues/27834) | [no](https://github.com/go-gitea/gitea/issues/27834) | ✓ |
-| [Math in quote blocks](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-quote-blocks) | [✓](https://github.com/github/markup/issues/1732) | [✓](https://github.com/github/markup/issues/1732) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431889) | ✓ | [partial](https://github.com/go-gitea/gitea/issues/27777) | [partial](https://github.com/go-gitea/gitea/issues/27777) | ✓ |
-| [Escaped dollar sign](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#escaped-dollar-sign) | [no](https://github.com/orgs/community/discussions/17116) | ✓ | ✓ | ✓ | [no](https://github.com/go-gitea/gitea/issues/27618) | ✓ | ✓ |
-| [Inline and display math in same list](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-and-display-math-in-same-list) | [no](https://github.com/github/markup/issues/1745) | [no](https://github.com/github/markup/issues/1745) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431895) | ✓ | ✓ | ✓ | ✓ |
-| [Math in footnotes](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-footnotes) | [no](https://github.com/orgs/community/discussions/55227) | [no](https://github.com/orgs/community/discussions/55227) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Math in links](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-links) | [no](https://github.com/orgs/community/discussions/55232) | [no](https://github.com/orgs/community/discussions/55232) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Escaped symbols in math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#escaped-symbols-in-math) | [no](https://github.com/github/markup/issues/1746) | ✓ | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431896) | ✓ | ✓ | ✓ | ✓ |
-| [Images and math in the same list](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#images-and-math-in-the-same-list) | [no](https://github.com/github/markup/issues/1743) | [no](https://github.com/github/markup/issues/1743) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Math in `<details>`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-details) | [no](https://github.com/orgs/community/discussions/57950) | [no](https://github.com/orgs/community/discussions/57950) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [`<` without surrounding whitespace](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#-without-surrounding-whitespace) | [no](https://github.com/orgs/community/discussions/55225) | [no](https://github.com/orgs/community/discussions/55225) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431897) | ✓ | ✓ | ✓ | ✓ |
-| [Inline math preceeded by non-whitespace](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-preceeded-by-non-whitespace) | [no](https://github.com/github/markup/issues/1742) | [partial](https://github.com/github/markup/issues/1742) | ✓ | ✓ | [✓](https://github.com/go-gitea/gitea/issues/27605) | [partial](https://github.com/go-gitea/gitea/issues/27605) | ✓ |
-| [Inline math succeeded by non-whitespace](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-succeeded-by-non-whitespace) | [partial](https://github.com/github/markup/issues/1742) | ✓ | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/431869) | ✓ | [partial](https://github.com/go-gitea/gitea/issues/27605) | [✓](https://github.com/go-gitea/gitea/issues/27605) | [partial](https://github.com/jgm/pandoc/issues/9192) |
-| [Inline math with `%\n`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-with-n) | ✓ | [no](https://github.com/orgs/community/discussions/55237) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/432102) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/432102) | [no](https://github.com/go-gitea/gitea/issues/27617) | [no](https://github.com/go-gitea/gitea/issues/27617) | [yes](https://github.com/jgm/pandoc/issues/9193) |
-| [Comments before bracket delimiters](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#comments-before-bracket-delimiters) | [no](https://github.com/orgs/community/discussions/55228) | [no](https://github.com/orgs/community/discussions/55228) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Sum/product signs in inline mode or fractions](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#sumproduct-signs-in-inline-mode-or-fractions) | [no](https://github.com/orgs/community/discussions/17051) | [no](https://github.com/orgs/community/discussions/17051) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [`\operatorname`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#operatorname) | [no](https://github.com/orgs/community/discussions/55368) | [no](https://github.com/orgs/community/discussions/55368) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Math in stylized text](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-stylized-text) | [no](https://github.com/orgs/community/discussions/17264) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Inline math at the end of stylized text](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-at-the-end-of-stylized-text) | [no](https://github.com/orgs/community/discussions/55033) | [no](https://github.com/orgs/community/discussions/55033) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Dollar in `\text`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#dollar-in-text) | [no](https://github.com/orgs/community/discussions/39655) | ✓ | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/432104) | ✓ | [no](https://github.com/go-gitea/gitea/issues/28070) | [no](https://github.com/go-gitea/gitea/issues/28070) | ✓ |
-| [Math vs. HTML mix-ups](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-vs-html-mix-ups) | [no](https://github.com/github/markup/issues/1747) | [no](https://github.com/github/markup/issues/1747) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/432106) | ✓ | ✓ | ✓ | ✓ |
-| [sqrt symbol around fractions](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#sqrt-symbol-around-fractions) | [no](https://github.com/orgs/community/discussions/39251) | [no](https://github.com/orgs/community/discussions/39251) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [Matrix without line breaks](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#matrix-without-line-breaks) | [no](https://github.com/orgs/community/discussions/52991) | ✓ | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/432108) | ✓ | ✓ | ✓ | ✓ |
-| [50 or more colors in a block](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#50-or-more-colors-in-a-block) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [100 or more bracketed exponents or subscripts](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#100-or-more-bracketed-exponents-or-subscripts) | [no](https://github.com/orgs/community/discussions/59960) | [no](https://github.com/orgs/community/discussions/59960) | ✓ | ✓ | ✓ | ✓ | ✓ |
+|  | GitHub `$` (38.5%) | Github `` $` `` (59.4%) | Github `` $$ `` (42.2%) | Github ```` ```math ```` (59.4%) |
+| :---- | :----: | :----: | :----: | :----: |
+| [Basic example](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#basic-example) | [✓](https://github.com/github/markup/issues/1744) | ✓ | ✓ | ✓ |
+| [Consecutive math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#consecutive-math) | [partial](https://github.com/github/markup/issues/1741) | ✓ | ✓ | ✓ |
+| [Indented math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#indented-math) | ✓ | ✓ | ✓ | ✓ |
+| [Math in quote blocks](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-quote-blocks) | [✓](https://github.com/github/markup/issues/1732) | [✓](https://github.com/github/markup/issues/1732) | ✓ | ✓ |
+| [Escaped dollar sign](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#escaped-dollar-sign) | [partial](https://github.com/github/markup/issues/17116) | partial | partial | ✓ |
+| [Math in footnotes](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-footnotes) | [no](https://github.com/orgs/community/discussions/55227) | [no](https://github.com/orgs/community/discussions/55227) |  |  |
+| [Math in links](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-links) | [no](https://github.com/orgs/community/discussions/55232) | [no](https://github.com/orgs/community/discussions/55232) |  |  |
+| [Escaped symbols in math](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#escaped-symbols-in-math) | [no](https://github.com/orgs/community/discussions/1746) | ✓ | no | ✓ |
+| [Math in `<details>`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-in-details) | ✓ | ✓ | no | ✓ |
+| [`<` without surrounding whitespace](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#-without-surrounding-whitespace) | [✓](https://github.com/orgs/community/discussions/55225) | [✓](https://github.com/orgs/community/discussions/55225) | no | no |
+| [Inline math preceeded by non-whitespace](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-preceeded-by-non-whitespace) | [no](https://github.com/github/markup/issues/1742) | [partial](https://github.com/github/markup/issues/1742) |  |  |
+| [Inline math succeeded by non-whitespace](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-succeeded-by-non-whitespace) | [partial](https://github.com/github/markup/issues/1742) | ✓ |  |  |
+| [Inline math with `%\n`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-with-n) | ✓ | [no](https://github.com/orgs/community/discussions/55237) |  |  |
+| [Comments before bracket delimiters](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#comments-before-bracket-delimiters) | [no](https://github.com/orgs/community/discussions/55228) | [no](https://github.com/orgs/community/discussions/55228) |  |  |
+| [Small sum/product signs](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#small-sumproduct-signs) | [✓](https://github.com/orgs/community/discussions/17051) | [✓](https://github.com/orgs/community/discussions/17051) | ✓ | ✓ |
+| [`\operatorname`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#operatorname) | [no](https://github.com/orgs/community/discussions/55368) | [no](https://github.com/orgs/community/discussions/55368) | [no](https://github.com/orgs/community/discussions/55368) | [no](https://github.com/orgs/community/discussions/55368) |
+| [Inline math in stylized text](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-in-stylized-text) | [partial](https://github.com/orgs/community/discussions/17264) | ✓ |  |  |
+| [Inline math at the end of stylized text](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#inline-math-at-the-end-of-stylized-text) | [partial](https://github.com/orgs/community/discussions/55033) | [partial](https://github.com/orgs/community/discussions/55033) |  |  |
+| [Dollar in `\text`](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#dollar-in-text) | [no](https://github.com/orgs/community/discussions/39655) | ✓ | ✓ | no |
+| [Math vs. HTML mix-ups](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#math-vs-html-mix-ups) | [no](https://github.com/github/markup/issues/1747) | [✓](https://github.com/github/markup/issues/1747) | no | ✓ |
+| [sqrt symbol around fractions](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#sqrt-symbol-around-fractions) | [no](https://github.com/orgs/community/discussions/39251) | [no](https://github.com/orgs/community/discussions/39251) | [no](https://github.com/orgs/community/discussions/39251) | [no](https://github.com/orgs/community/discussions/39251) |
+| [Matrix without line breaks](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#matrix-without-line-breaks) | [no](https://github.com/orgs/community/discussions/52991) | partial | no | partial |
+| [50 colors in a block](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#50-colors-in-a-block) | no | no | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) |
+| [100 bracketed exponents or subscripts](https://github.com/nschloe/markdown-math-acid-test/blob/main/dollar-backtick.md#100-bracketed-exponents-or-subscripts) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) |
+
 
 ### Comments
 
 [Comments welcome on Hacker
 News!](https://news.ycombinator.com/item?id=38292214)
-
 
 [^1]:
     `$`-toggles are original TeX notation, LaTeX introduced the begin-end
