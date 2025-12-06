@@ -116,7 +116,7 @@ and ends in `$`.
 
 ### Comparison table
 
-Updated December 2025.[^2]
+Updated December 2025.
 
 |  | GitHub `$` (38.5%) | Github `` $` `` (59.4%) | Github `` $$ `` (42.2%) | Github ```` ```math ```` (59.4%) |
 | :---- | :----: | :----: | :----: | :----: |
