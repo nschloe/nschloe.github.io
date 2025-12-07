@@ -118,6 +118,8 @@ and ends in `$`.
 
 Updated December 2025.
 
+#### GitHub
+
 |  | GitHub `$` (38.5%) | Github `` $` `` (59.4%) | Github `` $$ `` (42.2%) | Github ```` ```math ```` (59.4%) |
 | :---- | :----: | :----: | :----: | :----: |
 | [Basic example](https://github.com/nschloe/markdown-math-acid-test/blob/main/01-basic-example.md) | [✓](https://github.com/github/markup/issues/1744) | ✓ | ✓ | ✓ |
@@ -144,6 +146,35 @@ Updated December 2025.
 | [Matrix without line breaks](https://github.com/nschloe/markdown-math-acid-test/blob/main/22-matrix-without-line-breaks.md) | [no](https://github.com/orgs/community/discussions/52991) | partial | no | partial |
 | [50 colors in a block](https://github.com/nschloe/markdown-math-acid-test/blob/main/23-50-colors-in-a-block.md) | no | no | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) |
 | [100 bracketed exponents or subscripts](https://github.com/nschloe/markdown-math-acid-test/blob/main/24-100-bracketed-exponents-or-subscripts.md) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) | [no](https://github.com/orgs/community/discussions/45276) |
+
+#### GitLab
+
+|  | GitLab `$` (74.0%) | GitLab `` $` `` (78.1%) | GitLab `` $$ `` (100.0%) | GitLab ```` ```math ```` (100.0%) |
+| :---- | :----: | :----: | :----: | :----: |
+| [Basic example](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/01-basic-example.md) | ✓ | ✓ | ✓ | ✓ |
+| [Consecutive math](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/02-consecutive-math.md) | ✓ | ✓ | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431890) | ✓ |
+| [Indented math](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/03-indented-math.md) | ✓ | ✓ | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431893) | ✓ |
+| [Math in quote blocks](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/04-math-in-quote-blocks.md) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431889) | ✓ | ✓ | ✓ |
+| [Escaped dollar sign](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/05-escaped-dollar-sign.md) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/429512) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/429512) | ✓ | ✓ |
+| [Math in footnotes](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/06-math-in-footnotes.md) | partial | partial |  |  |
+| [Math in links](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/07-math-in-links.md) | ✓ | ✓ |  |  |
+| [Escaped symbols in math](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/08-escaped-symbols-in-math.md) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431896) | ✓ | ✓ | ✓ |
+| [Math in `<details>`](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/09-math-in-details.md) | ✓ | ✓ | ✓ | ✓ |
+| [`<` without surrounding whitespace](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/10--without-surrounding-whitespace.md) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/431897) | ✓ | ✓ | ✓ |
+| [Inline math preceeded by non-whitespace](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/11-inline-math-preceeded-by-nonwhitespace.md) | no | no |  |  |
+| [Inline math succeeded by non-whitespace](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/12-inline-math-succeeded-by-nonwhitespace.md) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/431869) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/431869) |  |  |
+| [Inline math with `%\n`](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/13-inline-math-with-n.md) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/432102) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/432102) |  |  |
+| [Comments before bracket delimiters](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/14-comments-before-bracket-delimiters.md) | no | no |  |  |
+| [Small sum/product signs](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/15-small-sumproduct-signs.md) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/429512) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/429512) | ✓ | ✓ |
+| [`\operatorname`](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/16-operatorname.md) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/429512) | [partial](https://gitlab.com/gitlab-org/gitlab/-/issues/429512) | ✓ | ✓ |
+| [Inline math in stylized text](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/17-inline-math-in-stylized-text.md) | ✓ | ✓ |  |  |
+| [Inline math at the end of stylized text](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/18-inline-math-at-the-end-of-stylized-text.md) | ✓ | ✓ |  |  |
+| [Dollar in `\text`](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/19-dollar-in-text.md) | [no](https://gitlab.com/gitlab-org/gitlab/-/issues/432104) | ✓ | ✓ | ✓ |
+| [Math vs. HTML mix-ups](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/20-math-vs-html-mixups.md) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/432106) | ✓ | ✓ | ✓ |
+| [sqrt symbol around fractions](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/21-sqrt-symbol-around-fractions.md) | ✓ | ✓ | ✓ | ✓ |
+| [Matrix without line breaks](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/22-matrix-without-line-breaks.md) | [✓](https://gitlab.com/gitlab-org/gitlab/-/issues/432108) | ✓ | ✓ | ✓ |
+| [50 colors in a block](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/23-50-colors-in-a-block.md) | ✓ | ✓ | ✓ | ✓ |
+| [100 bracketed exponents or subscripts](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/24-100-bracketed-exponents-or-subscripts.md) | ✓ | ✓ | ✓ | ✓ |
 
 ### Comments
 
