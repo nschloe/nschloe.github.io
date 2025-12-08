@@ -114,7 +114,7 @@ to only look at inline code contents for determining if it's math or not. In
 general though, you'd probably want to keep allowing actual code that starts
 and ends in `$`.
 
-### Comparison table
+### Comparison tables
 
 Updated December 2025.
 
