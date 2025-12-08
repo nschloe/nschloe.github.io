@@ -204,7 +204,9 @@ Updated December 2025.
 | [Matrix without line breaks](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/22-matrix-without-line-breaks.md) | ✓ | ✓ | ✓ | ✓ |
 | [50 colors in a block](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/23-50-colors-in-a-block.md) | ✓ | ✓ | ✓ | ✓ |
 | [100 bracketed exponents or subscripts](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/24-100-bracketed-exponents-or-subscripts.md) | ✓ | ✓ | ✓ | ✓ |
-❯ python create-md-tables.py
+
+#### Gitea
+
 |  | Gitea `$` (75.0%) | Gitea `` $` `` (91.7%) | Gitea `` $$ `` (100.0%) | Gitea ```` ```math ```` (100.0%) |
 | :---- | :----: | :----: | :----: | :----: |
 | [Basic example](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/01-basic-example.md) | ✓ | ✓ | ✓ | ✓ |
