@@ -176,6 +176,62 @@ Updated December 2025.
 | [50 colors in a block](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/23-50-colors-in-a-block.md) | ✓ | ✓ | ✓ | ✓ |
 | [100 bracketed exponents or subscripts](https://gitlab.com/nschloe/markdown-math-acid-test/-/blob/main/24-100-bracketed-exponents-or-subscripts.md) | ✓ | ✓ | ✓ | ✓ |
 
+#### Gitea
+
+|  | Gitea `$` (75.0%) | Gitea `` $` `` (91.7%) | Gitea `` $$ `` (100.0%) | Gitea ```` ```math ```` (100.0%) |
+| :---- | :----: | :----: | :----: | :----: |
+| [Basic example](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/01-basic-example.md) | ✓ | ✓ | ✓ | ✓ |
+| [Consecutive math](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/02-consecutive-math.md) | [no](https://github.com/go-gitea/gitea/issues/36107) | ✓ | ✓ | ✓ |
+| [Indented math](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/03-indented-math.md) | ✓ | ✓ | ✓ | ✓ |
+| [Math in quote blocks](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/04-math-in-quote-blocks.md) | [✓](https://github.com/go-gitea/gitea/issues/27777) | [✓](https://github.com/go-gitea/gitea/issues/27777) | ✓ | ✓ |
+| [Escaped dollar sign](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/05-escaped-dollar-sign.md) | ✓ | ✓ | ✓ | ✓ |
+| [Math in footnotes](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/06-math-in-footnotes.md) | ✓ | ✓ |  |  |
+| [Math in links](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/07-math-in-links.md) | no | ✓ |  |  |
+| [Escaped symbols in math](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/08-escaped-symbols-in-math.md) | ✓ | ✓ | ✓ | ✓ |
+| [Math in `<details>`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/09-math-in-details.md) | ✓ | ✓ | ✓ | ✓ |
+| [`<` without surrounding whitespace](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/10--without-surrounding-whitespace.md) | ✓ | ✓ | ✓ | ✓ |
+| [Inline math preceeded by non-whitespace](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/11-inline-math-preceeded-by-nonwhitespace.md) | [partial](https://github.com/go-gitea/gitea/issues/27605) | ✓ |  |  |
+| [Inline math succeeded by non-whitespace](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/12-inline-math-succeeded-by-nonwhitespace.md) | [partial](https://github.com/go-gitea/gitea/issues/27605) | ✓ |  |  |
+| [Inline math with `%\n`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/13-inline-math-with-n.md) | [no](https://github.com/go-gitea/gitea/issues/27617) | [no](https://github.com/go-gitea/gitea/issues/27617) |  |  |
+| [Comments before bracket delimiters](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/14-comments-before-bracket-delimiters.md) | no | no |  |  |
+| [Small sum/product signs](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/15-small-sumproduct-signs.md) | ✓ | ✓ | ✓ | ✓ |
+| [`\operatorname`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/16-operatorname.md) | ✓ | ✓ | ✓ | ✓ |
+| [Inline math in stylized text](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/17-inline-math-in-stylized-text.md) | ✓ | ✓ |  |  |
+| [Inline math at the end of stylized text](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/18-inline-math-at-the-end-of-stylized-text.md) | no | ✓ |  |  |
+| [Dollar in `\text`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/19-dollar-in-text.md) | [✓](https://github.com/go-gitea/gitea/issues/28070) | [✓](https://github.com/go-gitea/gitea/issues/28070) | ✓ | ✓ |
+| [Math vs. HTML mix-ups](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/20-math-vs-html-mixups.md) | ✓ | ✓ | ✓ | ✓ |
+| [sqrt symbol around fractions](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/21-sqrt-symbol-around-fractions.md) | ✓ | ✓ | ✓ | ✓ |
+| [Matrix without line breaks](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/22-matrix-without-line-breaks.md) | ✓ | ✓ | ✓ | ✓ |
+| [50 colors in a block](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/23-50-colors-in-a-block.md) | ✓ | ✓ | ✓ | ✓ |
+| [100 bracketed exponents or subscripts](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/24-100-bracketed-exponents-or-subscripts.md) | ✓ | ✓ | ✓ | ✓ |
+❯ python create-md-tables.py
+|  | Gitea `$` (75.0%) | Gitea `` $` `` (91.7%) | Gitea `` $$ `` (100.0%) | Gitea ```` ```math ```` (100.0%) |
+| :---- | :----: | :----: | :----: | :----: |
+| [Basic example](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/01-basic-example.md) | ✓ | ✓ | ✓ | ✓ |
+| [Consecutive math](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/02-consecutive-math.md) | [no](https://github.com/go-gitea/gitea/issues/36107) | ✓ | ✓ | ✓ |
+| [Indented math](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/03-indented-math.md) | ✓ | ✓ | ✓ | ✓ |
+| [Math in quote blocks](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/04-math-in-quote-blocks.md) | [✓](https://github.com/go-gitea/gitea/issues/27777) | [✓](https://github.com/go-gitea/gitea/issues/27777) | ✓ | ✓ |
+| [Escaped dollar sign](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/05-escaped-dollar-sign.md) | ✓ | ✓ | ✓ | ✓ |
+| [Math in footnotes](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/06-math-in-footnotes.md) | ✓ | ✓ |  |  |
+| [Math in links](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/07-math-in-links.md) | [no](https://github.com/go-gitea/gitea/issues/36108) | ✓ |  |  |
+| [Escaped symbols in math](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/08-escaped-symbols-in-math.md) | ✓ | ✓ | ✓ | ✓ |
+| [Math in `<details>`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/09-math-in-details.md) | ✓ | ✓ | ✓ | ✓ |
+| [`<` without surrounding whitespace](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/10--without-surrounding-whitespace.md) | ✓ | ✓ | ✓ | ✓ |
+| [Inline math preceeded by non-whitespace](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/11-inline-math-preceeded-by-nonwhitespace.md) | [partial](https://github.com/go-gitea/gitea/issues/27605) | ✓ |  |  |
+| [Inline math succeeded by non-whitespace](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/12-inline-math-succeeded-by-nonwhitespace.md) | [partial](https://github.com/go-gitea/gitea/issues/27605) | ✓ |  |  |
+| [Inline math with `%\n`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/13-inline-math-with-n.md) | [no](https://github.com/go-gitea/gitea/issues/27617) | [no](https://github.com/go-gitea/gitea/issues/27617) |  |  |
+| [Comments before bracket delimiters](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/14-comments-before-bracket-delimiters.md) | no | no |  |  |
+| [Small sum/product signs](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/15-small-sumproduct-signs.md) | ✓ | ✓ | ✓ | ✓ |
+| [`\operatorname`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/16-operatorname.md) | ✓ | ✓ | ✓ | ✓ |
+| [Inline math in stylized text](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/17-inline-math-in-stylized-text.md) | ✓ | ✓ |  |  |
+| [Inline math at the end of stylized text](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/18-inline-math-at-the-end-of-stylized-text.md) | no | ✓ |  |  |
+| [Dollar in `\text`](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/19-dollar-in-text.md) | [✓](https://github.com/go-gitea/gitea/issues/28070) | [✓](https://github.com/go-gitea/gitea/issues/28070) | ✓ | ✓ |
+| [Math vs. HTML mix-ups](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/20-math-vs-html-mixups.md) | ✓ | ✓ | ✓ | ✓ |
+| [sqrt symbol around fractions](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/21-sqrt-symbol-around-fractions.md) | ✓ | ✓ | ✓ | ✓ |
+| [Matrix without line breaks](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/22-matrix-without-line-breaks.md) | ✓ | ✓ | ✓ | ✓ |
+| [50 colors in a block](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/23-50-colors-in-a-block.md) | ✓ | ✓ | ✓ | ✓ |
+| [100 bracketed exponents or subscripts](https://gitea.com/nschloe/markdown-math-acid-test/src/branch/main/24-100-bracketed-exponents-or-subscripts.md) | ✓ | ✓ | ✓ | ✓ |
+
 ### Comments
 
 [Comments welcome on Hacker
